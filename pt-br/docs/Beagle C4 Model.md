@@ -55,17 +55,16 @@ Ao utilizar o Beagle, desenvolvedores podem:
 
 [C4Model](#Beagle-C4-Model)
 
-**Level 1: Diagrama de contexto do sistema**
+**Nível 1: Diagrama de contexto do sistema**
 
-Esse level mostra de forma macro a aplicação como um todo, os atores, seus papéis e também como eles interagem entre si. O principal objetivo aqui é abstrair ao máximo a solução e não entrar em detalhes exagerados.
+Esse nível mostra de forma macro a aplicação, os atores, seus papéis e também como eles interagem entre si. O principal objetivo aqui é representar o produto em sua forma mais abstrata.
 
 ***Contexto Beagle***
 
-O Beagle é um framework open source que ajuda desenvolvedores a implementar aplicações Server-Driver de uma maneira multi plataforma.
+O Beagle é um framework open source que ajuda desenvolvedores a implementar aplicações Server-Driven de uma maneira cross-platform:
 
-Desenvolvedores podem facilmente criar e prototipar telas frontend usando a biblioteca Beagle Backend e seus utilitários para layout (posicionamento e aparência) e comportamento (ações).
-
-Uma vez criadas, essas telas podem ser enviadas para aplicações frontend mobile ou web, elas usam a biblioteca do Beagle Frontend para renderizar os layouts.
+* Desenvolvedores podem facilmente criar e prototipar telas frontend usando a biblioteca Beagle Backend e seus utilitários para layout (posicionamento e aparência) e comportamento (ações).
+* Uma vez criadas, essas telas podem ser enviadas para aplicações frontend mobile ou web, elas usam a biblioteca do Beagle Frontend para renderizar os layouts.
 
 ![diagram](c1.svg)
 
@@ -75,7 +74,18 @@ Uma vez criadas, essas telas podem ser enviadas para aplicações frontend mobil
 
 [C4Model](#Beagle-C4-Model)
 
+**Nível 2: Diagrama de containers do sistema**
+
 Nesse nível mostramos de maneira mais detalhada o sistema descrevendo os seus containers (Não confundir com o Docker) e como eles se comunicam/interagem. Nesse nível é dado ênfase na arquitetura e tecnologias utilizadas. A ideia é mostrar como o sistema é de forma macro. Um container pode ser uma aplicação web, um database, um sistema de arquivos, etc.
+
+
+***Containers Beagle***
+
+No segundo nível de detalhamento temos os **containers** de `backend` e `frontend`:
+
+* O Beagle Frontend é instalado em aplicações Web e Mobile, que renderizam nativamente as telas recebidas do beagle backend.
+* O Beagle Backend é configurado no backend de uma aplicação para facilitar a criação de componentes server driven.
+
 
 
 ![diagram](c2.svg)
@@ -90,7 +100,7 @@ Nesse nível damos mais um passo nos detalhes em comparação ao Container; desc
 
 O MeuProjeto hoje é dividido em módulos, sendo cada um deles um container dentro do C4Model.
 
-- Module 1
+- In Progress...
 
 ## Module 1
 
@@ -98,6 +108,6 @@ O MeuProjeto hoje é dividido em módulos, sendo cada um deles um container dent
 
 [C4Model](#Beagle-C4-Model)
 
-Controla as permissões dos usuários em relação aos recursos existentes nas APIs do Charles.
+In progress...
 
 ![diagram](c3.svg)

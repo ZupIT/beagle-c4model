@@ -1,26 +1,29 @@
-@startuml
+@startuml container
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Container.puml
 
 LAYOUT_WITH_LEGEND()
 
-System_Boundary(beagle, "Beagle") {
+Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
+System_Boundary(beagle, "Beagle"){
   
-    Container(beagle_backend, "Beagle Backend", "JAVA, Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
-    
-    System_Boundary(beagle_frontend, "Beagle Frontend") {
+  Container(beagle_backend, "Beagle Backend", "JAVA, Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+
+  System_Boundary(beagle_frontend, "Beagle Frontend") {
       
     Container(beagle_web_core, "Beagle Web", "javascript, typescript", "Cuida da renderização de aplicações Web")
       Container(beagle_android, "Beagle Android", "kotlin", "Cuida da renderização de aplicações Android")
       Container(beagle_ios, "Beagle iOS", "swift", "Cuida da renderização de aplicações iOS")
-    }
+  }
 }
+System_Ext(frontend_app, "Aplicação Frontend", "Uma aplicação frontend que renderiza as telas")
+System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
+Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
 
-System_Ext(frontend_app, "Aplicação Frontend", "Uma aplicação frontend que renderiza as telas Beagle vindas do backend")
-Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
-
-Rel(software_developer, beagle_backend, "Desenvolve com")
+Rel(software_developer, beagle_backend, "Define telas usando")
+Rel(frontend_app, beagle_frontend, "Renderiza usando / Possui instalado")
 Rel(beagle_frontend, beagle_backend, "Faz requisação da tela beagle UI","HTTPS/JSON")
-Rel(frontend_app, beagle_frontend, "Renderiza com")
+Rel(infra, beagle_backend, "Hospeda")
+Rel(sre, infra, "Configura")
 Rel(software_developer, frontend_app, "Configura o Beagle na")
 
 @enduml

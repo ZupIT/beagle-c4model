@@ -6,7 +6,12 @@ LAYOUT_WITH_LEGEND()
 Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
 System(beagle, "Beagle", "Permite que os desenvolvedores criem telas Beagle facilmente.")
 System_Ext(frontend_app, "Aplicação Frontend", "Uma aplicação frontend que renderiza as telas")
+System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
+Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
 
 Rel(software_developer, beagle, "Desenvolve usando")
-Rel(frontend_app, beagle, "Renderiza usando")
+Rel(software_developer, frontend_app, "Configura o Beagle na")
+Rel(frontend_app, beagle, "Renderiza usando / Possui instalado")
+Rel(infra, beagle, "Hospeda")
+Rel(sre, infra, "Configura")
 @enduml

@@ -1,4 +1,4 @@
-# Opensource Sample C4model
+# Beagle C4model
 
 # Introduction
 
@@ -42,27 +42,34 @@ This project has two sections:
 
 To modify any configuration access `.c4builder` file on [en/.c4builder](https://github.com/ZupIT/myproject-c4model//tree/main/en/.c4builder)  or [pt-br/.c4builder](https://github.com/ZupIT/myproject-c4model//tree/main/pt-br/.c4builder)
 
-# What is MyProject?
+# What is Beagle?
 
-Myproject is an open-source tool that makes lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus sagittis placerat. Donec venenatis consequat metus ut volutpat. Aliquam gravida, metus accumsan congue finibus, augue tortor porta dui, vitae placerat massa ligula quis sem. Aenean aliquam malesuada tortor sit amet ultricies. Praesent varius euismod condimentum
+Beagle is an open source framework that helps developers implement Server-Driven UI in a cross-platform way.
+
+By using Beagle, developers can:
+
+ - Rapidly change an application layout, data, navigation flow, or even logic, just by changing code in the backend.
+ - Be more independent of mobile stores, like App Store and Play Store, because most changes won’t need an app update.
+ - Have more confidence that applications will behave similarly on different platforms, since code will be shared and standardized between backend and frontend.
+ - Easily test new business hypothesis or make live fixes on applications to improve users' experience and receive feedback.
 
 Take a look at 
 
-- [MyProject Doc](https://docs.myproject.io/) 
+- [Beagle Docs](https://docs.usebeagle.io) 
 
 
 # Communication
 
 We have a few channels for contact, feel free to reach out to us at:
 
-- [GitHub Issues](https://github.com/ZupIT/myproject/issues)
+- [GitHub Issues](https://github.com/ZupIT/beagle/issues)
 - [Zup Open Source Forum](https://forum.zup.com.br)
 
 # Contributing
 
 Feel free to use, recommend improvements or contribute to new implementations.
 
-If this is our first repository that you visit, or would like to know more about MyProject,
-check out [MyProject](https://github.com/ZupIT/myproject) repository.
+If this is our first repository that you visit, or would like to know more about Beagle,
+check out [Beagle Project](https://github.com/ZupIT/beagle) repository.
 
-Thank you for considering evoluting MyProject!!!:heart::heart::heart:
+Thank you for considering evoluting Beagle!!!:heart::heart::heart:

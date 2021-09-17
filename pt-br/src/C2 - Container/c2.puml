@@ -15,7 +15,7 @@ System_Boundary(beagle, "Beagle"){
       Container(beagle_ios, "Beagle iOS", "swift", "Cuida da renderização de aplicações iOS")
   }
 }
-System_Ext(frontend_app, "Aplicação Frontend", "Uma aplicação frontend que renderiza as telas")
+System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
 System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
 Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
 
@@ -24,6 +24,6 @@ Rel(frontend_app, beagle_frontend, "Renderiza usando / Possui instalado")
 Rel(beagle_frontend, beagle_backend, "Faz requisação da tela beagle UI","HTTPS/JSON")
 Rel(infra, beagle_backend, "Hospeda")
 Rel(sre, infra, "Configura")
-Rel(software_developer, frontend_app, "Configura o Beagle na")
+Rel(software_developer, frontend_app, "Configura o Beagle no")
 
 @enduml

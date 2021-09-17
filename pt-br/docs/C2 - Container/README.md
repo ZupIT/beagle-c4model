@@ -1,6 +1,6 @@
 # C2 - Container
 
-`/C2 - Container`
+`\C2 - Container`
 
 * [C4Model](/docs/README.md)
   * [C1 -  Context](/docs/C1%20-%20%20Context/README.md)

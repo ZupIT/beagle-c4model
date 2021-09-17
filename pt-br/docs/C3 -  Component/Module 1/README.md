@@ -1,6 +1,6 @@
 # Module 1
 
-`/C3 -  Component/Module 1`
+`\C3 -  Component\Module 1`
 
 * [C4Model](/docs/README.md)
   * [C1 -  Context](/docs/C1%20-%20%20Context/README.md)

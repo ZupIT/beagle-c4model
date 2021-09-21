@@ -32,7 +32,7 @@ Container_Boundary(beagle_web, "Beagle Web"){
     Boundary(beagle_config_services, "Config Services and Helpers"){
       Component(http_client, "HTTP Client","Typescript", "Serviço para definir ação de fetch customizada")
       Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
-      Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend")
+      Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
       Component(view_content_manager, "View Content Manager","Typescript", "Definition")
       Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
       Component(prefetcher, "Prefetcher","Typescript", "Definition")
@@ -71,4 +71,6 @@ Rel(beagle_view, view_client, "Usa")
 Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
 Rel(beagle_navigator, analytics, "Pode criar evento")
 Rel(beagle_navigator, url_builder, "Usa")
+Rel(beagle_default_actions, http_client, "Pode usar")
+
 @enduml

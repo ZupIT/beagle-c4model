@@ -1,4 +1,4 @@
-# Module 1
+# Beagle Web
 
 In progress...
 

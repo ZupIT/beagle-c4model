@@ -6,13 +6,13 @@
   * [C1 -  Context](/docs/C1%20-%20%20Context/README.md)
   * [C2 - Container](/docs/C2%20-%20Container/README.md)
   * [**C3 -  Component**](/docs/C3%20-%20%20Component/README.md)
-    * [Module 1](/docs/C3%20-%20%20Component/Module%201/README.md)
+    * [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
 
 ---
 
 [C4Model (up)](/docs/README.md)
 
-- [Module 1](/docs/C3%20-%20%20Component/Module%201/README.md)
+- [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
 
 ---
 

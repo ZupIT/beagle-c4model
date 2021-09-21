@@ -1,0 +1,74 @@
+@startuml c2
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
+
+Container(beagle_backend, "Beagle Backend", "JAVA, Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+
+Container_Boundary(beagle_web, "Beagle Web"){
+  
+  Component(beagle_remote_view, "Beagle Remote View","Typescript", "Local onde a tela será renderizada de acordo com a rota e / ou configurações passadas")
+  Component(beagle_default_components, "Beagle Default UI Components","Typescript", "Componentes do Beagle como Text, Listview, Container...")
+  Component(beagle_default_actions, "Beagle Default Actions","Typescript", "Ações padrão pré-definidas")
+
+  Boundary(beagle_react, "Beagle React"){
+    Component(beagle_provider, "Beagle Provider", "Typescript", "Encapsula Beagle Service")
+  }
+
+  Boundary(beagle_angular, "Beagle Angular"){
+    Component(beagle_module, "Beagle Module", "Typescript", "Encapsula Beagle Service")
+  }
+
+  Boundary(beagle_core, "Beagle Web Core"){
+
+    Component(beagle_service, "Beagle Service", "Typescript","Ponto de partida de toda a lógica de processamento do Beagle Web Core, é responsável por iniciar a biblioteca e faz a ponte entre os utilitários e o código nativo")
+    Component(beagle_config, "Beagle Config", "Typescript","Configurações que alteram ou incrementam o comportamento da biblioteca Beagle")
+    Component(beagle_view, "Beagle View","Typescript", "Responsável pelo gerenciamento de telas server-driven")
+    Component(beagle_navigator, "Beagle Navigator","Typescript", "Responsável pelo controle de navegação entre as rotas")
+    Component(beagle_renderer, "Beagle Renderer","Typescript", "Responsável pela renderização de telas e uso dos utilitários de desserialização")
+
+    Boundary(beagle_config_services, "Config Services and Helpers"){
+      Component(http_client, "HTTP Client","Typescript", "Serviço para definir ação de fetch customizada")
+      Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
+      Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend")
+      Component(view_content_manager, "View Content Manager","Typescript", "Definition")
+      Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
+      Component(prefetcher, "Prefetcher","Typescript", "Definition")
+      Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
+      Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
+      Component(action_handlers, "Action Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de ações")
+    }
+
+
+
+  }
+}
+
+Rel(frontend_app, beagle_angular, "Usa")
+Rel(frontend_app, beagle_react, "Usa")
+Rel(beagle_provider, beagle_remote_view, "Acessa parâmetros")
+Rel(beagle_module, beagle_remote_view, "Acessa parâmetros")
+Rel(beagle_remote_view, beagle_default_components, "Apresenta")
+Rel(beagle_default_actions, analytics, "Pode criar evento")
+Rel(beagle_provider, beagle_service, "Cria")
+Rel(beagle_module, beagle_service, "Cria")
+Rel(beagle_service, beagle_view, "Cria")
+Rel(beagle_view, beagle_service, "Contém")
+Rel(beagle_service, beagle_config ,"Processa")
+Rel(beagle_config, beagle_config_services ,"Contém")
+Rel(beagle_config, beagle_default_components ,"Contém")
+Rel(beagle_config, beagle_default_actions ,"Contém")
+Rel(beagle_view, beagle_navigator, "Cria")
+Rel(beagle_view, beagle_renderer, "Cria")
+Rel(beagle_renderer, beagle_view, "Usa")
+Rel(beagle_navigator, beagle_renderer, "Aciona renderização")
+Rel(beagle_renderer, action_handlers, "Usa")
+Rel(beagle_renderer, operation_handlers, "Usa")
+Rel(global_context, beagle_renderer, "Aciona renderização")
+Rel(beagle_view, view_client, "Usa")
+Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
+Rel(beagle_navigator, analytics, "Pode criar evento")
+Rel(beagle_navigator, url_builder, "Usa")
+@enduml

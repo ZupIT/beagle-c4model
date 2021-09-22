@@ -13,11 +13,15 @@ Container_Boundary(beagle_web, "Beagle Web"){
   Component(beagle_default_actions, "Beagle Default Actions","Typescript", "Ações padrão pré-definidas")
 
   Boundary(beagle_react, "Beagle React"){
-    Component(beagle_provider, "Beagle Provider", "Typescript", "Encapsula Beagle Service")
+    Component(beagle_provider, "Beagle Provider", "Typescript", "Inicia o Beagle Service")
   }
 
   Boundary(beagle_angular, "Beagle Angular"){
-    Component(beagle_module, "Beagle Module", "Typescript", "Encapsula Beagle Service")
+    Component(beagle_module, "Beagle Module", "Typescript", "Inicia o Beagle Service")
+  }
+
+  Boundary(beagle_flutter, "Beagle Flutter"){
+    Component(beagle_flutter_bridge, "Beagle Flutter Bridge", "Typescript, Dart", "Ponte de comunicação entre o core do Beagle e o código nativo flutter")
   }
 
   Boundary(beagle_core, "Beagle Web Core"){
@@ -48,6 +52,8 @@ Container_Boundary(beagle_web, "Beagle Web"){
 
 Rel(frontend_app, beagle_angular, "Usa")
 Rel(frontend_app, beagle_react, "Usa")
+Rel(frontend_app, beagle_flutter, "Usa")
+Rel(beagle_flutter_bridge, beagle_service, "Cria")
 Rel(beagle_provider, beagle_remote_view, "Acessa parâmetros")
 Rel(beagle_module, beagle_remote_view, "Acessa parâmetros")
 Rel(beagle_remote_view, beagle_default_components, "Apresenta")

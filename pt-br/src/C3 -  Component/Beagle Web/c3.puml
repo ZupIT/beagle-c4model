@@ -39,9 +39,6 @@ Container_Boundary(beagle_web, "Beagle Web"){
       Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
       Component(action_handlers, "Action Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de ações")
     }
-
-
-
   }
 }
 

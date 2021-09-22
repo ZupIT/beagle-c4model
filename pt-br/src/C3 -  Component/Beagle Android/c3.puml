@@ -1,0 +1,20 @@
+@startuml c2
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
+LAYOUT_WITH_LEGEND()
+
+System_Ext(frontend_app, "Aplicativo Android", "Um aplicativo que renderiza as telas do Beagle")
+
+Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+
+Container_Boundary(beagle_android, "Beagle Android"){
+  Component(beagle_networking, "Beagle Networking", "Descrição networking")
+  Component(beagle_setup, "Beagle Setup", "Descrição setup")
+  Component(beagle_screen, "Beagle Screen", "Descrição da tela Serven Driven")
+  
+  
+}
+
+Rel(frontend_app, beagle_setup, "Cria Instancia")
+Rel(frontend_app, beagle_screen, "Adiciona a tela Serven Driven a Aplicação")
+
+@enduml

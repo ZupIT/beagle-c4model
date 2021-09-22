@@ -1,7 +1,6 @@
 @startuml c2
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
 LAYOUT_WITH_LEGEND()
-LAYOUT_LEFT_RIGHT()
 
 System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
 
@@ -33,7 +32,7 @@ Container_Boundary(beagle_web, "Beagle Web"){
       Component(http_client, "HTTP Client","Typescript", "Serviço para definir ação de fetch customizada")
       Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
       Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
-      Component(view_content_manager, "View Content Manager","Typescript", "Definition")
+      Component(view_content_manager, "View Content Manager","Typescript", "Utilitário que ajuda no acesso a elementos da árvore de componentes")
       Component(global_context, "[[http://google.com.br Global Context]]","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
       Component(prefetcher, "Prefetcher","Typescript", "Definition")
       Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
@@ -60,6 +59,8 @@ Rel(beagle_view, beagle_service, "Contém")
 Rel(beagle_service, beagle_config ,"Processa")
 Rel(beagle_config, beagle_config_services ,"Contém")
 Rel(beagle_config, beagle_default_components ,"Contém")
+Rel(beagle_default_components, view_content_manager ,"Usa")
+Rel(view_content_manager, beagle_view , "Retorna uma instância")
 Rel(beagle_config, beagle_default_actions ,"Contém")
 Rel(beagle_view, beagle_navigator, "Cria")
 Rel(beagle_view, beagle_renderer, "Cria")

@@ -1,11 +1,10 @@
 @startuml c2
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
 LAYOUT_WITH_LEGEND()
-LAYOUT_LEFT_RIGHT()
 
 System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
 
-Container(beagle_backend, "Beagle Backend", "JAVA, Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
 Container_Boundary(beagle_web, "Beagle Web"){
   
@@ -72,5 +71,7 @@ Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
 Rel(beagle_navigator, analytics, "Pode criar evento")
 Rel(beagle_navigator, url_builder, "Usa")
 Rel(beagle_default_actions, http_client, "Pode usar")
+Rel(beagle_navigator, prefetcher, "Pode usar")
+Rel(prefetcher, view_client, "Usa")
 
 @enduml

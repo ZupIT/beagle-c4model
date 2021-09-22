@@ -1,6 +1,7 @@
 @startuml c2
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
 LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
 
 System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
 
@@ -33,11 +34,12 @@ Container_Boundary(beagle_web, "Beagle Web"){
       Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
       Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
       Component(view_content_manager, "View Content Manager","Typescript", "Definition")
-      Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
+      Component(global_context, "[[http://google.com.br Global Context]]","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
       Component(prefetcher, "Prefetcher","Typescript", "Definition")
       Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
       Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
       Component(action_handlers, "Action Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de ações")
+      Component(expression_handlers, "Expression Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de expressions")
     }
 
 
@@ -65,8 +67,10 @@ Rel(beagle_renderer, beagle_view, "Usa")
 Rel(beagle_navigator, beagle_renderer, "Aciona renderização")
 Rel(beagle_renderer, action_handlers, "Usa")
 Rel(beagle_renderer, operation_handlers, "Usa")
+Rel(beagle_renderer, expression_handlers, "Usa")
 Rel(global_context, beagle_renderer, "Aciona renderização")
 Rel(beagle_view, view_client, "Usa")
+Rel(beagle_view, global_context, "Cria")
 Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
 Rel(beagle_navigator, analytics, "Pode criar evento")
 Rel(beagle_navigator, url_builder, "Usa")

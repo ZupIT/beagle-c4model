@@ -4,7 +4,7 @@
   * [C1 -  Context](#C1----Context)
   * [C2 - Container](#C2---Container)
   * [C3 -  Component](#C3----Component)
-    * [Module 1](#Module-1)
+    * [Beagle Backend](#Beagle-Backend)
 
 ---
 
@@ -102,9 +102,9 @@ O MeuProjeto hoje é dividido em módulos, sendo cada um deles um container dent
 
 - In Progress...
 
-## Module 1
+## Beagle Backend
 
-`\C3 -  Component\Module 1`
+`\C3 -  Component\Beagle Backend`
 
 [C4Model](#Beagle-C4-Model)
 

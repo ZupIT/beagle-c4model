@@ -3,7 +3,7 @@
 	"projectName": "Beagle C4 Model",
 	"homepageName": "C4Model",
 	"rootFolder": "src",
-	"distFolder": "docs",
+	"distFolder": "../docs",
 	"generateMD": true,
 	"generatePDF": false,
 	"generateCompleteMD": true,

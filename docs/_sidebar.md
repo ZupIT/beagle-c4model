@@ -2,4 +2,4 @@
   * [C1 -  Context](C1%20-%20%20Context/HOME)
   * [C2 - Container](C2%20-%20Container/HOME)
   * [C3 -  Component](C3%20-%20%20Component/HOME)
-    * [Module 1](C3%20-%20%20Component/Module%201/HOME)
+    * [Beagle Backend](C3%20-%20%20Component/Beagle%20Backend/HOME)

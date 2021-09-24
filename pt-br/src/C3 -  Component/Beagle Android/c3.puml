@@ -20,7 +20,7 @@ Container_Boundary(beagle_android, "Beagle Android"){
   
 }
 
-Rel(beagle_fragment, context_data_manager, "Adiciona Contexto")
+BiRel(beagle_fragment, context_data_manager, "Adiciona Contexto")
 Rel(beagle_serializer, beagle_fragment, "Converte em")
 Rel(frontend_app, beagle_screen, "Adiciona a tela Server Driven a Aplicação")
 Rel(beagle_screen, beagle_networking, "Usa", "Fetch")
@@ -30,7 +30,7 @@ Rel(beagle_screen, beagle_serializer, "Usa")
 Rel(beagle_fragment, server_driven_component, "Cria")
 Rel(server_driven_component, view_factory, "Usa")
 Rel(view_factory, beagle_screen, "Cria Android view")
-Rel(server_driven_component, beagle_setup, "É registrado")
-Rel(server_driven_component, yoga_layout, "Define posicionamento na tela")
+BiRel(server_driven_component, beagle_setup, "É registrado")
+BiRel(server_driven_component, yoga_layout, "Define posicionamento na tela")
 
 @enduml

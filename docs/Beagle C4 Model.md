@@ -4,6 +4,7 @@
   * [C1 -  Context](#C1----Context)
   * [C2 - Container](#C2---Container)
   * [C3 -  Component](#C3----Component)
+    * [Beagle Android](#Beagle-Android)
     * [Beagle Web](#Beagle-Web)
 
 ---
@@ -101,6 +102,16 @@ Nesse nível damos mais um passo nos detalhes em comparação ao Container; desc
 O MeuProjeto hoje é dividido em módulos, sendo cada um deles um container dentro do C4Model.
 
 - In Progress...
+
+## Beagle Android
+
+`\C3 -  Component\Beagle Android`
+
+[C4Model](#Beagle-C4-Model)
+
+In progress...
+
+![diagram](c3.svg)
 
 ## Beagle Web
 

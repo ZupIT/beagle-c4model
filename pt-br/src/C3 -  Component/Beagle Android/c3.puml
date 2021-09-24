@@ -3,7 +3,7 @@
 LAYOUT_WITH_LEGEND()
 
 System_Ext(frontend_app, "Aplicativo Android", "Um aplicativo que renderiza as telas do Beagle")
-System_Ext(moshi_lib, "Moshi library", "JSON library for Android and Java to parse JSON into Java objects")
+System_Ext(moshi_lib, "Moshi library", "JSON lib para Android e Java que converte JSON em um objeto Java")
 System_Ext(yoga_layout, "Yoga Layout", "Engine que posiciona os componentes em tela")
 
 Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
@@ -12,7 +12,7 @@ Container_Boundary(beagle_android, "Beagle Android"){
   Component(beagle_networking, "Beagle Networking", "Descrição networking")
   Component(beagle_setup, "Beagle Setup", "Resgistra os componentes utilizados/criados no Beagle")
   Component(beagle_screen, "Beagle Screen", "Telas/componentes server driven")
-  Component(beagle_serializer, "Beagle Serializer", "Serializa/Deserializa tela utilizando MOSHI")
+  Component(beagle_serializer, "Beagle Serializer", "Serializa/Deserializa tela/componente utilizando MOSHI")
   Component(server_driven_component, "Server Driven Component", "Beagle View")
   Component(view_factory, "View Factory", "")
   Component(beagle_fragment, "Beagle Fragment", "")
@@ -21,7 +21,7 @@ Container_Boundary(beagle_android, "Beagle Android"){
 }
 
 Rel(beagle_fragment, context_data_manager, "")
-Rel(beagle_serializer, beagle_fragment, "")
+Rel(beagle_serializer, beagle_fragment, "Cria um")
 Rel(frontend_app, beagle_screen, "Adiciona a tela Server Driven a Aplicação")
 Rel(beagle_screen, beagle_networking, "Usa", "Fetch")
 Rel(beagle_networking, beagle_backend, "Faz requisação da tela/componente Beagle","HTTPS/JSON")

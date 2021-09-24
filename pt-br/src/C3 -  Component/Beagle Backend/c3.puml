@@ -10,7 +10,8 @@ Container_Boundary(beagle_backend, "Beagle Backend"){
   }
 
   Boundary(framework, "Framework"){
-    Component(screen_builder, "Screen Builder", "Interface utilitário para facilitar a criação de telas")
+    Component(cache, "Cache", "Contém a lógica que otimiza o reúso de JSON já enviados ao frontend")
+    Component(component_sorting, "Canalização de Componentes", "Utilitário que ajuda a filtrar quais componentes serão mostrados por plataforma")
     Component(widget, "Widget", "Define o modelo base para criação de componentes")
     Component(beagle_components, "Componentes Beagle UI", "Define o modelo para criação de cada componente de UI do Beagle como Text, Button e etc...")
     Component(analytics, "Analytics", "Define o modelo para criação do serviço de analytics")
@@ -26,14 +27,14 @@ Container_Boundary(beagle_backend, "Beagle Backend"){
 Rel(backend_starter,framework, "Configura")
 
 Rel(serialization, beagle_components, "Serializa")
-
-Rel(screen_builder,beagle_components, "Contém")
-Rel(beagle_components,widget, "Herda atributos")
-Rel(beagle_components,analytics, "Pode usar")
-Rel(beagle_components,operations, "Pode usar")
-Rel(beagle_components,actions, "Pode usar")
-Rel(beagle_components,context, "Pode usar")
-Rel(beagle_components,layout_style, "Pode usar")
+Rel(serialization, component_sorting, "Pode Usar")
+Rel(component_sorting, cache, "Pode Usar")
+Rel(beagle_components,widget, "Herda")
+Rel(beagle_components,analytics, "Herda")
+Rel(beagle_components,operations, "Herda")
+Rel(beagle_components,actions, "Herda")
+Rel(beagle_components,context, "Herda")
+Rel(beagle_components,layout_style, "Herda")
 
 
 @enduml

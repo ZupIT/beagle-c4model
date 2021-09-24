@@ -9,7 +9,6 @@ Container_Boundary(beagle_backend, "Beagle Backend"){
     Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Aciona configurações automáticas iniciais para aplicações que usam Micronaut")
   }
 
-
   Boundary(framework, "Framework"){
     Component(screen_builder, "Screen Builder", "Interface utilitário para facilitar a criação de telas")
     Component(widget, "Widget", "Define o modelo base para criação de componentes")
@@ -27,8 +26,6 @@ Container_Boundary(beagle_backend, "Beagle Backend"){
 Rel(backend_starter,framework, "Configura")
 
 Rel(serialization, beagle_components, "Serializa")
-
-
 
 Rel(screen_builder,beagle_components, "Contém")
 Rel(beagle_components,widget, "Herda atributos")

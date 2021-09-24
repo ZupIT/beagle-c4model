@@ -9,19 +9,19 @@ System_Ext(yoga_layout, "Yoga Layout", "Engine que posiciona os componentes em t
 Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
 Container_Boundary(beagle_android, "Beagle Android"){
-  Component(beagle_networking, "Beagle Networking", "Descrição networking")
+  Component(beagle_networking, "Beagle Networking", "Camada de rede")
   Component(beagle_setup, "Beagle Setup", "Resgistra os componentes utilizados/criados no Beagle")
   Component(beagle_screen, "Beagle Screen", "Telas/componentes server driven")
   Component(beagle_serializer, "Beagle Serializer", "Serializa/Deserializa tela/componente utilizando MOSHI")
   Component(server_driven_component, "Server Driven Component", "Beagle View")
-  Component(view_factory, "View Factory", "")
-  Component(beagle_fragment, "Beagle Fragment", "")
-  Component(context_data_manager, "Context Data Manager", "")
-
+  Component(view_factory, "View Factory", "Classe responsável por criar views nativas no Android")
+  Component(beagle_fragment, "Beagle Fragment", "Fragment do Android criado a partir da tela/componentes deserializados")
+  Component(context_data_manager, "Context Data Manager", "Regula a adição e atualização da funcionalidade do contexto aos componentes. Atualiza o contexto Global")
+  
 }
 
-Rel(beagle_fragment, context_data_manager, "")
-Rel(beagle_serializer, beagle_fragment, "Cria um")
+Rel(beagle_fragment, context_data_manager, "Adiciona Contexto")
+Rel(beagle_serializer, beagle_fragment, "Converte em")
 Rel(frontend_app, beagle_screen, "Adiciona a tela Server Driven a Aplicação")
 Rel(beagle_screen, beagle_networking, "Usa", "Fetch")
 Rel(beagle_networking, beagle_backend, "Faz requisação da tela/componente Beagle","HTTPS/JSON")

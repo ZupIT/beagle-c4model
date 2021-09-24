@@ -41,16 +41,13 @@ Container_Boundary(beagle_web, "Beagle Web"){
       Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
       Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
       Component(view_content_manager, "View Content Manager","Typescript", "Utilitário que ajuda no acesso a elementos da árvore de componentes")
-      Component(prefetcher, "Prefetcher","Typescript", "Definition")
+      Component(prefetcher, "Prefetcher","Typescript", "Utilitário que faz a reutilização de telas já carregadas")
       Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
       Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
       Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
       Component(action_handlers, "Action Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de ações")
       Component(expression_handlers, "Expression Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de expressions")
     }
-
-
-
   }
 }
 

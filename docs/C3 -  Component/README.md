@@ -14,11 +14,9 @@
 
 [C4Model (up)](/docs/README.md)
 
-<<<<<<< HEAD
 - [Beagle Android](/docs/C3%20-%20%20Component/Beagle%20Android/README.md)
-=======
+
 - [Beagle Backend](/docs/C3%20-%20%20Component/Beagle%20Backend/README.md)
->>>>>>> 7245f9ffd924f9b270ab51c2b5cf1c7573d71d47
 
 - [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
 

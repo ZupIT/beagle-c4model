@@ -6,6 +6,7 @@ System_Ext(frontend_app, "Aplicativo Android", "Um aplicativo que renderiza as t
 System_Ext(moshi_lib, "Moshi library", "JSON lib para Android e Java que converte JSON em um objeto Java")
 System_Ext(yoga_layout, "Yoga Layout", "Engine que posiciona os componentes em tela")
 System_Ext(design_system, "Design System", "Lib de configuração de DS")
+System_Ext(analytics_provider, "Analytics Provider", "Provedor de Analytics externo")
 
 Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
@@ -18,13 +19,14 @@ Container_Boundary(beagle_android, "Beagle Android"){
   Component(view_factory, "Beagle View Factory", "Classe responsável por criar views nativas no Android")
   Component(beagle_fragment, "Beagle Fragment", "Fragment do Android criado a partir da tela/componentes deserializados")
   Component(context_data_manager, "Context Data Manager", "Regula a adição e atualização da funcionalidade do contexto aos componentes. Atualiza o contexto Global")
-  Component(analytic, "Beagle Analytics", "Descrição do Analytics")
+  Component(beagle_analytic, "Beagle Analytics", "Descrição do Analytics")
   Component(beagle_ds, "Beagle Design System", "Descrição DS")
 }
 
-BiRel(beagle_fragment, beagle_ds, "Recebe informações de DS")
-Rel(beagle_ds, design_system, "Recebe info de DS")
-BiRel(beagle_fragment, analytic, "Adiciona Analytics")
+BiRel(beagle_analytic, analytics_provider, "")
+BiRel(beagle_fragment, beagle_ds, "Recebe estilos")
+BiRel(beagle_ds, design_system, "Pode receber estilos")
+BiRel(beagle_fragment, beagle_analytic, "Adiciona Analytics")
 BiRel(beagle_fragment, context_data_manager, "Adiciona Contexto")
 Rel(beagle_serializer, beagle_fragment, "Converte em")
 Rel(frontend_app, beagle_screen, "Adiciona a tela Server Driven a Aplicação")

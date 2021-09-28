@@ -6,11 +6,11 @@ LAYOUT_WITH_LEGEND()
 Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
 System_Boundary(beagle, "Beagle"){
   
-  Container(beagle_backend, "Beagle Backend", "JAVA, Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+  Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
   System_Boundary(beagle_frontend, "Beagle Frontend") {
       
-    Container(beagle_web_core, "Beagle Web", "javascript, typescript", "Cuida da renderização de aplicações Web")
+    Container(beagle_web_core, "Beagle Web", "typescript", "Cuida da renderização de aplicações Web")
       Container(beagle_android, "Beagle Android", "kotlin", "Cuida da renderização de aplicações Android")
       Container(beagle_ios, "Beagle iOS", "swift", "Cuida da renderização de aplicações iOS")
   }

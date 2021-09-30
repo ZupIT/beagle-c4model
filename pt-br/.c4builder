@@ -16,7 +16,7 @@
 	"docsifyTemplate": "",
 	"webPort": "3000",
 	"includeBreadcrumbs": true,
-	"includeLinkToDiagram": true,
+	"includeLinkToDiagram": false,
 	"diagramsOnTop": false,
 	"embedDiagram": true,
 	"generateLocalImages": true,

@@ -7,6 +7,7 @@
     * [Beagle Android](/docs/C3%20-%20%20Component/Beagle%20Android/README.md)
     * [Beagle Backend](/docs/C3%20-%20%20Component/Beagle%20Backend/README.md)
     * [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
+    * [Beagle iOS](/docs/C3%20-%20%20Component/Beagle%20iOS/README.md)
 
 ---
 

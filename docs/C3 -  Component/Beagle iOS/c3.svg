@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="930px" preserveAspectRatio="none" style="width:2228px;height:930px;" version="1.1" viewBox="0 0 2228 930" width="2228px" zoomAndPan="magnify"><defs/><g><!--MD5=[2e72a1b40c9c544968bbe53967bdb003]
+cluster beagle_android--><rect fill="#FFFFFF" height="602" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" width="1891" x="326" y="142.5"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="1229" y="159.9688">Beagle iOS</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="1237" y="174.9453">[Container]</text><!--MD5=[78761c03146c327bf3acb5940687309c]
+entity screen--><rect fill="#85BBF0" height="102.4414" style="stroke: #78A8D8; stroke-width: 1.5;" width="211" x="342" y="505.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="391.5" y="530.9688">Beagle Screen</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="430.5" y="545.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="449.5" y="562.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="187" x="352" y="578.5">Representações de telas do</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="165" x="365" y="594.9883">Beagle (View Controller)</text><!--MD5=[ffacdf9ebea6aad8409eca525e77fda7]
+entity analytics--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="214" x="1230" y="194"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="1299.5" y="219.4688">Analytics</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="157" x="1258.5" y="234.4453">[Swift | Abstrato | Opcional]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1339" y="250.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="1240" y="267">Registra eventos de ciclo de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="1275" y="283.4883">vida de telas para</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="1259" y="299.9766">ferramentas de analise</text><!--MD5=[15f3a757e18669ade47ed3f77393a597]
+entity view_client--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="197" x="1238.5" y="348"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120" x="1277" y="373.4688">Network Client</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="95" x="1289.5" y="388.4453">[Swift | Abstrato]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1339" y="404.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="152" x="1259" y="421">Responsável por fazer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="173" x="1248.5" y="437.4883">requisições remotas para</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="1261" y="453.9766">obter telas do Beagle.</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="1256" y="470.4648">Requer implementação.</text><!--MD5=[27e818a3f17d509693237ba6c38ae04a]
+entity view_model--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="208" x="748" y="348"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="152" x="776" y="373.4688">Beagle View Model</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="835" y="388.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="854" y="404.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="165" x="767.5" y="421">Responsável por fazer o</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="772" y="437.4883">intermédio entre IO do</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="758" y="453.9766">sistema e a visualização de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="805.5" y="470.4648">componentes</text><!--MD5=[1a1f727908a501275905650efe539c95]
+entity decoder--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="193" x="1656" y="194"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="68" x="1718.5" y="219.4688">Decoder</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1735.5" y="234.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1754.5" y="250.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="1666" y="267">Transforma as respostas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="1680" y="283.4883">JSON do Backend em</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="1681.5" y="299.9766">componentes Beagle</text><!--MD5=[4ce64a73e6975a726bb31e5cdbfe0bb1]
+entity beagle_component--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="216" x="1985" y="406"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="153" x="2016.5" y="431.4688">Beagle Component</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2076" y="446.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2095" y="462.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="1995" y="479">Representa um elemento de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="2023" y="495.4883">interface do Beagle (</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="2007.5" y="511.9766">Container, Botão, Texto,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117" x="2034.5" y="528.4648">Lista, Ações, etc.)</text><!--MD5=[23ec4f1fff159d71b633b9f85a9aab58]
+entity cache--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="217" x="1644" y="348"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="1728" y="373.4688">Cache</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="161" x="1672" y="388.4453">[Swift  | Abstrato | Opcional]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1754.5" y="404.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="193" x="1654" y="421">Armazena temporariamente</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="1655.5" y="437.4883">estruturas de tela recebidas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="186" x="1657.5" y="453.9766">via servidor, indexadas por</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="23" x="1741" y="470.4648">URI</text><!--MD5=[704122d1ad1970a5270f8af3d33da602]
+entity renderer--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="214" x="986" y="541"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="74" x="1056" y="566.4688">Renderer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1076" y="581.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1095" y="597.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="996" y="614">Organiza a renderização de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="997" y="630.4883">componentes de UI e aplica</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="1019.5" y="646.9766">estilos/acessibilidade</text><!--MD5=[da6558bc0d1ebd067bd458b76ee5e773]
+entity beagle_config--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="199" x="1653" y="593"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="1696" y="618.4688">Beagle Config</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1735.5" y="633.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1754.5" y="649.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="1663" y="666">Armazena configurações,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="1674" y="682.4883">estilos e componentes</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="1669" y="698.9766">relacionados ao Beagle (</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="1717.5" y="715.4648">Singleton)</text><!--MD5=[7f54bd6e99cba49939734103681ed703]
+entity beagle_style--><rect fill="#85BBF0" height="151.9063" style="stroke: #78A8D8; stroke-width: 1.5;" width="216" x="1985" y="576.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="38" x="2074" y="601.9688">Style</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2076" y="616.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2095" y="633.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="1995" y="649.5">Armazena configurações de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="2004" y="665.9883">estilos dos componentes.</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="178" x="2002" y="682.4766">Uma ponte entre o design</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="125" x="2028.5" y="698.9648">system nativo e os</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="2022" y="715.4531">componentes Beagle</text><!--MD5=[f3db3974b1fd13c59897b7e6c4a71d54]
+entity frontend_app--><rect fill="#999999" height="88.3086" style="stroke: #8A8A8A; stroke-width: 1.5;" width="216" x="7" y="610.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="58.5" y="635.9688">Aplicativo iOS</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="117" y="652.8789"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="17" y="669.3672">Um aplicativo que renderiza</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="122" x="54" y="685.8555">as telas do Beagle</text><!--MD5=[df2e2e01d061513cfc1649d0b2571220]
+entity beagle_backend--><rect fill="#438DD5" height="118.9297" style="stroke: #3C7FC0; stroke-width: 1.5;" width="198" x="1653.5" y="7"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="1689" y="32.4688">Beagle Backend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="1732.5" y="47.4453">[Koltin]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1754.5" y="63.5117"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="1663.5" y="80">Permite a criação de telas</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="161" x="1670" y="96.4883">seguindo o contrato do</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="1730" y="112.9766">Beagle</text><!--MD5=[ad2617dde7d5d35127820f765b278e21]
+link frontend_app to beagle_config--><path d="M223.33,668.7 C287.89,676.05 371.77,683.5 446.5,683.5 C446.5,683.5 446.5,683.5 1338,683.5 C1442.37,683.5 1561.34,676.1 1644.78,669.7 " fill="none" id="frontend_app-to-beagle_config" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1653,669.06,1644.7931,666.6835,1645.2541,672.6658,1653,669.06" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="824.5" y="680.1016">Inicializa</text><!--MD5=[51d2e95f0ec3cddf3b958f8270ea1459]
+link frontend_app to screen--><path d="M223.3,622.68 C258.7,612.19 298.16,600.49 333.94,589.88 " fill="none" id="frontend_app-to-screen" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="341.99,587.49,333.4675,586.8847,335.1709,592.6378,341.99,587.49" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="254" y="596.1016">Inicializa</text><!--MD5=[01d86bbc95ccad70b3a37c7f8166bb37]
+link beagle_config to beagle_style--><path d="M1852.32,658.16 C1891.29,657.24 1936.32,656.18 1976.75,655.22 " fill="none" id="beagle_config-to-beagle_style" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1984.77,655.03,1976.7025,652.2165,1976.8418,658.2149,1984.77,655.03" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="41" x="1902.5" y="652.1016">Possui</text><!--MD5=[908eca77640489e3837f20929018522c]
+link beagle_config to beagle_component--><path d="M1852,628.49 C1885.66,615.85 1922.89,599.91 1955,581.5 C1960.97,578.07 1979.99,563.45 2002.04,546.02 " fill="none" id="beagle_config-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2008.33,541.04,2000.1972,543.6587,2003.9244,548.3606,2008.33,541.04" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="1892" y="578.1016">Armazena</text><!--MD5=[1aae8ef48a9d26d12889646ce1290def]
+link screen to renderer--><path d="M553.32,563.67 C669.86,571.64 857.47,584.46 977.71,592.68 " fill="none" id="screen-to-renderer" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="985.88,593.24,978.1019,589.7043,977.695,595.6905,985.88,593.24" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="639" y="562.1016">Usa</text><!--MD5=[cb5659923c8052548e90944e50e8fa26]
+link view_client to beagle_backend--><path d="M1426.53,347.81 C1432.63,342.16 1438.52,336.36 1444,330.5 C1459.92,313.48 1458.05,304.49 1474,287.5 C1529.18,228.7 1600.51,172.24 1657.03,131.11 " fill="none" id="view_client-to-beagle_backend" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1663.84,126.17,1655.6017,128.4351,1659.1225,133.2936,1663.84,126.17" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="92" x="1498" y="149.1016">Requisita telas</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73" x="1507.5" y="163.2344">[JSON/Https]</text><!--MD5=[c42f49de07a59fca16de36d25daab344]
+link view_client to decoder--><path d="M1435.73,377.21 C1499.64,352.17 1583.01,319.51 1648.04,294.03 " fill="none" id="view_client-to-decoder" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1655.87,290.96,1647.3271,291.0975,1649.524,296.6809,1655.87,290.96" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1532.5" y="308.1016">Usa</text><!--MD5=[7c815385ceeeddea688451579ac5ed44]
+link view_client to cache--><path d="M1435.73,415.5 C1495.73,415.5 1572.88,415.5 1635.91,415.5 " fill="none" id="view_client-to-cache" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1643.92,415.5,1635.92,412.5,1635.92,418.5,1643.92,415.5" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="1480.5" y="412.1016">Armazena respostas</text><!--MD5=[800f420bf7e74f8aa96dabee3fbacde4]
+link decoder to beagle_component--><path d="M1845.1,313.04 C1887.1,340.33 1937.24,372.92 1981.33,401.57 " fill="none" id="decoder-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1988.07,405.95,1982.999,399.0736,1979.7279,404.1035,1988.07,405.95" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="25" x="1910.5" y="341.1016">Cria</text><!--MD5=[fc24754d37327e8e1e133fcf78f9501f]
+link screen to view_model--><path d="M561.01,517.09 C616.96,497.49 684.35,473.88 740.08,454.36 " fill="none" id="screen-view_model" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="747.87,451.63,739.3281,451.4391,741.3088,457.1027,747.87,451.63" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="553.2,519.82,561.7419,520.0109,559.7612,514.3473,553.2,519.82" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="129" x="584" y="448.1016">Requisita conteúdo |</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51" x="625" y="462.2344">Observa</text><!--MD5=[11b819b3c3c88c804df815fae42bb299]
+link view_model to view_client--><path d="M956.02,415.5 C1036.78,415.5 1148.74,415.5 1230.21,415.5 " fill="none" id="view_model-to-view_client" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1238.49,415.5,1230.49,412.5,1230.49,418.5,1238.49,415.5" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1081.5" y="412.1016">Usa</text><!--MD5=[2e5d830f10ef41e41c2dd7211ee84e47]
+link view_model to analytics--><path d="M956.02,380.95 C1034.13,354.75 1141.42,318.76 1222.07,291.71 " fill="none" id="view_model-to-analytics" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1229.79,289.12,1221.2513,288.8182,1223.1583,294.5071,1229.79,289.12" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103" x="1041.5" y="298.1016">Propaga eventos</text><!--MD5=[4f8e0f998c046c506c9bda0cb0040aa0]
+link screen to beagle_component--><path d="M553.06,543.99 C563.17,543.04 573.27,542.18 583,541.5 C1149.9,501.73 1294.41,544.42 1861,500.5 C1898.71,497.58 1939.74,493.18 1976.63,488.78 " fill="none" id="screen-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1984.92,487.78,1976.6185,485.7587,1977.3364,491.7156,1984.92,487.78" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="1273.5" y="517.1016">Contém um ou mais</text><!--MD5=[6d2e3ba9c11b172e2c66cd9d2ae0892f]
+link renderer to beagle_component--><path d="M1200.37,595.73 C1398.03,586.18 1814.63,562.66 1955,528.5 C1962.22,526.74 1969.57,524.68 1976.92,522.4 " fill="none" id="renderer-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1984.88,519.84,1976.346,519.4273,1978.1789,525.1405,1984.88,519.84" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="138" x="1475" y="566.1016">Transforma em nativo</text><rect fill="#FFFFFF" height="162.3945" rx="5" ry="5" style="stroke: #FFFFFF; stroke-width: 1.0;" width="159" x="2042" y="757.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51" x="2048" y="778.0352">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2103" y="778.0352"/><rect fill="#08427B" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="780.9883"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="2052" y="794.5234">person</text><rect fill="#1168BD" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="797.4766"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="2052" y="811.0117">system</text><rect fill="#438DD5" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="813.9648"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="2052" y="827.5">container</text><rect fill="#85BBF0" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="830.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="2052" y="843.9883">component</text><rect fill="#686868" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="846.9414"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2052" y="860.4766">external person</text><rect fill="#999999" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="863.4297"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="108" x="2052" y="876.9648">external system</text><rect fill="#B3B3B3" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="879.918"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="2052" y="893.4531">external container</text><rect fill="#CCCCCC" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2048" y="896.4063"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="2052" y="909.9414">external component</text><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="764.5" y2="764.5"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="780.9883" y2="780.9883"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="797.4766" y2="797.4766"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="813.9648" y2="813.9648"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="830.4531" y2="830.4531"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="846.9414" y2="846.9414"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="863.4297" y2="863.4297"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="879.918" y2="879.918"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="896.4063" y2="896.4063"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2195" y1="912.8945" y2="912.8945"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2048" x2="2048" y1="764.5" y2="912.8945"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2195" x2="2195" y1="764.5" y2="912.8945"/><!--MD5=[a611f2afd6649b9443d3ce21316b2cbd]
+@startuml c2
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+System_Ext(frontend_app, "Aplicativo iOS", "Um aplicativo que renderiza as telas do Beagle")
+Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+
+Container_Boundary(beagle_android, "Beagle iOS"){
+
+  Component(screen, "Beagle Screen", "Swift", "Representações de telas do Beagle (View Controller)")
+  Component(analytics, "Analytics", "Swift | Abstrato | Opcional", "Registra eventos de ciclo de vida de telas para ferramentas de analise")
+  Component(view_client, "Network Client", "Swift | Abstrato", "Responsável por fazer requisições remotas para obter telas do Beagle. Requer implementação.")
+  Component(view_model, "Beagle View Model", "Swift", "Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes")
+  Component(decoder, "Decoder", "Swift", "Transforma as respostas JSON do Backend em componentes Beagle")
+  Component(beagle_component, "Beagle Component", "Swift", "Representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Ações, etc.)")
+  Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI")
+  Component(renderer, "Renderer", "Swift", "Organiza a renderização de componentes de UI e aplica estilos/acessibilidade")
+  Component(beagle_config, "Beagle Config", "Swift", "Armazena configurações, estilos e componentes relacionados ao Beagle (Singleton)")
+  Component(beagle_style, "Style", "Swift", "Armazena configurações de estilos dos componentes. Uma ponte entre o design system nativo e os componentes Beagle")
+}
+
+Rel(frontend_app, beagle_config, "Inicializa")
+Rel(frontend_app, screen, "Inicializa")
+Rel(beagle_config, beagle_style, "Possui")
+Rel(beagle_config, beagle_component, "Armazena")
+Rel(screen, renderer, "Usa")
+Rel(view_client, beagle_backend, "Requisita telas", "JSON/Https")
+Rel(view_client, decoder, "Usa")
+Rel(view_client, cache, "Armazena respostas")
+Rel(decoder, beagle_component, "Cria")
+BiRel(screen, view_model, "Requisita conteúdo | Observa")
+Rel(view_model, view_client, "Usa")
+Rel(view_model, analytics, "Propaga eventos")
+Rel(screen, beagle_component, "Contém um ou mais")
+Rel(renderer, beagle_component, "Transforma em nativo")
+
+@enduml
+
+@startuml c2
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#85BBF0> component |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+|<#CCCCCC> external component |
+endlegend
+left to right direction
+
+rectangle "==Aplicativo iOS\n\n Um aplicativo que renderiza as telas do Beagle" <<external_system>> as frontend_app
+rectangle "==Beagle Backend\n//<size:12>[Koltin]</size>//\n\n Permite a criação de telas seguindo o contrato do Beagle" <<container>> as beagle_backend
+
+rectangle "==Beagle iOS\n<size:12>[Container]</size>" <<boundary>> as beagle_android{
+
+  rectangle "==Beagle Screen\n//<size:12>[Swift]</size>//\n\n Representações de telas do Beagle (View Controller)" <<component>> as screen
+  rectangle "==Analytics\n//<size:12>[Swift | Abstrato | Opcional]</size>//\n\n Registra eventos de ciclo de vida de telas para ferramentas de analise" <<component>> as analytics
+  rectangle "==Network Client\n//<size:12>[Swift | Abstrato]</size>//\n\n Responsável por fazer requisições remotas para obter telas do Beagle. Requer implementação." <<component>> as view_client
+  rectangle "==Beagle View Model\n//<size:12>[Swift]</size>//\n\n Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes" <<component>> as view_model
+  rectangle "==Decoder\n//<size:12>[Swift]</size>//\n\n Transforma as respostas JSON do Backend em componentes Beagle" <<component>> as decoder
+  rectangle "==Beagle Component\n//<size:12>[Swift]</size>//\n\n Representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Ações, etc.)" <<component>> as beagle_component
+  rectangle "==Cache\n//<size:12>[Swift  | Abstrato | Opcional]</size>//\n\n Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI" <<component>> as cache
+  rectangle "==Renderer\n//<size:12>[Swift]</size>//\n\n Organiza a renderização de componentes de UI e aplica estilos/acessibilidade" <<component>> as renderer
+  rectangle "==Beagle Config\n//<size:12>[Swift]</size>//\n\n Armazena configurações, estilos e componentes relacionados ao Beagle (Singleton)" <<component>> as beagle_config
+  rectangle "==Style\n//<size:12>[Swift]</size>//\n\n Armazena configurações de estilos dos componentes. Uma ponte entre o design system nativo e os componentes Beagle" <<component>> as beagle_style
+}
+
+frontend_app - ->> beagle_config : **Inicializa**
+frontend_app - ->> screen : **Inicializa**
+beagle_config - ->> beagle_style : **Possui**
+beagle_config - ->> beagle_component : **Armazena**
+screen - ->> renderer : **Usa**
+view_client - ->> beagle_backend : **Requisita telas**\n//<size:12>[JSON/Https]</size>//
+view_client - ->> decoder : **Usa**
+view_client - ->> cache : **Armazena respostas**
+decoder - ->> beagle_component : **Cria**
+screen <<- ->> view_model : **Requisita conteúdo | Observa**
+view_model - ->> view_client : **Usa**
+view_model - ->> analytics : **Propaga eventos**
+screen - ->> beagle_component : **Contém um ou mais**
+renderer - ->> beagle_component : **Transforma em nativo**
+
+@enduml
+
+PlantUML version 1.2020.17(Sat Sep 19 09:30:11 BRT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

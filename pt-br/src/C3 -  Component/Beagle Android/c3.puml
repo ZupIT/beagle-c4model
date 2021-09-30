@@ -3,18 +3,41 @@
 LAYOUT_WITH_LEGEND()
 
 System_Ext(frontend_app, "Aplicativo Android", "Um aplicativo que renderiza as telas do Beagle")
+System_Ext(moshi_lib, "Moshi library", "JSON lib para Android e Java que converte JSON em um objeto Java")
+System_Ext(yoga_layout, "Yoga Layout", "Engine que posiciona os componentes em tela")
+System_Ext(design_system, "Design System", "Lib de configuração de DS")
+System_Ext(analytics_provider, "Analytics Provider", "Provedor de Analytics externo")
 
 Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
 Container_Boundary(beagle_android, "Beagle Android"){
-  Component(beagle_networking, "Beagle Networking", "Descrição networking")
-  Component(beagle_setup, "Beagle Setup", "Descrição setup")
-  Component(beagle_screen, "Beagle Screen", "Descrição da tela Serven Driven")
-  
-  
+  Component(beagle_networking, "Beagle Networking", "Camada de rede")
+  Component(beagle_setup, "Beagle Setup", "Resgistra os componentes utilizados/criados no Beagle por meio de um processador de anotações")
+  Component(beagle_screen, "Beagle Screen", "Telas/componentes server driven")
+  Component(beagle_serializer, "Beagle Serializer", "Serializa/Deserializa tela/componente utilizando MOSHI")
+  Component(server_driven_component, "Server Driven Component", "Beagle View")
+  Component(view_factory, "Beagle View Factory", "Classe responsável por criar views nativas no Android")
+  Component(beagle_fragment, "Beagle Fragment", "Fragment do Android criado a partir da tela/componentes deserializados")
+  Component(context_data_manager, "Context Data Manager", "Regula a adição e atualização da funcionalidade do contexto aos componentes. Atualiza o contexto Global")
+  Component(beagle_analytic, "Beagle Analytics", "Descrição do Analytics")
+  Component(beagle_ds, "Beagle Design System", "Descrição DS")
 }
 
-Rel(frontend_app, beagle_setup, "Cria Instancia")
-Rel(frontend_app, beagle_screen, "Adiciona a tela Serven Driven a Aplicação")
+BiRel(beagle_analytic, analytics_provider, "")
+BiRel(beagle_fragment, beagle_ds, "Recebe estilos")
+BiRel(beagle_ds, design_system, "Pode receber estilos")
+BiRel(beagle_fragment, beagle_analytic, "Adiciona Analytics")
+BiRel(beagle_fragment, context_data_manager, "Adiciona Contexto")
+Rel(beagle_serializer, beagle_fragment, "Converte em")
+Rel(frontend_app, beagle_screen, "Adiciona a tela Server Driven a Aplicação")
+Rel(beagle_screen, beagle_networking, "Usa", "Fetch")
+Rel(beagle_networking, beagle_backend, "Faz requisação da tela/componente Beagle","HTTPS/JSON")
+Rel(beagle_serializer, moshi_lib, "Usa")
+Rel(beagle_screen, beagle_serializer, "Usa")
+Rel(beagle_fragment, server_driven_component, "Cria")
+Rel(server_driven_component, view_factory, "Usa")
+Rel(view_factory, beagle_screen, "Cria Android view")
+BiRel(server_driven_component, beagle_setup, "É registrado")
+BiRel(server_driven_component, yoga_layout, "Define posicionamento na tela")
 
 @enduml

@@ -5,6 +5,7 @@ Nele estarão contidos:
 * Ações default e customizadas (Navegação, Alerta, SendRequest, etc)
 * Operações default e customizadas (Operadores aritiméticos, Operadores lógicos, etc)
 
-O Diagrama abaixo mostra o "caminho" de um componente dentro de uma aplicação Android que utiliza o Beagle.
+O Diagrama abaixo mostra o "caminho" de um componente dentro de um aplicativo Android que utiliza o Beagle.
 
-O Beagle possuiu um mecanismo de processamento de anotações, que cria um Beagle Setup, onde são registrados todos os componentes, ações, operações, camada de rede, ou seja, todos os recursos que o Beagle utiliza do Android. Todos esses possuem anotações do tipo ´@RegisterAction´  
+O Beagle possuiu um mecanismo de processamento de anotações, que cria o Beagle Setup, onde são registrados os componentes que o Beagle cria no Android, como ações, operações, componentes visuais (como botões, textos), camada de rede, etc. Todos esses são anotados para que o processador possa mapear esses recursos, como por exemplo, o ´@RegisterAction´ é utilizado para registrar ações, ´@RegisterOperation´ para operações e o ´@RegisterWidget´ para componentes.
+

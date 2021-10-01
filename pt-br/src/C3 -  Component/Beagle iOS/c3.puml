@@ -13,11 +13,11 @@ Container_Boundary(beagle_android, "Beagle iOS") {
   Component(beagle_view, "Beagle View", "Swift", "Alternativa ao Beagle View Controller que possibilita adicionar uma tela Beagle como parte de uma tela nativa do iOS (UIView)")
   Component(analytics, "Analytics", "Swift | Abstrato | Opcional", "Registra eventos de ciclo de vida de telas para ferramentas de análise")
   Component(view_client, "View Client", "Swift", "Repositório que fica responsável por realizar requisições remotas para obter telas do Beagle.")
-  Component(network_client, "Network Client", "Swift | Abstrato", "Componente que define a estratégia de execução de requisições remotas. Requer implementação.")
   Component(view_model, "Beagle View Model", "Swift", "Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes")
   Component(component_decoder, "Component Decoder", "Swift", "Transforma as respostas JSON do Backend em componentes Beagle")
   Component(beagle_component, "Server Driven Component", "Swift", "Estrutura de dados que representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Operação, etc.)")
   Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI")
+  Component(network_client, "Network Client", "Swift | Abstrato", "Componente que define a estratégia de execução de requisições remotas. Requer implementação.")
   Component(renderer, "Renderer", "Swift", "Coordena a renderização de elementos de interface")
   Component(view_configurator, "View Configurator", "Swift", "Aplica temas e acessibilidade nos componentes server-driven")
   Component(beagle_theme, "Theme", "Swift", "Armazena configurações de estilos dos componentes, como cores, bordas. Atua como ponte entre o design system nativo e os componentes Beagle")
@@ -43,10 +43,11 @@ Rel(layout_manager, style_view_configurator, "Usa")
 
 Rel(style_view_configurator, yoga, "Utiliza propriedades e elementos Yoga")
 
-Rel(view_client, beagle_backend, "Requisita telas", "JSON/Https")
 Rel(view_client, component_decoder, "Usa")
 Rel(view_client, cache, "Armazena respostas")
 Rel(view_client, network_client, "Usa")
+
+Rel(network_client, beagle_backend, "Requisita telas", "JSON/Https")
 
 Rel(renderer, beagle_component, "Transforma em nativo (UIKit)")
 Rel(renderer, view_configurator, "Usa")

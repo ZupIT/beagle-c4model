@@ -7,33 +7,54 @@ LAYOUT_LEFT_RIGHT()
 System_Ext(frontend_app, "Aplicativo iOS", "Um aplicativo que renderiza as telas do Beagle")
 Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
 
-Container_Boundary(beagle_android, "Beagle iOS"){
-
-  Component(screen, "Beagle Screen", "Swift", "Representações de telas do Beagle (View Controller)")
-  Component(analytics, "Analytics", "Swift | Abstrato | Opcional", "Registra eventos de ciclo de vida de telas para ferramentas de analise")
-  Component(view_client, "Network Client", "Swift | Abstrato", "Responsável por fazer requisições remotas para obter telas do Beagle. Requer implementação.")
+Container_Boundary(beagle_android, "Beagle iOS") {
+  Component(beagle_config, "Beagle Config", "Swift", "Singleton responsável por armazenar todas as dependências e configurações do Beagle, tais como: temas, implementações de view client, analytics, decoder, logger, deeplinks, etc.")
+  Component(beagle_view_controller, "Beagle View Controller", "Swift", "Representação completa de tela do Beagle (View Controller)")
+  Component(beagle_view, "Beagle View", "Swift", "Alternativa ao Beagle View Controller que possibilita adicionar uma tela Beagle como parte de uma tela nativa do iOS (UIView)")
+  Component(analytics, "Analytics", "Swift | Abstrato | Opcional", "Registra eventos de ciclo de vida de telas para ferramentas de análise")
+  Component(view_client, "View Client", "Swift | Abstrato", "Repositório que fica responsável por realizar requisições remotas para obter telas do Beagle. Requer implementação.")
   Component(view_model, "Beagle View Model", "Swift", "Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes")
-  Component(decoder, "Decoder", "Swift", "Transforma as respostas JSON do Backend em componentes Beagle")
-  Component(beagle_component, "Beagle Component", "Swift", "Representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Ações, etc.)")
+  Component(component_decoder, "Component Decoder", "Swift", "Transforma as respostas JSON do Backend em componentes Beagle")
+  Component(beagle_component, "Server Driven Component", "Swift", "Estrutura de dados que representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Operação, etc.)")
   Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI")
-  Component(renderer, "Renderer", "Swift", "Organiza a renderização de componentes de UI e aplica estilos/acessibilidade")
-  Component(beagle_config, "Beagle Config", "Swift", "Armazena configurações, estilos e componentes relacionados ao Beagle (Singleton)")
-  Component(beagle_style, "Style", "Swift", "Armazena configurações de estilos dos componentes. Uma ponte entre o design system nativo e os componentes Beagle")
+  Component(renderer, "Renderer", "Swift", "Coordena a renderização de elementos de interface")
+  Component(view_configurator, "View Configurator", "Swift", "Aplica temas e acessibilidade nos componentes server-driven")
+  Component(beagle_theme, "Theme", "Swift", "Armazena configurações de estilos dos componentes, como cores, bordas. Atua como ponte entre o design system nativo e os componentes Beagle")
+  Component(style_view_configurator, "Style View Configurator", "Swift", "Sabe como aplicar estilos e organização flex em elementos de interface")
+  Component(layout_manager, "Layout Manager", "Swift", "Coordena a distribuição dos elementos de interface nas telas, aplica margens e safe area")
 }
 
+System_Ext(yoga, "Yoga", "Biblioteca que organiza as telas de um aplicativo no padrão flex")
+
 Rel(frontend_app, beagle_config, "Inicializa")
-Rel(frontend_app, screen, "Inicializa")
-Rel(beagle_config, beagle_style, "Possui")
-Rel(beagle_config, beagle_component, "Armazena")
-Rel(screen, renderer, "Usa")
+Rel(frontend_app, beagle_view_controller, "Inicializa")
+Rel(frontend_app, beagle_view, "Adiciona em telas existentes")
+
+Rel(beagle_view_controller, renderer, "Usa")
+Rel(beagle_view_controller, beagle_component, "Contém um ou mais")
+Rel(beagle_view_controller, layout_manager, "Usa")
+Rel(beagle_view_controller, analytics, "Registra ações e navegação")
+BiRel(beagle_view_controller, view_model, "Requisita conteúdo | Observa")
+
+Rel(beagle_view, beagle_view_controller, "Usa em container")
+
+Rel(layout_manager, style_view_configurator, "Usa")
+
+Rel(style_view_configurator, yoga, "Utiliza propriedades e elementos Yoga")
+
 Rel(view_client, beagle_backend, "Requisita telas", "JSON/Https")
-Rel(view_client, decoder, "Usa")
+Rel(view_client, component_decoder, "Usa")
 Rel(view_client, cache, "Armazena respostas")
-Rel(decoder, beagle_component, "Cria")
-BiRel(screen, view_model, "Requisita conteúdo | Observa")
+
+Rel(renderer, beagle_component, "Transforma em nativo (UIKit)")
+Rel(renderer, view_configurator, "Usa")
+
+Rel(view_configurator, beagle_theme, "Aplica")
+Rel(view_configurator, style_view_configurator, "Usa")
+
+Rel(component_decoder, beagle_component, "Cria e armazena tipos customizados")
+
 Rel(view_model, view_client, "Usa")
 Rel(view_model, analytics, "Propaga eventos")
-Rel(screen, beagle_component, "Contém um ou mais")
-Rel(renderer, beagle_component, "Transforma em nativo")
 
 @enduml

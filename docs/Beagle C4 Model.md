@@ -6,8 +6,8 @@
   * [C3 -  Component](#C3----Component)
     * [Beagle Android](#Beagle-Android)
     * [Beagle Backend](#Beagle-Backend)
-    * [Beagle Web](#Beagle-Web)
     * [Beagle iOS](#Beagle-iOS)
+    * [Beagle Web](#Beagle-Web)
 
 ---
 
@@ -54,7 +54,7 @@ Ao utilizar o Beagle, desenvolvedores podem:
 
 ## C1 -  Context
 
-`/C1 -  Context`
+`\C1 -  Context`
 
 [C4Model](#Beagle-C4-Model)
 
@@ -73,7 +73,7 @@ O Beagle é um framework open source que ajuda desenvolvedores a implementar apl
 
 ## C2 - Container
 
-`/C2 - Container`
+`\C2 - Container`
 
 [C4Model](#Beagle-C4-Model)
 
@@ -95,7 +95,7 @@ No segundo nível de detalhamento temos os **containers** de `backend` e `fronte
 
 ## C3 -  Component
 
-`/C3 -  Component`
+`\C3 -  Component`
 
 [C4Model](#Beagle-C4-Model)
 
@@ -113,28 +113,27 @@ O Beagle hoje é dividido em plataformas, sendo cada uma delas um container dent
 
 ## Beagle Android
 
-`/C3 -  Component/Beagle Android`
+`\C3 -  Component\Beagle Android`
 
 [C4Model](#Beagle-C4-Model)
 
 O Beagle Android estabelece a relação entre o Framework Beagle e aplicativos Android. 
-É ele quem orquestra a criação de views no ambiente Android a partir dos componentes enviados do Backend.
-Nele estarão contidos:
-* Componentes default e customizados (botões, textos, campos de textos, etc)
+É ele quem orquestra a criação de views no ambiente Android a partir dos componentes recebidos do Backend.
+Os componentes do Beagle são:
+* Componentes visuais default e customizados (botões, textos, campos de textos, etc)
 * Ações default e customizadas (Navegação, Alerta, SendRequest, etc)
 * Operações default e customizadas (Operadores aritiméticos, Operadores lógicos, etc)
 
-O Diagrama abaixo mostra o "caminho" de um componente dentro de um aplicativo Android que utiliza o Beagle.
+O Diagrama abaixo mostra o "caminho" que um componente "percorre" dentro de um aplicativo Android que utiliza o Beagle.
 
-O Beagle possuiu um mecanismo de processamento de anotações, que cria o Beagle Setup, onde são registrados os componentes que o Beagle cria no Android, como ações, operações, componentes visuais (como botões, textos), camada de rede, etc. Todos esses são anotados para que o processador possa mapear esses recursos, como por exemplo, o ´@RegisterAction´ é utilizado para registrar ações, ´@RegisterOperation´ para operações e o ´@RegisterWidget´ para componentes.
-
+O Beagle possuiu um mecanismo de **processamento de anotações** que cria inicialmente o arquivo de configuração do framework chamado BeagleSetup. Esse arquivo é gerado automaticamente quando o projeto é montado (build) pela primeira vez e nele são registrados os componentes criados no Android, como ações, operações, componentes visuais (botões, textos, etc), camada de rede, dentre outros. Todos esses componentes são anotados para que o processador possa mapea-los, como por exemplo, o `@RegisterAction` é utilizado para registrar ações, `@RegisterOperation` para operações e o `@RegisterWidget` para componentes visuais.
 
 
 ![diagram](c3.svg)
 
 ## Beagle Backend
 
-`/C3 -  Component/Beagle Backend`
+`\C3 -  Component\Beagle Backend`
 
 [C4Model](#Beagle-C4-Model)
 
@@ -145,24 +144,9 @@ O Beagle Backend é uma biblioteca de suporte que ajuda na criação de telas Be
 
 ![diagram](c3.svg)
 
-## Beagle Web
-
-`/C3 -  Component/Beagle Web`
-
-[C4Model](#Beagle-C4-Model)
-
-O Beagle Web é separado em duas partes principais a biblioteca frontend e o core :
-
-* A biblioteca frontend é responsável por criar a ponte entre cada framework que usa o Beagle e o Core
-* Cada framework (Angular, React, Flutter) contém os componentes padrões de interface do Beagle além de um utilitário que faz a ligação com o Core e apresenta as telas nativamente.
-* O Beagle Web Core inicia seu processo através do componente Beagle Service, ele contém, processa e organiza tudo que é padrão da biblioteca como componentes, serviços.
-* O componente que orquestra as telas é o Beagle View. Ele inicia serviços de navegação, renderização e estes por sua vez usam todos os utilitários disponíveis para tratar e traduzir cada tela que será apresentada.
-
-![diagram](c3.svg)
-
 ## Beagle iOS
 
-`/C3 -  Component/Beagle iOS`
+`\C3 -  Component\Beagle iOS`
 
 [C4Model](#Beagle-C4-Model)
 
@@ -175,5 +159,20 @@ As peças chave para entendimento da arquitetura e sua aplicação são os compo
 * **Server Driven Component:** Representação de qualquer elemento de interface do Beagle. Ele pode representar tanto elementos visuais como botões, textos e listas quanto ações de navegação, comportamentos de clique e operações.
 * **Network Client:** Por padrão o Beagle iOS não provê uma estratégia padrão para realização de requisições remotas, dando a liberdade aos desenvolvedores implementarem a abordagem mais compatível com o contexto do projeto, como: direcionamento de entpoints, regras de segurança e tratamento de erros. **Network Client** fica responsável por comunicar-se com os recursos implementados no **Beagle Backend**.
 * **Recursos de apoio:** O Beagle iOS provê certo nível de customização de alguns componentes de projeto. Ao observar o diagrama abaixo, é possível notar alguns componentes com a descrição "abstrato | opcional", tais componentes são meios de propagar eventos para ferramentas de analytics contratadas ou regras customizadas de armazenamento local das telas.
+
+![diagram](c3.svg)
+
+## Beagle Web
+
+`\C3 -  Component\Beagle Web`
+
+[C4Model](#Beagle-C4-Model)
+
+O Beagle Web é separado em duas partes principais a biblioteca frontend e o core :
+
+* A biblioteca frontend é responsável por criar a ponte entre cada framework que usa o Beagle e o Core
+* Cada framework (Angular, React, Flutter) contém os componentes padrões de interface do Beagle além de um utilitário que faz a ligação com o Core e apresenta as telas nativamente.
+* O Beagle Web Core inicia seu processo através do componente Beagle Service, ele contém, processa e organiza tudo que é padrão da biblioteca como componentes, serviços.
+* O componente que orquestra as telas é o Beagle View. Ele inicia serviços de navegação, renderização e estes por sua vez usam todos os utilitários disponíveis para tratar e traduzir cada tela que será apresentada.
 
 ![diagram](c3.svg)

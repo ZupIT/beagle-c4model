@@ -25,9 +25,9 @@ Container_Boundary(beagle_android, "Beagle Android"){
 }
 
 Rel(frontend_app, beagle_config, "Define")
-BiRel(beagle_analytic, analytics_provider, "")
+BiRel(beagle_analytic, analytics_provider, "Registra eventos")
 BiRel(beagle_fragment, beagle_ds, "Adiciona estilos")
-BiRel(beagle_ds, design_system, "Pode receber estilos de")
+BiRel(beagle_ds, design_system, "Pode receber estilos de library externa")
 BiRel(beagle_fragment, beagle_analytic, "Adiciona Analytics")
 BiRel(beagle_fragment, context_data_manager, "Adiciona Contexto")
 Rel(beagle_serializer, beagle_fragment, "Converte em")

@@ -8,6 +8,7 @@
   * [C3 -  Component](/docs/C3%20-%20%20Component/README.md)
     * [**Beagle Android**](/docs/C3%20-%20%20Component/Beagle%20Android/README.md)
     * [Beagle Backend](/docs/C3%20-%20%20Component/Beagle%20Backend/README.md)
+    * [Beagle iOS](/docs/C3%20-%20%20Component/Beagle%20iOS/README.md)
     * [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
 
 ---
@@ -25,7 +26,7 @@ Os componentes do Beagle são:
 
 O Diagrama abaixo mostra o "caminho" que um componente "percorre" dentro de um aplicativo Android que utiliza o Beagle.
 
-O Beagle possuiu um mecanismo de **processamento de anotações** que cria inicialmente o arquivo de configuração do framework chamado BeagleSetup. Esse arquivo é gerado automaticamente quando o projeto é montado (build) pela primeira vez e nele são registrados os componentes criados no Android, como ações, operações, componentes visuais (botões, textos, etc), camada de rede, dentre outros. Todos esses componentes são anotados para que o processador possa mapea-los, como por exemplo, o ´@RegisterAction´ é utilizado para registrar ações, ´@RegisterOperation´ para operações e o ´@RegisterWidget´ para componentes visuais.
+O Beagle possuiu um mecanismo de **processamento de anotações** que cria inicialmente o arquivo de configuração do framework chamado BeagleSetup. Esse arquivo é gerado automaticamente quando o projeto é montado (build) pela primeira vez e nele são registrados os componentes criados no Android, como ações, operações, componentes visuais (botões, textos, etc), camada de rede, dentre outros. Todos esses componentes são anotados para que o processador possa mapea-los, como por exemplo, o `@RegisterAction` é utilizado para registrar ações, `@RegisterOperation` para operações e o `@RegisterWidget` para componentes visuais.
 
 
 ![diagram](c3.svg)

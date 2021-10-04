@@ -6,6 +6,7 @@
   * [C3 -  Component](#C3----Component)
     * [Beagle Android](#Beagle-Android)
     * [Beagle Backend](#Beagle-Backend)
+    * [Beagle iOS](#Beagle-iOS)
     * [Beagle Web](#Beagle-Web)
 
 ---
@@ -125,7 +126,7 @@ Os componentes do Beagle são:
 
 O Diagrama abaixo mostra o "caminho" que um componente "percorre" dentro de um aplicativo Android que utiliza o Beagle.
 
-O Beagle possuiu um mecanismo de **processamento de anotações** que cria inicialmente o arquivo de configuração do framework chamado BeagleSetup. Esse arquivo é gerado automaticamente quando o projeto é montado (build) pela primeira vez e nele são registrados os componentes criados no Android, como ações, operações, componentes visuais (botões, textos, etc), camada de rede, dentre outros. Todos esses componentes são anotados para que o processador possa mapea-los, como por exemplo, o ´@RegisterAction´ é utilizado para registrar ações, ´@RegisterOperation´ para operações e o ´@RegisterWidget´ para componentes visuais.
+O Beagle possuiu um mecanismo de **processamento de anotações** que cria inicialmente o arquivo de configuração do framework chamado BeagleSetup. Esse arquivo é gerado automaticamente quando o projeto é montado (build) pela primeira vez e nele são registrados os componentes criados no Android, como ações, operações, componentes visuais (botões, textos, etc), camada de rede, dentre outros. Todos esses componentes são anotados para que o processador possa mapea-los, como por exemplo, o `@RegisterAction` é utilizado para registrar ações, `@RegisterOperation` para operações e o `@RegisterWidget` para componentes visuais.
 
 
 ![diagram](c3.svg)
@@ -140,6 +141,24 @@ O Beagle Backend é uma biblioteca de suporte que ajuda na criação de telas Be
 - O Backend Starter configura automaticamente a biblioteca em aplicações usando Spring ou Micronaut. 
 - O Framework fornece todos os contratos que serão usados na criação dos componentes.
 - O Framework também possui um utilitário de serialização que transforma toda tela criada no JSON que será enviado para um frontend.
+
+![diagram](c3.svg)
+
+## Beagle iOS
+
+`\C3 -  Component\Beagle iOS`
+
+[C4Model](#Beagle-C4-Model)
+
+O Beagle iOS é uma biblioteca que tem como finalidade integrar o sistema Beagle em um projeto existente de aplicativo nativo dos sistemas Apple iOS.
+
+As peças chave para entendimento da arquitetura e sua aplicação são os componentes abaixo:
+
+* **Beagle Config:** Classe de instância única que armazena todas as configurações, customizações e implementações do Beagle (propriedade `Dependencies`). Sua inicialização é essencial para o funcionamento do projeto e ocorre no `AppDelegate` do aplicativo hospedeiro.
+* **Beagle View Controller e Beagle View:** São as portas de entrada para as telas server-driven do Beagle. O **Beagle View Controller** pode ser adicionado na pilha de navegação diretamente a partir da classe `AppDelegate` e age como uma tela independente. Já **Beagle View** é uma UIView do UIKit, ela possibilita adicionar uma tela Beagle como subview de uma tela existente, sendo assim, torna-se dependente de um view controller ou UIView previamente definidos. O conteúdo de um **Beagle View Controller** é uma composição de **Server Driven Components** traduzidos para UIKit.
+* **Server Driven Component:** Representação de qualquer elemento de interface do Beagle. Ele pode representar tanto elementos visuais como botões, textos e listas quanto ações de navegação, comportamentos de clique e operações.
+* **Network Client:** Por padrão o Beagle iOS não provê uma estratégia padrão para realização de requisições remotas, dando a liberdade aos desenvolvedores implementarem a abordagem mais compatível com o contexto do projeto, como: direcionamento de entpoints, regras de segurança e tratamento de erros. **Network Client** fica responsável por comunicar-se com os recursos implementados no **Beagle Backend**.
+* **Recursos de apoio:** O Beagle iOS provê certo nível de customização de alguns componentes de projeto. Ao observar o diagrama abaixo, é possível notar alguns componentes com a descrição "abstrato | opcional", tais componentes são meios de propagar eventos para ferramentas de analytics contratadas ou regras customizadas de armazenamento local das telas.
 
 ![diagram](c3.svg)
 

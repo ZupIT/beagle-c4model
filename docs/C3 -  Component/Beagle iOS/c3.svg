@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1426px" preserveAspectRatio="none" style="width:2786px;height:1426px;" version="1.1" viewBox="0 0 2786 1426" width="2786px" zoomAndPan="magnify"><defs/><g><!--MD5=[2e72a1b40c9c544968bbe53967bdb003]
+cluster beagle_android--><rect fill="#FFFFFF" height="958" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" width="2389" x="386" y="7"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="1538" y="24.4688">Beagle iOS</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="1546" y="39.4453">[Container]</text><!--MD5=[da6558bc0d1ebd067bd458b76ee5e773]
+entity beagle_config--><rect fill="#85BBF0" height="201.3711" style="stroke: #78A8D8; stroke-width: 1.5;" width="220" x="402" y="67.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="455.5" y="92.9688">Beagle Config</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="495" y="107.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="514" y="124.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="420.5" y="140.5">Singleton responsável por</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="135" x="442.5" y="156.9883">armazenar todas as</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="107" x="456.5" y="173.4766">dependências e</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200" x="412" y="189.9648">configurações do Beagle, tais</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="464.5" y="206.4531">como: temas,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="426.5" y="222.9414">implementações de view</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="424" y="239.4297">client, analytics, decoder,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="151" x="436.5" y="255.918">logger, deeplinks, etc.</text><!--MD5=[06a577c5c1c77a45d07426f18797aeaf]
+entity beagle_view_controller--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="213" x="792" y="326.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="183" x="807" y="351.9688">Beagle View Controller</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="881.5" y="366.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="900.5" y="383.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189" x="802" y="399.5">Representação completa de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="137" x="828" y="415.9883">tela do Beagle (View</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="75" x="861" y="432.4766">Controller)</text><!--MD5=[7ba1784dd92ac8f239534f56973ef356]
+entity beagle_view--><rect fill="#85BBF0" height="151.9063" style="stroke: #78A8D8; stroke-width: 1.5;" width="204" x="410" y="304"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="97" x="463.5" y="329.4688">Beagle View</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="495" y="344.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="514" y="360.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="180" x="420" y="377">Alternativa ao Beagle View</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="423" y="393.4883">Controller que possibilita</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="422" y="409.9766">adicionar uma tela Beagle</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="429" y="426.4648">como parte de uma tela</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="150" x="437" y="442.9531">nativa do iOS (UIView)</text><!--MD5=[ffacdf9ebea6aad8409eca525e77fda7]
+entity analytics--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="214" x="1699.5" y="341.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="1769" y="366.9688">Analytics</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="157" x="1728" y="381.9453">[Swift | Abstrato | Opcional]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1808.5" y="398.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="1709.5" y="414.5">Registra eventos de ciclo de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="1744.5" y="430.9883">vida de telas para</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="1728.5" y="447.4766">ferramentas de análise</text><!--MD5=[15f3a757e18669ade47ed3f77393a597]
+entity view_client--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="197" x="1708" y="496.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="91" x="1761" y="521.9688">View Client</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1789.5" y="536.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1808.5" y="553.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="137" x="1736" y="569.5">Repositório que fica</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="166" x="1721.5" y="585.9883">responsável por realizar</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="173" x="1718" y="602.4766">requisições remotas para</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="1732.5" y="618.9648">obter telas do Beagle.</text><!--MD5=[27e818a3f17d509693237ba6c38ae04a]
+entity view_model--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="208" x="1205.5" y="456.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="152" x="1233.5" y="481.9688">Beagle View Model</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1292.5" y="496.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1311.5" y="513.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="165" x="1225" y="529.5">Responsável por fazer o</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="1229.5" y="545.9883">intermédio entre IO do</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="1215.5" y="562.4766">sistema e a visualização de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="1263" y="578.9648">componentes</text><!--MD5=[bee3c548bc0407ec85e1f78a58cbed96]
+entity component_decoder--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="193" x="2137" y="505.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="168" x="2149.5" y="530.9688">Component Decoder</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2216.5" y="545.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2235.5" y="562.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="2147" y="578.5">Transforma as respostas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="2161" y="594.9883">JSON do Backend em</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="2162.5" y="611.4766">componentes Beagle</text><!--MD5=[4ce64a73e6975a726bb31e5cdbfe0bb1]
+entity beagle_component--><rect fill="#85BBF0" height="170.75" style="stroke: #78A8D8; stroke-width: 1.5;" width="213" x="2546" y="58.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="109" x="2595.5" y="83.9688">Server Driven</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="95" x="2605" y="102.8125">Component</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2635.5" y="117.7891">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2654.5" y="133.8555"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="2570.5" y="150.3438">Estrutura de dados que</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189" x="2556" y="166.832">representa um elemento de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="2582.5" y="183.3203">interface do Beagle (</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="2567" y="199.8086">Container, Botão, Texto,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="2581.5" y="216.2969">Lista, Operação, etc.)</text><!--MD5=[23ec4f1fff159d71b633b9f85a9aab58]
+entity cache--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="217" x="2125" y="335.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="2209" y="360.9688">Cache</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="161" x="2153" y="375.9453">[Swift  | Abstrato | Opcional]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2235.5" y="392.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="193" x="2135" y="408.5">Armazena temporariamente</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="2136.5" y="424.9883">estruturas de tela recebidas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="186" x="2138.5" y="441.4766">via servidor, indexadas por</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="23" x="2222" y="457.9648">URI</text><!--MD5=[651b033f164fd8ec7679b5d7d91e4d8f]
+entity network_client--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="219" x="2124" y="813.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120" x="2173.5" y="838.9688">Network Client</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="95" x="2186" y="853.9453">[Swift | Abstrato]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2235.5" y="870.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="178" x="2142.5" y="886.5">Componente que define a</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="2142" y="902.9883">estratégia de execução de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="195" x="2134" y="919.4766">requisições remotas. Requer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2179" y="935.9648">implementação.</text><!--MD5=[704122d1ad1970a5270f8af3d33da602]
+entity renderer--><rect fill="#85BBF0" height="102.4414" style="stroke: #78A8D8; stroke-width: 1.5;" width="219" x="1200" y="192"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="74" x="1272.5" y="217.4688">Renderer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1292.5" y="232.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1311.5" y="248.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="195" x="1210" y="265">Coordena a renderização de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="1231.5" y="281.4883">elementos de interface</text><!--MD5=[0415a222c75c090aeb248812feaeb1dc]
+entity view_configurator--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="219" x="1697" y="183.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="1732" y="208.9688">View Configurator</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1789.5" y="223.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1808.5" y="240.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199" x="1707" y="256.5">Aplica temas e acessibilidade</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="1718.5" y="272.9883">nos componentes server-</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="1785" y="289.4766">driven</text><!--MD5=[6ca472174c765528e84410b754f058b9]
+entity beagle_theme--><rect fill="#85BBF0" height="168.3945" style="stroke: #78A8D8; stroke-width: 1.5;" width="216" x="2125.5" y="132"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="56" x="2205.5" y="157.4688">Theme</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2216.5" y="172.4453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2235.5" y="188.5117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="2135.5" y="205">Armazena configurações de</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="2144.5" y="221.4883">estilos dos componentes,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="2144" y="237.9766">como cores, bordas. Atua</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="2139" y="254.4648">como ponte entre o design</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="125" x="2169" y="270.9531">system nativo e os</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="2162.5" y="287.4414">componentes Beagle</text><!--MD5=[86917e1c3adb8ebdcdfa1474f2238cc1]
+entity style_view_configurator--><rect fill="#85BBF0" height="118.9297" style="stroke: #78A8D8; stroke-width: 1.5;" width="212" x="2127.5" y="659.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="192" x="2137.5" y="684.9688">Style View Configurator</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="2216.5" y="699.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2235.5" y="716.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="2139" y="732.5">Sabe como aplicar estilos e</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="2161.5" y="748.9883">organização flex em</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="2155.5" y="765.4766">elementos de interface</text><!--MD5=[dce4044cc382fbbcc659b5929d62bf01]
+entity layout_manager--><rect fill="#85BBF0" height="135.418" style="stroke: #78A8D8; stroke-width: 1.5;" width="218" x="1449" y="632.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="130" x="1493" y="657.9688">Layout Manager</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="34" x="1541" y="672.9453">[Swift]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="1560" y="689.0117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="194" x="1459" y="705.5">Coordena a distribuição dos</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184" x="1464" y="721.9883">elementos de interface nas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="1462" y="738.4766">telas, aplica margens e safe</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="1543" y="754.9648">area</text><!--MD5=[f3db3974b1fd13c59897b7e6c4a71d54]
+entity frontend_app--><rect fill="#999999" height="88.3086" style="stroke: #8A8A8A; stroke-width: 1.5;" width="216" x="7" y="336"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="58.5" y="361.4688">Aplicativo iOS</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="117" y="378.3789"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="17" y="394.8672">Um aplicativo que renderiza</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="122" x="54" y="411.3555">as telas do Beagle</text><!--MD5=[df2e2e01d061513cfc1649d0b2571220]
+entity beagle_backend--><rect fill="#438DD5" height="118.9297" style="stroke: #3C7FC0; stroke-width: 1.5;" width="198" x="2553.5" y="1121.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="2589" y="1146.9688">Beagle Backend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="2632.5" y="1161.9453">[Koltin]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2654.5" y="1178.0117"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="2563.5" y="1194.5">Permite a criação de telas</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="161" x="2570" y="1210.9883">seguindo o contrato do</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="2630" y="1227.4766">Beagle</text><!--MD5=[26ae17af65af8a312dc17401fb071e46]
+entity yoga--><rect fill="#999999" height="104.7969" style="stroke: #8A8A8A; stroke-width: 1.5;" width="204" x="2550.5" y="981.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="41" x="2632" y="1006.9688">Yoga</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2654.5" y="1023.8789"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="180" x="2560.5" y="1040.3672">Biblioteca que organiza as</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="2565.5" y="1056.8555">telas de um aplicativo no</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="2613" y="1073.3438">padrão flex</text><!--MD5=[ad2617dde7d5d35127820f765b278e21]
+link frontend_app to beagle_config--><path d="M198.32,335.82 C255.15,305.32 331.52,264.33 394.56,230.49 " fill="none" id="frontend_app-to-beagle_config" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="401.79,226.61,393.3204,227.7348,396.1483,233.0265,401.79,226.61" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="284" y="245.6016">Inicializa</text><!--MD5=[38dfced594b1b4300c8e43fa60a21a7a]
+link frontend_app to beagle_view_controller--><path d="M198.29,424.11 C248.61,448.54 315.2,476.46 378,489 C484.34,510.24 515.29,508.3 622,489 C677.08,479.04 735.51,458.72 784.32,438.75 " fill="none" id="frontend_app-to-beagle_view_controller" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="791.75,435.67,783.2106,435.9519,785.5016,441.4973,791.75,435.67" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="484.5" y="485.6016">Inicializa</text><!--MD5=[e56ccba81b44b1bb21fa266dad835ae4]
+link frontend_app to beagle_view--><path d="M223.15,380 C278.57,380 346.09,380 401.8,380 " fill="none" id="frontend_app-to-beagle_view" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="409.93,380,401.93,377,401.93,383,409.93,380" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="254" y="362.6016">Adiciona em telas</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="64" x="279.5" y="376.7344">existentes</text><!--MD5=[a468732cf4c4bb6033b9e31ce706b599]
+link beagle_view_controller to renderer--><path d="M1005.09,349.08 C1062.29,329.08 1133.08,304.33 1191.9,283.77 " fill="none" id="beagle_view_controller-to-renderer" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1199.74,281.03,1191.1981,280.8391,1193.1788,286.5027,1199.74,281.03" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1091" y="290.6016">Usa</text><!--MD5=[2414c21600c1e2b4a9c09f067a37eed2]
+link beagle_view_controller to beagle_component--><path d="M961.12,326.26 C1017.99,275.38 1107.42,205.65 1200,174 C1578.26,44.67 1694.64,57.06 2094,75 C2282.12,83.45 2330.01,83.49 2516,113 C2523.18,114.14 2530.54,115.44 2537.94,116.85 " fill="none" id="beagle_view_controller-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2545.99,118.41,2538.7101,113.9375,2537.5643,119.8271,2545.99,118.41" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="1743" y="60.6016">Contém um ou mais</text><!--MD5=[5125c6e5459b271abc64c68a2713ef09]
+link beagle_view_controller to layout_manager--><path d="M967.18,445.57 C988.47,463.59 1012.34,483.07 1035,500 C1105.41,552.6 1119.63,573.43 1200,609 C1277.01,643.09 1369.25,666.18 1440.68,680.58 " fill="none" id="beagle_view_controller-to-layout_manager" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1448.84,682.2,1441.5758,677.702,1440.4094,683.5876,1448.84,682.2" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1091" y="496.6016">Usa</text><!--MD5=[ec9136ed25c62f22c79e1f2318adc566]
+link beagle_view_controller to analytics--><path d="M1005.2,387.75 C1176.79,390.59 1514.53,396.18 1691.38,399.11 " fill="none" id="beagle_view_controller-to-analytics" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1699.42,399.24,1691.4692,396.1118,1691.3728,402.1111,1699.42,399.24" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="101" x="1257" y="374.6016">Registra ações e</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="65" x="1277" y="388.7344">navegação</text><!--MD5=[60c5a351568d92c0635c7cce21c67b2f]
+link beagle_view_controller to view_model--><path d="M1012.76,424.21 C1070.49,443.69 1140.42,467.29 1197.78,486.64 " fill="none" id="beagle_view_controller-view_model" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1205.43,489.22,1198.8075,483.8217,1196.8908,489.5073,1205.43,489.22" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1005.09,421.63,1011.7125,427.0283,1013.6292,421.3427,1005.09,421.63" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="129" x="1036" y="417.6016">Requisita conteúdo |</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51" x="1077" y="431.7344">Observa</text><!--MD5=[bb7361b20172b9d249cf5c21be59b58e]
+link beagle_view to beagle_view_controller--><path d="M614.02,381.58 C666.09,382.39 729.77,383.38 783.58,384.22 " fill="none" id="beagle_view-to-beagle_view_controller" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="791.78,384.35,783.8292,381.2218,783.7328,387.2211,791.78,384.35" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="108" x="653" y="379.6016">Usa em container</text><!--MD5=[ef31b7ef4f6139e15faea6ad752cec81]
+link layout_manager to style_view_configurator--><path d="M1667.21,703.05 C1791.1,706.55 1993.14,712.25 2119.14,715.8 " fill="none" id="layout_manager-to-style_view_configurator" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2127.33,716.03,2119.4132,712.8169,2119.2525,718.8147,2127.33,716.03" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1795" y="701.6016">Usa</text><!--MD5=[d62ba1d515117afdc91017e3363aa3f5]
+link style_view_configurator to yoga--><path d="M2319.95,778.7 C2327.8,784.47 2335.59,790.3 2343,796 C2436.05,867.58 2451.61,895.2 2546,965 C2551.31,968.93 2556.84,972.89 2562.45,976.82 " fill="none" id="style_view_configurator-to-yoga" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2569.08,981.42,2564.2156,974.3959,2560.7965,979.3263,2569.08,981.42" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="137" x="2374" y="803.6016">Utiliza propriedades e</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="100" x="2394.5" y="817.7344">elementos Yoga</text><!--MD5=[176b2af79f2b0952a117db95e5dba668]
+link view_client to component_decoder--><path d="M1905,564.23 C1971.88,564.39 2060.51,564.6 2128.7,564.76 " fill="none" id="view_client-to-component_decoder" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2136.91,564.78,2128.9154,561.7657,2128.9047,567.7657,2136.91,564.78" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="2008.5" y="561.6016">Usa</text><!--MD5=[7c815385ceeeddea688451579ac5ed44]
+link view_client to cache--><path d="M1905,527.06 C1968.13,503.15 2050.62,471.9 2117.02,446.75 " fill="none" id="view_client-to-cache" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2124.63,443.86,2116.0861,443.8957,2118.2163,449.5048,2124.63,443.86" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="1956.5" y="456.6016">Armazena respostas</text><!--MD5=[e0c0b61e33ca7aa09ae18b27b11d0f98]
+link view_client to network_client--><path d="M1898.15,631.62 C1967.82,683.58 2063.88,755.23 2135.17,808.4 " fill="none" id="view_client-to-network_client" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2141.99,813.49,2137.372,806.3015,2133.784,811.1105,2141.99,813.49" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="2008.5" y="672.6016">Usa</text><!--MD5=[5260f5b730bc63b11e8c60b7e02afb31]
+link network_client to beagle_backend--><path d="M2259.63,948.61 C2281.91,999.46 2319.31,1067 2373,1107 C2422.71,1144.04 2489.54,1162.56 2545.28,1171.81 " fill="none" id="network_client-to-beagle_backend" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2553.41,1173.11,2545.9883,1168.8769,2545.035,1174.8007,2553.41,1173.11" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="92" x="2398.5" y="1089.6016">Requisita telas</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73" x="2408" y="1103.7344">[JSON/Https]</text><!--MD5=[6d2e3ba9c11b172e2c66cd9d2ae0892f]
+link renderer to beagle_component--><path d="M1419.22,219.06 C1496.46,202.61 1602.76,181.1 1697,166 C1981.41,120.42 2055.3,100.04 2343,114 C2407.55,117.13 2479.44,123.93 2537.56,130.26 " fill="none" id="renderer-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2545.67,131.15,2538.051,127.2834,2537.3872,133.2466,2545.67,131.15" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="146" x="1947" y="95.6016">Transforma em nativo (</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="2002.5" y="109.7344">UIKit)</text><!--MD5=[19aa9e9d1229aed1b81278e24f3fade4]
+link renderer to view_configurator--><path d="M1419.13,243 C1498.78,243 1606.81,243 1688.39,243 " fill="none" id="renderer-to-view_configurator" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1696.7,243,1688.7,240,1688.7,246,1696.7,243" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1546.5" y="239.6016">Usa</text><!--MD5=[dcbca7929b8fcb5e64dfa10ebe133de4]
+link view_configurator to beagle_theme--><path d="M1916.12,236.1 C1977.55,232.2 2054.34,227.32 2116.89,223.34 " fill="none" id="view_configurator-to-beagle_theme" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2125.22,222.82,2117.0437,220.3403,2117.4293,226.3279,2125.22,222.82" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="38" x="2001" y="222.6016">Aplica</text><!--MD5=[4814929e4c884f49d12acc566180daf6]
+link view_configurator to style_view_configurator--><path d="M1916.16,288.72 C1978.42,320.7 2052.26,369.62 2094,436 C2143.25,514.33 2075.71,563.08 2124,642 C2126.34,645.82 2128.94,649.5 2131.76,653.04 " fill="none" id="view_configurator-to-style_view_configurator" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2137.05,659.27,2134.165,651.2278,2129.5884,655.1078,2137.05,659.27" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="2008.5" y="304.6016">Usa</text><!--MD5=[8a8eaa3218666fa046c5079cded0a54c]
+link component_decoder to beagle_component--><path d="M2322.29,505.3 C2329.45,499.65 2336.45,493.84 2343,488 C2430.6,409.85 2518.85,308.64 2578.39,236.27 " fill="none" id="component_decoder-to-beagle_component" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="2583.7,229.8,2576.3079,234.0845,2580.9478,237.8886,2583.7,229.8" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="2374.5" y="299.6016">Cria e armazena tipos</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="2401" y="313.7344">customizados</text><!--MD5=[11b819b3c3c88c804df815fae42bb299]
+link view_model to view_client--><path d="M1413.67,532.34 C1497.52,539.11 1615.35,548.63 1699.87,555.46 " fill="none" id="view_model-to-view_client" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1707.94,556.12,1700.207,552.4866,1699.7247,558.4672,1707.94,556.12" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="1546.5" y="532.6016">Usa</text><!--MD5=[2e5d830f10ef41e41c2dd7211ee84e47]
+link view_model to analytics--><path d="M1413.67,498.36 C1494.78,478.21 1607.68,450.16 1691.46,429.34 " fill="none" id="view_model-to-analytics" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="1699.48,427.34,1690.9925,426.3588,1692.4402,432.1816,1699.48,427.34" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103" x="1506.5" y="434.6016">Propaga eventos</text><rect fill="#FFFFFF" height="162.3945" rx="5" ry="5" style="stroke: #FFFFFF; stroke-width: 1.0;" width="159" x="2600" y="1253.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51" x="2606" y="1273.9648">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="2661" y="1273.9648"/><rect fill="#08427B" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1276.918"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="2610" y="1290.4531">person</text><rect fill="#1168BD" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1293.4063"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="2610" y="1306.9414">system</text><rect fill="#438DD5" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1309.8945"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="2610" y="1323.4297">container</text><rect fill="#85BBF0" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1326.3828"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="2610" y="1339.918">component</text><rect fill="#686868" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1342.8711"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="2610" y="1356.4063">external person</text><rect fill="#999999" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1359.3594"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="108" x="2610" y="1372.8945">external system</text><rect fill="#B3B3B3" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1375.8477"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="2610" y="1389.3828">external container</text><rect fill="#CCCCCC" height="16.4883" style="stroke: none; stroke-width: 1.0;" width="147" x="2606" y="1392.3359"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="2610" y="1405.8711">external component</text><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1260.4297" y2="1260.4297"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1276.918" y2="1276.918"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1293.4063" y2="1293.4063"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1309.8945" y2="1309.8945"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1326.3828" y2="1326.3828"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1342.8711" y2="1342.8711"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1359.3594" y2="1359.3594"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1375.8477" y2="1375.8477"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1392.3359" y2="1392.3359"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2753" y1="1408.8242" y2="1408.8242"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2606" x2="2606" y1="1260.4297" y2="1408.8242"/><line style="stroke: #FFFFFF; stroke-width: 1.0;" x1="2753" x2="2753" y1="1260.4297" y2="1408.8242"/><!--MD5=[42d5906d5045d0cda031761391357b03]
+@startuml c2
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+System_Ext(frontend_app, "Aplicativo iOS", "Um aplicativo que renderiza as telas do Beagle")
+Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+
+Container_Boundary(beagle_android, "Beagle iOS") {
+  Component(beagle_config, "Beagle Config", "Swift", "Singleton responsável por armazenar todas as dependências e configurações do Beagle, tais como: temas, implementações de view client, analytics, decoder, logger, deeplinks, etc.")
+  Component(beagle_view_controller, "Beagle View Controller", "Swift", "Representação completa de tela do Beagle (View Controller)")
+  Component(beagle_view, "Beagle View", "Swift", "Alternativa ao Beagle View Controller que possibilita adicionar uma tela Beagle como parte de uma tela nativa do iOS (UIView)")
+  Component(analytics, "Analytics", "Swift | Abstrato | Opcional", "Registra eventos de ciclo de vida de telas para ferramentas de análise")
+  Component(view_client, "View Client", "Swift", "Repositório que fica responsável por realizar requisições remotas para obter telas do Beagle.")
+  Component(view_model, "Beagle View Model", "Swift", "Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes")
+  Component(component_decoder, "Component Decoder", "Swift", "Transforma as respostas JSON do Backend em componentes Beagle")
+  Component(beagle_component, "Server Driven Component", "Swift", "Estrutura de dados que representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Operação, etc.)")
+  Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI")
+  Component(network_client, "Network Client", "Swift | Abstrato", "Componente que define a estratégia de execução de requisições remotas. Requer implementação.")
+  Component(renderer, "Renderer", "Swift", "Coordena a renderização de elementos de interface")
+  Component(view_configurator, "View Configurator", "Swift", "Aplica temas e acessibilidade nos componentes server-driven")
+  Component(beagle_theme, "Theme", "Swift", "Armazena configurações de estilos dos componentes, como cores, bordas. Atua como ponte entre o design system nativo e os componentes Beagle")
+  Component(style_view_configurator, "Style View Configurator", "Swift", "Sabe como aplicar estilos e organização flex em elementos de interface")
+  Component(layout_manager, "Layout Manager", "Swift", "Coordena a distribuição dos elementos de interface nas telas, aplica margens e safe area")
+}
+
+System_Ext(yoga, "Yoga", "Biblioteca que organiza as telas de um aplicativo no padrão flex")
+
+Rel(frontend_app, beagle_config, "Inicializa")
+Rel(frontend_app, beagle_view_controller, "Inicializa")
+Rel(frontend_app, beagle_view, "Adiciona em telas existentes")
+
+Rel(beagle_view_controller, renderer, "Usa")
+Rel(beagle_view_controller, beagle_component, "Contém um ou mais")
+Rel(beagle_view_controller, layout_manager, "Usa")
+Rel(beagle_view_controller, analytics, "Registra ações e navegação")
+BiRel(beagle_view_controller, view_model, "Requisita conteúdo | Observa")
+
+Rel(beagle_view, beagle_view_controller, "Usa em container")
+
+Rel(layout_manager, style_view_configurator, "Usa")
+
+Rel(style_view_configurator, yoga, "Utiliza propriedades e elementos Yoga")
+
+Rel(view_client, component_decoder, "Usa")
+Rel(view_client, cache, "Armazena respostas")
+Rel(view_client, network_client, "Usa")
+
+Rel(network_client, beagle_backend, "Requisita telas", "JSON/Https")
+
+Rel(renderer, beagle_component, "Transforma em nativo (UIKit)")
+Rel(renderer, view_configurator, "Usa")
+
+Rel(view_configurator, beagle_theme, "Aplica")
+Rel(view_configurator, style_view_configurator, "Usa")
+
+Rel(component_decoder, beagle_component, "Cria e armazena tipos customizados")
+
+Rel(view_model, view_client, "Usa")
+Rel(view_model, analytics, "Propaga eventos")
+
+@enduml
+
+@startuml c2
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#85BBF0> component |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+|<#CCCCCC> external component |
+endlegend
+left to right direction
+
+rectangle "==Aplicativo iOS\n\n Um aplicativo que renderiza as telas do Beagle" <<external_system>> as frontend_app
+rectangle "==Beagle Backend\n//<size:12>[Koltin]</size>//\n\n Permite a criação de telas seguindo o contrato do Beagle" <<container>> as beagle_backend
+
+rectangle "==Beagle iOS\n<size:12>[Container]</size>" <<boundary>> as beagle_android {
+  rectangle "==Beagle Config\n//<size:12>[Swift]</size>//\n\n Singleton responsável por armazenar todas as dependências e configurações do Beagle, tais como: temas, implementações de view client, analytics, decoder, logger, deeplinks, etc." <<component>> as beagle_config
+  rectangle "==Beagle View Controller\n//<size:12>[Swift]</size>//\n\n Representação completa de tela do Beagle (View Controller)" <<component>> as beagle_view_controller
+  rectangle "==Beagle View\n//<size:12>[Swift]</size>//\n\n Alternativa ao Beagle View Controller que possibilita adicionar uma tela Beagle como parte de uma tela nativa do iOS (UIView)" <<component>> as beagle_view
+  rectangle "==Analytics\n//<size:12>[Swift | Abstrato | Opcional]</size>//\n\n Registra eventos de ciclo de vida de telas para ferramentas de análise" <<component>> as analytics
+  rectangle "==View Client\n//<size:12>[Swift]</size>//\n\n Repositório que fica responsável por realizar requisições remotas para obter telas do Beagle." <<component>> as view_client
+  rectangle "==Beagle View Model\n//<size:12>[Swift]</size>//\n\n Responsável por fazer o intermédio entre IO do sistema e a visualização de componentes" <<component>> as view_model
+  rectangle "==Component Decoder\n//<size:12>[Swift]</size>//\n\n Transforma as respostas JSON do Backend em componentes Beagle" <<component>> as component_decoder
+  rectangle "==Server Driven Component\n//<size:12>[Swift]</size>//\n\n Estrutura de dados que representa um elemento de interface do Beagle (Container, Botão, Texto, Lista, Operação, etc.)" <<component>> as beagle_component
+  rectangle "==Cache\n//<size:12>[Swift  | Abstrato | Opcional]</size>//\n\n Armazena temporariamente estruturas de tela recebidas via servidor, indexadas por URI" <<component>> as cache
+  rectangle "==Network Client\n//<size:12>[Swift | Abstrato]</size>//\n\n Componente que define a estratégia de execução de requisições remotas. Requer implementação." <<component>> as network_client
+  rectangle "==Renderer\n//<size:12>[Swift]</size>//\n\n Coordena a renderização de elementos de interface" <<component>> as renderer
+  rectangle "==View Configurator\n//<size:12>[Swift]</size>//\n\n Aplica temas e acessibilidade nos componentes server-driven" <<component>> as view_configurator
+  rectangle "==Theme\n//<size:12>[Swift]</size>//\n\n Armazena configurações de estilos dos componentes, como cores, bordas. Atua como ponte entre o design system nativo e os componentes Beagle" <<component>> as beagle_theme
+  rectangle "==Style View Configurator\n//<size:12>[Swift]</size>//\n\n Sabe como aplicar estilos e organização flex em elementos de interface" <<component>> as style_view_configurator
+  rectangle "==Layout Manager\n//<size:12>[Swift]</size>//\n\n Coordena a distribuição dos elementos de interface nas telas, aplica margens e safe area" <<component>> as layout_manager
+}
+
+rectangle "==Yoga\n\n Biblioteca que organiza as telas de um aplicativo no padrão flex" <<external_system>> as yoga
+
+frontend_app - ->> beagle_config : **Inicializa**
+frontend_app - ->> beagle_view_controller : **Inicializa**
+frontend_app - ->> beagle_view : **Adiciona em telas existentes**
+
+beagle_view_controller - ->> renderer : **Usa**
+beagle_view_controller - ->> beagle_component : **Contém um ou mais**
+beagle_view_controller - ->> layout_manager : **Usa**
+beagle_view_controller - ->> analytics : **Registra ações e navegação**
+beagle_view_controller <<- ->> view_model : **Requisita conteúdo | Observa**
+
+beagle_view - ->> beagle_view_controller : **Usa em container**
+
+layout_manager - ->> style_view_configurator : **Usa**
+
+style_view_configurator - ->> yoga : **Utiliza propriedades e elementos Yoga**
+
+view_client - ->> component_decoder : **Usa**
+view_client - ->> cache : **Armazena respostas**
+view_client - ->> network_client : **Usa**
+
+network_client - ->> beagle_backend : **Requisita telas**\n//<size:12>[JSON/Https]</size>//
+
+renderer - ->> beagle_component : **Transforma em nativo (UIKit)**
+renderer - ->> view_configurator : **Usa**
+
+view_configurator - ->> beagle_theme : **Aplica**
+view_configurator - ->> style_view_configurator : **Usa**
+
+component_decoder - ->> beagle_component : **Cria e armazena tipos customizados**
+
+view_model - ->> view_client : **Usa**
+view_model - ->> analytics : **Propaga eventos**
+
+@enduml
+
+PlantUML version 1.2020.17(Sat Sep 19 09:30:11 BRT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

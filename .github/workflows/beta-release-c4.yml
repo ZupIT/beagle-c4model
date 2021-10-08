@@ -16,7 +16,8 @@
 name: PreDoc
 
 on:
-  pull_request:    
+  push:
+    branches: [ main ]
 
 jobs:
   predoc_deploy_c4model:

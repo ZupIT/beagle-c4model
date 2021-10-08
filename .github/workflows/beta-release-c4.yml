@@ -33,10 +33,10 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: ${{ secrets.AWS_REGION_DEV }}
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_DEV }}
-          role-duration-seconds: 1200
-          role-session-name: PreDocS3Session
-          role-skip-session-tagging: true
+          # role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_DEV }}
+          # role-duration-seconds: 1200
+          # role-session-name: PreDocS3Session
+          # role-skip-session-tagging: true
 
       # - name: Remove Custom C4Builder Theme from S3
       #   run: aws s3 rm s3://${{ secrets.AWS_S3_BUCKET_DEV }}/c4model/theme/ --recursive
@@ -53,7 +53,7 @@ jobs:
           path: 'pt-br'
 
       - name: Upload PT-BR on S3
-        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_DEV }}/c4model/pt-br/ --delete
+        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_BETA }}/c4model/pt-br/ --delete
 
       # - name: C4Builder EN
       #   uses: ZupIT/c4builder-action@880d2639f0e8a7cf2b05452111fb8d741a4e5651 #v1.0.3

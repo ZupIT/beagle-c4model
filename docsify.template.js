@@ -46,7 +46,15 @@ module.exports = options => {
       </nav>
 
       <script>
-        window.$docsify = ${JSON.stringify(options, null, 2)};
+        window.$docsify = ${JSON.stringify(
+          {
+            ...options,
+            el: '#app',
+            logo: 'https://raw.githubusercontent.com/ZupIT/beagle-docs/main/static/shared/logo_beagle_black.svg'
+          },
+          null,
+          2
+        )};
       </script>
       <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
       <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>

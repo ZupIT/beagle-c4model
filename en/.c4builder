@@ -13,7 +13,7 @@
 	"includeTableOfContents": true,
 	"webTheme": "//unpkg.com/docsify/lib/themes/vue.css",
 	"repoUrl": "",
-	"docsifyTemplate": "",
+	"docsifyTemplate": "../docsify.template.js",
 	"webPort": "3000",
 	"includeBreadcrumbs": true,
 	"includeLinkToDiagram": false,

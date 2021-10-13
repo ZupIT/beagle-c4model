@@ -11,7 +11,7 @@
 	"generateWEB": true,
 	"includeNavigation": true,
 	"includeTableOfContents": true,
-	"webTheme": "//c4model/theme/theme.css",
+	"webTheme": "../assets/css/theme.css",
 	"repoUrl": "",
 	"docsifyTemplate": "../docsify.template.js",
 	"webPort": "3000",

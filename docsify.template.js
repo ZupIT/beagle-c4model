@@ -24,7 +24,7 @@ module.exports = options => {
       <!-- OG tags-->
 
       <link rel="icon" href="https://usebeagle.io/public/icon.png" alt="favicon-32x32"/>
-      <link rel="stylesheet" href="./c4model/theme/theme.css"/>
+      <link rel="stylesheet" href="../theme/theme.css"/>
       <link rel="stylesheet" href="${options.stylesheet}">
     </head>
     
@@ -52,7 +52,7 @@ module.exports = options => {
       <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
       <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
       <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-      <script src="./c4model/theme/theme.js"></script>
+      <script src="../theme/theme.js"></script>
     </body>
     
     </html>`

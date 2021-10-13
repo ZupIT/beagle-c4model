@@ -10,11 +10,10 @@ module.exports = options => {
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
       <meta name="description" content="Beagle is...">
-      <meta name="image" content="//charlescd.io/c4model/assets/images/screen.png" />
       
       <!-- OG tags-->
       <meta property="og:title" content="Beagle" />
-      <meta property="og:url" content="https://usebeagle.io/c4model />
+      <meta property="og:url" content="https://docs-beta.usebeagle.io/c4model />
       <meta property="og:type" content="website"
       <meta property="og:description" content="Beagle is..." />
       <meta property="og:locale" content="en-US" />
@@ -40,8 +39,8 @@ module.exports = options => {
 
         <div class="language-nav-main">
           <ul class="language-nav-main-list">
-            <li class="language-nav-main-list-item" data-value="pt-br">Português</li>
-            <li class="language-nav-main-list-item" data-value="en">English</li>
+            <li class="language-nav-main-list-item" data-value="c4model/pt-br">Português</li>
+            <li class="language-nav-main-list-item" data-value="c4model/en">English</li>
           </ul>
         </div>
       </nav>

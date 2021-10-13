@@ -1,14 +1,3 @@
-// {
-//     name: '{{name}}',
-//     repo: '',
-//     loadSidebar: true,
-//     auto2top: true,
-//     homepage: 'index.md',
-//     plantuml: {
-//       skin: 'classic'
-//     },
-//     stylesheet: ''
-//   }
 module.exports = options => {
   return `<!DOCTYPE html>
     <html lang="en">
@@ -35,7 +24,7 @@ module.exports = options => {
       <!-- OG tags-->
 
       <link rel="icon" href="https://usebeagle.io/public/icon.png" alt="favicon-32x32"/>
-      <link rel="stylesheet" href="https://usebeagle.io/c4model/theme/theme.css"/>
+      <link rel="stylesheet" href="./c4model/theme/theme.css"/>
       <link rel="stylesheet" href="${options.stylesheet}">
     </head>
     
@@ -63,7 +52,7 @@ module.exports = options => {
       <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
       <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
       <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-      <script src="//usebeagle.io/c4model/theme/theme.js"></script>
+      <script src="./c4model/theme/theme.js"></script>
     </body>
     
     </html>`

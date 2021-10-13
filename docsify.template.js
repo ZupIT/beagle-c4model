@@ -23,7 +23,6 @@ module.exports = options => {
       <!-- OG tags-->
 
       <link rel="icon" href="https://usebeagle.io/public/icon.png" alt="favicon-32x32"/>
-      <link rel="stylesheet" href="../theme/theme.css"/>
       <link rel="stylesheet" href="${options.stylesheet}">
     </head>
     

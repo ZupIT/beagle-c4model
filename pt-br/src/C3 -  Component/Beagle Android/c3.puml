@@ -8,12 +8,12 @@ System_Ext(yoga_layout, "Yoga Layout", "Engine que posiciona os componentes em t
 System_Ext(design_system, "Design System Externo", "Lib de configuração de Design System externo a aplicação")
 System_Ext(analytics_provider, "Analytics Provider", "Provedor de Analytics externo")
 
-Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+Container(beagle_backend, "Beagle Backend", "Kotlin", "Permite a criação de telas seguindo o contrato do Beagle")
 
 Container_Boundary(beagle_android, "Beagle Android"){
   Component(beagle_config, "Beagle Config", "Kotlin", "Define configurações do Beagle, como a URL base para requisições ao Backend. É utilizado na criação do Beagle Setup")
   Component(beagle_networking, "Beagle Networking", "Kotlin","Configura a camada de rede do aplicativo")
-  Component(beagle_setup, "Beagle Setup", "Kotlin","Resgistra os componentes utilizados/criados no Beagle por meio de um processador de anotações. E criado quando a aplicação é montada (build) a primeira vez.")
+  Component(beagle_setup, "Beagle Setup", "Kotlin","Registra os componentes utilizados/criados no Beagle por meio de um processador de anotações. E criado quando a aplicação é montada (build) a primeira vez.")
   Component(beagle_activity, "Beagle Activity", "Kotlin","Recebe Telas/componentes server driven serializados")
   Component(beagle_serializer, "Beagle Serializer", "Kotlin", "Serializa/Deserializa tela/componentes utilizando MOSHI")
   Component(server_driven_component, "Server Driven Component", "Kotlin","Componente do Beagle pronto para ser transformado em uma view nativa do Android")

@@ -13,8 +13,8 @@ module.exports = options => {
       
       <!-- OG tags-->
       <meta property="og:title" content="Beagle" />
-      <meta property="og:url" content="https://docs.usebeagle.io/c4model />
-      <meta property="og:type" content="website"
+      <meta property="og:url" content="https://docs-beta.usebeagle.io/c4model" />
+      <meta property="og:type" content="website" />
       <meta property="og:description" content="Beagle is..." />
       <meta property="og:locale" content="en-US" />
       <meta property="og:site_name" content="Beagle" />

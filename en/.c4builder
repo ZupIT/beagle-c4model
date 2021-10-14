@@ -11,7 +11,7 @@
 	"generateWEB": true,
 	"includeNavigation": true,
 	"includeTableOfContents": true,
-	"webTheme": "//unpkg.com/docsify/lib/themes/vue.css",
+	"webTheme": "https://docs.usebeagle.io/c4model/theme/theme.css",
 	"repoUrl": "",
 	"docsifyTemplate": "../docsify.template.js",
 	"webPort": "3000",

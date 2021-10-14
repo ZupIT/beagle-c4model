@@ -3,27 +3,27 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
+Person(software_developer, "Software Developer", "Any developers that want to publish a cross platform frontend application.")
 System_Boundary(beagle, "Beagle"){
   
-  Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+  Container(beagle_backend, "Beagle Backend", "Kotlin", "Allows the development of screens within the Beagle definition.")
 
   System_Boundary(beagle_frontend, "Beagle Frontend") {
       
-    Container(beagle_web_core, "Beagle Web", "Typescript", "Cuida da renderização de aplicações Web")
-      Container(beagle_android, "Beagle Android", "Kotlin", "Cuida da renderização de aplicações Android")
-      Container(beagle_ios, "Beagle iOS", "swift", "Cuida da renderização de aplicações iOS")
+    Container(beagle_web_core, "Beagle Web", "Typescript", "Handles the rendering of Web Applications.")
+      Container(beagle_android, "Beagle Android", "Kotlin", "Handles the rendering of Android Applications.")
+      Container(beagle_ios, "Beagle iOS", "swift", "Handles the rendering of iOS Applications.")
   }
 }
-System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
-System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
-Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
+System_Ext(frontend_app, "App / Website", "A software that renders Beagle screens.")
+System_Ext(infra, "Infrastructure", "The whole infra of the entity that implements beagle.")
+Person(sre, "SRE / Devops", "Responsible for configuring and maintaining the environments")
 
-Rel(software_developer, beagle_backend, "Define telas usando")
-Rel(frontend_app, beagle_frontend, "Renderiza usando / Possui instalado")
-Rel(beagle_frontend, beagle_backend, "Faz requisação da tela Beagle UI","REST ou gRPC")
-Rel(infra, beagle_backend, "Hospeda")
-Rel(sre, infra, "Configura")
-Rel(software_developer, frontend_app, "Configura o Beagle no")
+Rel(software_developer, beagle_backend, "Defines using")
+Rel(frontend_app, beagle_frontend, "Renders using / Has installed")
+Rel(beagle_frontend, beagle_backend, "Requests Beagle UI screens","REST or gRPC")
+Rel(infra, beagle_backend, "Hosts")
+Rel(sre, infra, "Configures")
+Rel(software_developer, frontend_app, "Configures Beagle at")
 
 @enduml

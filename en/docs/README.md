@@ -4,7 +4,10 @@
   * [C1 -  Context](/docs/C1%20-%20%20Context/README.md)
   * [C2 - Container](/docs/C2%20-%20Container/README.md)
   * [C3 -  Component](/docs/C3%20-%20%20Component/README.md)
-    * [Module 1](/docs/C3%20-%20%20Component/Module%201/README.md)
+    * [Beagle Android](/docs/C3%20-%20%20Component/Beagle%20Android/README.md)
+    * [Beagle Backend](/docs/C3%20-%20%20Component/Beagle%20Backend/README.md)
+    * [Beagle iOS](/docs/C3%20-%20%20Component/Beagle%20iOS/README.md)
+    * [Beagle Web](/docs/C3%20-%20%20Component/Beagle%20Web/README.md)
 
 ---
 
@@ -44,6 +47,13 @@ Pensando nisso, nos motivamos para criar uma visualização da nossa arquitetura
 
 
 
-**O que é o Meu Projeto?**
+**O que é o Beagle?**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus sagittis placerat. Donec venenatis consequat metus ut volutpat. Aliquam gravida, metus accumsan congue finibus, augue tortor porta dui, vitae placerat massa ligula quis sem. Aenean aliquam malesuada tortor sit amet ultricies. Praesent varius euismod condimentum. Etiam sit amet quam interdum, porttitor purus fermentum, tempus lorem. In fringilla tellus nec enim mollis, vitae ullamcorper nulla tincidunt.
+Beagle é uma ferramenta de código aberto que ajuda os desenvolvedores a implementar Server-Driven UI que funcione em múltiplas plataformas.
+
+Ao utilizar o Beagle, desenvolvedores podem:
+
+ - Rapidamente alterar o layout, dados, fluxo de navegação, ou até mesmo lógica, apenas alterando código no backend.
+ - Ser mais independentes das lojas mobile, como App Store e Play Store, porque a maioria das mudanças não precisarão de uma atualização no aplicativo.
+ - Ter mais confiança de que aplicações se comportarão de forma semelhante em plataformas diferentes, pois o código será compartilhado e padronizado entre backend e frontend.
+ - Testar facilmente novas hipóteses de negócio ou fazer correções em tempo real nas aplicações para melhorar a experiência dos usuários e receber feedback.

@@ -1,6 +1,16 @@
 # C2 - Container
 
-Nesse nível mostramos de maneira mais detalhada o sistema descrevendo os seus containers (Não confundir com o Docker) e como eles se comunicam/interagem. Nesse nível é dado ênfase na arquitetura e tecnologias utilizadas. A ideia é mostrar como o sistema é de forma macro. Um container pode ser uma aplicação web, um database, um sistema de arquivos, etc.
+**Level 2: System Diagram**
+
+At this level it is shown in a more detailed way the whole system environment, its containers (do not confuse with Docker) and how they interact with each other. Here the highlights go to the architecture and technologies. In short the ideia is to paint a picture of the system in a broader form. A container could be an application, a database, a file system, etc.
+
+***Beagle Containers**
+
+The second level of detailing brings us to the **containers**. And beagle has two of them `backend` and `frontend`
+
+* The Beagle Frontend is installed in Web or Mobile applications which natively render the received screens from beagle backend
+* The Beagle Backend is configured in backend applications to easy the development of server driven components
+
 
 
 ![diagram](c2.svg)

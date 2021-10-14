@@ -5,36 +5,36 @@ LAYOUT_WITH_LEGEND()
 Container_Boundary(beagle_backend, "Beagle Backend"){
 
   Boundary(backend_starter, "Backend Starter"){
-    Component(backend_starter_spring, "Beagle Spring Starter", "Aciona configurações automáticas iniciais para aplicações que usam Spring")
-    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Aciona configurações automáticas iniciais para aplicações que usam Micronaut")
+    Component(backend_starter_spring, "Beagle Spring Starter", "Kotlin", "Triggers initial configurations for Spring applications.")
+    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Kotlin", "Triggers initial configurations for Micronaut applications.")
   }
 
   Boundary(framework, "Framework"){
-    Component(cache, "Cache", "Contém a lógica que otimiza o reúso de JSON já enviados ao frontend")
-    Component(component_sorting, "Canalização de Componentes", "Utilitário que ajuda a filtrar quais componentes serão mostrados por plataforma")
-    Component(widget, "Widget", "Define o modelo base para criação de componentes")
-    Component(beagle_components, "Componentes Beagle UI", "Define o modelo para criação de cada componente de UI do Beagle como Text, Button e etc...")
-    Component(analytics, "Analytics", "Define o modelo para criação do serviço de analytics")
-    Component(operations, "Operações", "Define o modelo para adicionar operações aos componentes")
-    Component(actions, "Ações", "Define o modelo para adicionar ações aos componentes")
-    Component(serialization, "Serialização", "Utilitário para serializar os componentes criados")
-    Component(context, "Contexto", "Define o modelo para criação de contextos Beagle nos componentes")
-    Component(layout_style, "Layout e Estilos", "Define o modelo para aplicar mudanças de layout como posicionamento e estilo como cores e tamanho")
+    Component(cache, "Cache", "Kotlin", "Wraps the logic that optimizes the use of JSON already sent to the frontend.")
+    Component(component_sorting, "Components Sorting", "Kotlin","Helper that filters which components should be sent according to the receiving platform.")
+    Component(widget, "Widget","Kotlin", "Defines the core model of a component.")
+    Component(beagle_components, "Beagle UI Components", "Kotlin","Defines the core model of UI components, such as Text, Button, etc...")
+    Component(analytics, "Analytics", "Kotlin","Sets the definition to create an analytics services.")
+    Component(operations, "Operations", "Kotlin","Sets the definition to add operations to the components")
+    Component(actions, "Actions", "Kotlin","Sets the definition to add actions to the components")
+    Component(serialization, "Serialization", "Kotlin","Helper to serialize the created components")
+    Component(context, "Context", "Kotlin","Sets the model to add context to Beagle components.")
+    Component(layout_style, "Layout and Styling", "Kotlin","Sets the model to apply layout and style changes. e.g: positiong, colors, size")
   }
 
 }
 
-Rel(backend_starter,framework, "Configura")
+Rel(backend_starter,framework, "Configures")
 
-Rel(serialization, beagle_components, "Serializa")
-Rel(serialization, component_sorting, "Pode Usar")
-Rel(component_sorting, cache, "Pode Usar")
-Rel(beagle_components,widget, "Herda")
-Rel(beagle_components,analytics, "Herda")
-Rel(beagle_components,operations, "Herda")
-Rel(beagle_components,actions, "Herda")
-Rel(beagle_components,context, "Herda")
-Rel(beagle_components,layout_style, "Herda")
+Rel(serialization, beagle_components, "Serializes")
+Rel(serialization, component_sorting, "Can use")
+Rel(component_sorting, cache, "Can use")
+Rel(beagle_components,widget, "Inherits")
+Rel(beagle_components,analytics, "Inherits")
+Rel(beagle_components,operations, "Inherits")
+Rel(beagle_components,actions, "Inherits")
+Rel(beagle_components,context, "Inherits")
+Rel(beagle_components,layout_style, "Inherits")
 
 
 @enduml

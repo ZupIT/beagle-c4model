@@ -43,10 +43,10 @@ jobs:
       #   run: aws s3 rm s3://${{ secrets.AWS_S3_BUCKET_BETA }}/c4model/theme/ --recursive
     
       - name: Upload Custom C4Builder Theme CSS on S3
-        run: aws s3 sync --follow-symlinks assets/css s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/       
+        run: aws s3 sync --follow-symlinks assets/css s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4modeltest/theme/       
 
       - name: Upload Custom C4Builder Theme JS on S3
-        run: aws s3 sync --follow-symlinks assets/js s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/ 
+        run: aws s3 sync --follow-symlinks assets/js s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4modeltest/theme/ 
 
       - name: C4Builder PT-BR
         uses: ZupIT/c4builder-action@880d2639f0e8a7cf2b05452111fb8d741a4e5651 #v1.0.3
@@ -54,7 +54,7 @@ jobs:
           path: 'pt-br'
 
       - name: Upload PT-BR on S3
-        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/pt-br/ --delete
+        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4modeltest/pt-br/ --delete
 
       - name: C4Builder EN
         uses: ZupIT/c4builder-action@880d2639f0e8a7cf2b05452111fb8d741a4e5651 #v1.0.3
@@ -62,4 +62,4 @@ jobs:
           path: 'pt-br'
 
       - name: Upload EN on S3
-        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/en/ --delete
+        run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4modeltest/en/ --delete

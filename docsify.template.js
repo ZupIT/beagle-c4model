@@ -50,8 +50,7 @@ module.exports = options => {
           {
             ...options,
             el: '#app',
-            logo: 'https://raw.githubusercontent.com/ZupIT/beagle-docs/main/static/shared/logo_beagle_black.svg',
-            routerMode: 'history'
+            logo: 'https://raw.githubusercontent.com/ZupIT/beagle-docs/main/static/shared/logo_beagle_black.svg'
           },
           null,
           2

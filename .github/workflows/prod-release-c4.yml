@@ -40,7 +40,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION_PROD }}
 
       - name: Remove Custom C4Builder Theme from S3
-        run: aws s3 rm s3://zup-beagle-c4-model/c4model/theme/ --recursive
+        run: aws s3 rm s3://zup-beagle-c4-model/theme/ --recursive
     
       - name: Upload Custom C4Builder Theme CSS on S3
         run: aws s3 sync --follow-symlinks assets/css s3://zup-beagle-c4-model/theme/       

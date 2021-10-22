@@ -16,7 +16,7 @@
 name: Beta upload C4 Documentation
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:

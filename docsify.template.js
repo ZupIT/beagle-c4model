@@ -50,15 +50,22 @@ module.exports = options => {
           {
             ...options,
             el: '#app',
+            loadSidebar: true,
+            sidebarDisplayLevel: 1,
+            alias: {
+              '/.*/_sidebar.md': '/_sidebar.md',
+            },
             logo: 'https://raw.githubusercontent.com/ZupIT/beagle-docs/main/static/shared/logo_beagle_black.svg'
           },
           null,
           2
         )};
       </script>
-      <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-      <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
-      <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+      <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+      <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
       <script src="../theme/theme.js"></script>
     </body>
     

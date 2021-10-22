@@ -9,13 +9,13 @@ module.exports = options => {
       <meta name="description" content="Description">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-      <meta name="description" content="Beagle is...">
+      <meta name="description" content="Beagle is an open source framework that helps developers implement Server-Driven UI in a cross-platform way.">
       
       <!-- OG tags-->
       <meta property="og:title" content="Beagle" />
       <meta property="og:url" content="https://docs.usebeagle.io/c4model" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="Beagle is..." />
+      <meta property="og:description" content="Beagle is an open source framework that helps developers implement Server-Driven UI in a cross-platform way." />
       <meta property="og:locale" content="en-US" />
       <meta property="og:site_name" content="Beagle" />
       <meta property="og:titleTemplate" content="Beagle" />

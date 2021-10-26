@@ -15,14 +15,11 @@
 
 name: Production Upload C4 Documentation
 
-# on:
-#   push:
-#     tags:
-#       - v[0-9]+.[0-9]+.[0-9]*
-
 on:
-  pull_request:
-    branches: [ main ]
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]*
+
 
 jobs:
   production_deploy_c4model:

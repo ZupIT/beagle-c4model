@@ -1,25 +1,23 @@
 #
-  # Copyright 2020, 2021 ZUP IT SERVICOS EM TECNOLOGIA E INOVACAO SA
-  #
-  # Licensed under the Apache License, Version 2.0 (the "License");
-  # you may not use this file except in compliance with the License.
-  # You may obtain a copy of the License at
-  #
-  #  http://www.apache.org/licenses/LICENSE-2.0
-  #
-  # Unless required by applicable law or agreed to in writing, software
-  # distributed under the License is distributed on an "AS IS" BASIS,
-  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  # See the License for the specific language governing permissions and
-  # limitations under the License.
+# Copyright 2020, 2021 ZUP IT SERVICOS EM TECNOLOGIA E INOVACAO SA
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#  http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 name: Production Upload C4 Documentation
 
 on:
-  push:
-    tags:
-      - v[0-9]+.[0-9]+.[0-9]*
-
+  release:
+    types: [published]
 
 jobs:
   production_deploy_c4model:
@@ -39,17 +37,17 @@ jobs:
 
       - name: Remove Custom C4Builder Theme from S3
         run: aws s3 rm s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/ --recursive
-    
+
       - name: Upload Custom C4Builder Theme CSS on S3
-        run: aws s3 sync --follow-symlinks assets/css s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/       
+        run: aws s3 sync --follow-symlinks assets/css s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/
 
       - name: Upload Custom C4Builder Theme JS on S3
-        run: aws s3 sync --follow-symlinks assets/js s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/ 
+        run: aws s3 sync --follow-symlinks assets/js s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/theme/
 
       - name: C4Builder PT-BR
         uses: ZupIT/c4builder-action@880d2639f0e8a7cf2b05452111fb8d741a4e5651 #v1.0.3
         with:
-          path: 'pt-br'
+          path: "pt-br"
 
       - name: Upload PT-BR on S3
         run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/pt-br/ --delete
@@ -57,7 +55,7 @@ jobs:
       - name: C4Builder EN
         uses: ZupIT/c4builder-action@880d2639f0e8a7cf2b05452111fb8d741a4e5651 #v1.0.3
         with:
-          path: 'pt-br'
+          path: "pt-br"
 
       - name: Upload EN on S3
         run: aws s3 sync --follow-symlinks pt-br/docs s3://${{ secrets.AWS_S3_BUCKET_PROD }}/c4model/en/ --delete

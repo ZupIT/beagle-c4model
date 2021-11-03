@@ -5,21 +5,21 @@ LAYOUT_WITH_LEGEND()
 Container_Boundary(beagle_backend, "Beagle Backend"){
 
   Boundary(backend_starter, "Backend Starter"){
-    Component(backend_starter_spring, "Beagle Spring Starter", "Aciona configurações automáticas iniciais para aplicações que usam Spring")
-    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Aciona configurações automáticas iniciais para aplicações que usam Micronaut")
+    Component(backend_starter_spring, "Beagle Spring Starter", "Kotlin","Aciona configurações automáticas iniciais para aplicações que usam Spring")
+    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Kotlin","Aciona configurações automáticas iniciais para aplicações que usam Micronaut")
   }
 
   Boundary(framework, "Framework"){
-    Component(cache, "Cache", "Contém a lógica que otimiza o reúso de JSON já enviados ao frontend")
-    Component(component_sorting, "Canalização de Componentes", "Utilitário que ajuda a filtrar quais componentes serão mostrados por plataforma")
-    Component(widget, "Widget", "Define o modelo base para criação de componentes")
-    Component(beagle_components, "Componentes Beagle UI", "Define o modelo para criação de cada componente de UI do Beagle como Text, Button e etc...")
-    Component(analytics, "Analytics", "Define o modelo para criação do serviço de analytics")
-    Component(operations, "Operações", "Define o modelo para adicionar operações aos componentes")
-    Component(actions, "Ações", "Define o modelo para adicionar ações aos componentes")
-    Component(serialization, "Serialização", "Utilitário para serializar os componentes criados")
-    Component(context, "Contexto", "Define o modelo para criação de contextos Beagle nos componentes")
-    Component(layout_style, "Layout e Estilos", "Define o modelo para aplicar mudanças de layout como posicionamento e estilo como cores e tamanho")
+    Component(cache, "Cache", "Kotlin","Contém a lógica que otimiza o reúso de JSON já enviados ao frontend")
+    Component(component_sorting, "Canalização de Componentes", "Kotlin","Utilitário que ajuda a filtrar quais componentes serão mostrados por plataforma")
+    Component(widget, "Widget", "Kotlin","Define o modelo base para criação de componentes")
+    Component(beagle_components, "Componentes Beagle UI", "Kotlin","Define o modelo para criação de cada componente de UI do Beagle como Text, Button e etc...")
+    Component(analytics, "Analytics", "Kotlin","Define o modelo para criação do serviço de analytics")
+    Component(operations, "Operações", "Kotlin","Define o modelo para adicionar operações aos componentes")
+    Component(actions, "Ações", "Kotlin","Define o modelo para adicionar ações aos componentes")
+    Component(serialization, "Serialização", "Kotlin","Utilitário para serializar os componentes criados")
+    Component(context, "Contexto", "Kotlin","Define o modelo para criação de contextos Beagle nos componentes")
+    Component(layout_style, "Layout e Estilos", "Kotlin","Define o modelo para aplicar mudanças de layout como posicionamento e estilo como cores e tamanho")
   }
 
 }

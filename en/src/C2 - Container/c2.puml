@@ -16,15 +16,16 @@ System_Boundary(beagle, "Beagle"){
   }
 
 }
-System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
-System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
-Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
+System_Ext(frontend_app, "Application / Website", "A software that renders Beagle's screens").
+System_Ext(infra, "Infraestrutura", "Entity infrastructure that implements Beagle").
+Person(sre, "SRE / Devops", "Responsible for the configuration and infrastructure environment maintenance").
 
-Rel(software_developer, beagle_backend, "Define telas usando")
-Rel(frontend_app, beagle_frontend, "Renderiza usando / Possui instalado")
-Rel(beagle_frontend, beagle_backend, "Faz requisação da tela Beagle UI","REST ou gRPC")
-Rel(infra, beagle_backend, "Hospeda")
-Rel(sre, infra, "Configura")
-Rel(software_developer, frontend_app, "Configura o Beagle no")
+Rel(software_developer, beagle_backend, "It define screens").
+Rel(frontend_app, beagle_frontend, "It renders / It is installed").
+Rel(beagle_frontend, beagle_backend, "Requests Beagle UI screen","REST or gRPC").
+Rel(infra, beagle_backend, "It hosts").
+Rel(sre, infra, "It configures").
+Rel(software_developer, frontend_app, "It configures Beagle").
+
 
 @enduml

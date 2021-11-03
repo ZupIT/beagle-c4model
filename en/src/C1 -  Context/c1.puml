@@ -3,11 +3,12 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
-System(beagle, "Beagle", "Permite que os desenvolvedores criem telas Beagle facilmente.")
-System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
-System_Ext(infra, "Infraestrutura", "Infraestrutura da entidade que implanta o beagle")
-Person(sre, "SRE / Devops", "Responsáveis pela configuração e manutenção do ambiente de infra")
+Person(software_developer, "Software developer", "Any developer who wants to create and publish a frontend multi-platform application").
+System(beagle, "Beagle", "It allows developers to create Beagle's screens").
+System_Ext(frontend_app, "Application/ Website", "A software that renders Beagle's screens").
+System_Ext(infra, "Infrastructure", "Entity infrastructure that implements Beagle").
+Person(sre, "SRE / Devops", "Responsible for the infrastructure environment configuration and maintenance").
+
 
 Rel(software_developer, beagle, "Desenvolve usando")
 Rel(software_developer, frontend_app, "Configura o Beagle no")

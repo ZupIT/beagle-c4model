@@ -132,3 +132,9 @@ h5 * {
   background-color: #404659;
   color: #fff;
 }
+
+.content {
+  overflow-y: auto !important;
+  margin-top: 60px !important;
+  padding-top: 0 !important;
+}

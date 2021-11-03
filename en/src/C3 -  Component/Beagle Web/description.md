@@ -1,6 +1,6 @@
-O Beagle Web é separado em duas partes principais a biblioteca frontend e o core :
+Beagle Web is divided into two main parts: fronted and core libraries:
 
-* A biblioteca frontend é responsável por criar a ponte entre cada framework que usa o Beagle e o Core
-* Cada framework (Angular, React, Flutter) contém os componentes padrões de interface do Beagle além de um utilitário que faz a ligação com o Core e apresenta as telas nativamente.
-* O Beagle Web Core inicia seu processo através do componente Beagle Service, ele contém, processa e organiza tudo que é padrão da biblioteca como componentes, serviços.
-* O componente que orquestra as telas é o Beagle View. Ele inicia serviços de navegação, renderização e estes por sua vez usam todos os utilitários disponíveis para tratar e traduzir cada tela que será apresentada.
+* The frontend library is responsible for creating the bridge between each framework that uses Beagle and Core.
+* Every framework (Angular, React, Flutter) contains the default Beagle interface components. They also have a utility that makes a connection with Core and displays screens natively. 
+* Beagle Web Core starts its process through a Beagle Service component. It processes and organizes every library default, such as components and services. 
+* Beagle View orchestrates screens. It starts the navigation services, rendering, and uses every available utility to handle and translate each screen.

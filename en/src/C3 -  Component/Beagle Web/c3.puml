@@ -2,26 +2,26 @@
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
 LAYOUT_WITH_LEGEND()
 
-System_Ext(frontend_app, "Aplicativo / Website", "Um software que renderiza as telas do Beagle")
+System_Ext(frontend_app, "Application / Website", "A software that renders Beagle's screens").
 
-Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of screens following Beagle's contract").
 
 Container_Boundary(beagle_web, "Beagle Web"){
 
   Boundary(beagle_web_frontend, "Beagle Web Frontend"){
-    Component(beagle_remote_view, "Beagle Remote View","Typescript", "Local onde a tela será renderizada de acordo com a rota e / ou configurações passadas")
-    Component(beagle_components, "Beagle Components","Typescript", "Componentes do Beagle como Text, Listview, Container...")
+    Component(beagle_remote_view, "Beagle Remote View","Typescript", "Location where the screen is rendered according to the route and/or past settings").
+    Component(beagle_components, "Beagle Components","Typescript", "Beagle's components like Text, Listview, Container, etc").
 
     Boundary(beagle_react, "Beagle React"){
-      Component(beagle_provider, "Beagle Provider", "Typescript", "Inicia o Beagle Service")
+      Component(beagle_provider, "Beagle Provider", "Typescript", "It starts Beagle Service").
     }
 
     Boundary(beagle_angular, "Beagle Angular"){
-      Component(beagle_module, "Beagle Module", "Typescript", "Inicia o Beagle Service")
+      Component(beagle_module, "Beagle Module", "Typescript", "It starts Beagle Service").
     }
 
     Boundary(beagle_flutter, "Beagle Flutter"){
-      Component(beagle_flutter_bridge, "Beagle Flutter Bridge", "Typescript, Dart", "Ponte de comunicação entre o core do Beagle e o código nativo flutter")
+      Component(beagle_flutter_bridge, "Beagle Flutter Bridge", "Typescript, Dart", "Communication bridge between Beagle Core and native Flutter code").
     }
   }
 
@@ -29,61 +29,61 @@ Container_Boundary(beagle_web, "Beagle Web"){
 
   Boundary(beagle_core, "Beagle Web Core"){
 
-    Component(beagle_service, "Beagle Service", "Typescript","Ponto de partida de toda a lógica de processamento do Beagle Web Core, é responsável por iniciar a biblioteca e faz a ponte entre os utilitários e o código nativo")
-    Component(beagle_config, "Beagle Config", "Typescript","Configurações que alteram ou incrementam o comportamento da biblioteca Beagle")
-    Component(beagle_view, "Beagle View","Typescript", "Responsável pelo gerenciamento de telas server-driven")
-    Component(beagle_navigator, "Beagle Navigator","Typescript", "Responsável pelo controle de navegação entre as rotas")
-    Component(beagle_renderer, "Beagle Renderer","Typescript", "Responsável pela renderização de telas e uso dos utilitários de desserialização")
-    Component(beagle_actions, "Beagle Actions","Typescript", "Ações pré-definidas ou customizadas como por exemplo SendRequest")
+    Component(beagle_service, "Beagle Service", "Typescript", "The starting point of all Beagle Core processes. It is responsible for starting the library and it reduces the gap between utilities and native code").
+    Component(beagle_config, "Beagle Config", "Typescript","Settings that change or enhance Beagle's library behavior").
+    Component(beagle_view, "Beagle View","Typescript", "It is responsible for managing server-driven screens").
+    Component(beagle_navigator, "Beagle Navigator","Typescript", "It is responsible for controlling navigation between routes").
+    Component(beagle_renderer, "Beagle Renderer", "Typescript", "It is responsible for rendering the screens and use of deserialization utilities").
+    Component(beagle_actions, "Beagle Actions","Typescript", "Pre-defined or customized actions, for example, SendRequest").
 
     Boundary(beagle_config_services, "Config Services and Helpers"){
-      Component(http_client, "HTTP Client","Typescript", "Serviço para definir ação de fetch customizada")
-      Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
-      Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
-      Component(view_content_manager, "View Content Manager","Typescript", "Utilitário que ajuda no acesso a elementos da árvore de componentes")
-      Component(prefetcher, "Prefetcher","Typescript", "Utilitário que faz a reutilização de telas já carregadas")
-      Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
-      Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
-      Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
-      Component(action_handlers, "Action Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de ações")
-      Component(expression_handlers, "Expression Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de expressions")
+      Component(http_client, "HTTP Client","Typescript", "Service to define custom fetch action").
+      Component(analytics, "Analytics Service","Typescript", "Service to enable analytics for route changing events or components action").
+      Component(view_client, "View Client","Typescript", "Utility that makes requests to the backend and handles cache strategies").
+      Component(view_content_manager, "View Content Manager","Typescript", "Utility that helps access elements of the component tree").
+      Component(prefetcher, "Prefetcher","Typescript", "Utility that reuses already loaded screens").
+      Component(global_context, "Global Context","Typescript", "Utility responsible for deserialization and treatment of the global context").
+      Component(url_builder, "URL Builder","Typescript", "Utility that treats the URL sent as a parameter for the settings").
+      Component(operation_handlers, "Operation Handler","Typescript", "Utility responsible for deserializing and handling operations").
+      Component(action_handlers, "Action Handler","Typescript", "Utility responsible for deserialization and handling actions").
+      Component(expression_handlers, "Expression Handler","Typescript", "Utility responsible for deserialization and handling expressions").
     }
   }
 }
 
-Rel(frontend_app, beagle_angular, "Usa")
-Rel(frontend_app, beagle_react, "Usa")
-Rel(frontend_app, beagle_flutter, "Usa")
-Rel(beagle_flutter_bridge, beagle_service, "Cria")
-Rel(beagle_provider, beagle_remote_view, "Acessa parâmetros")
-Rel(beagle_module, beagle_remote_view, "Acessa parâmetros")
-Rel(beagle_remote_view, beagle_components, "Processa e apresenta")
-Rel(beagle_actions, analytics, "Pode criar evento")
-Rel(beagle_provider, beagle_service, "Cria")
-Rel(beagle_module, beagle_service, "Cria")
-Rel(beagle_service, beagle_view, "Cria")
-Rel(beagle_view, beagle_service, "Contém")
-Rel(beagle_service, beagle_config ,"Processa")
-Rel(beagle_config, beagle_config_services ,"Contém")
-Rel(beagle_config, beagle_components ,"Contém")
-Rel(beagle_remote_view, view_content_manager ,"Provê para seus filhos")
-Rel(view_content_manager, beagle_view , "Retorna uma instância")
-Rel(beagle_config, beagle_actions ,"Contém")
-Rel(beagle_view, beagle_navigator, "Cria")
-Rel(beagle_view, beagle_renderer, "Cria")
-Rel(beagle_renderer, beagle_view, "Usa")
-Rel(beagle_navigator, beagle_renderer, "Aciona renderização")
-Rel(beagle_renderer, action_handlers, "Usa")
-Rel(beagle_renderer, operation_handlers, "Usa")
-Rel(beagle_renderer, expression_handlers, "Usa")
-Rel(global_context, beagle_renderer, "Aciona renderização")
-Rel(beagle_view, view_client, "Usa")
-Rel(beagle_view, global_context, "Cria")
-Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
-Rel(beagle_navigator, analytics, "Pode criar evento")
-Rel(beagle_navigator, url_builder, "Usa")
-Rel(beagle_actions, http_client, "Pode usar")
-Rel(view_client, http_client, "Usa")
-Rel(prefetcher, view_client, "Usa")
+Rel(frontend_app, beagle_angular, "It uses").
+Rel(frontend_app, beagle_react, "It uses").
+Rel(frontend_app, beagle_flutter, "It uses").
+Rel(beagle_flutter_bridge, beagle_service, "It creates").
+Rel(beagle_provider, beagle_remote_view, "Access parameters").
+Rel(beagle_module, beagle_remote_view, "Access parameters").
+Rel(beagle_remote_view, beagle_components, "Process and present").
+Rel(beagle_actions, analytics, "It can create events").
+Rel(beagle_provider, beagle_service, "It creates").
+Rel(beagle_module, beagle_service, "It creates").
+Rel(beagle_service, beagle_view, "It creates").
+Rel(beagle_view, beagle_service, "It contains").
+Rel(beagle_service, beagle_config ,"It processes").
+Rel(beagle_config, beagle_config_services ,"It contains").
+Rel(beagle_config, beagle_components ,"It contains").
+Rel(beagle_remote_view, view_content_manager ,"It provides for its children").
+Rel(view_content_manager, beagle_view , "It returns an instance").
+Rel(beagle_config, beagle_actions ,"It contains").
+Rel(beagle_view, beagle_navigator, "It creates").
+Rel(beagle_view, beagle_renderer, "It creates").
+Rel(beagle_renderer, beagle_view, "It uses")
+Rel(beagle_navigator, beagle_renderer, "It triggers rendering").
+Rel(beagle_renderer, action_handlers, "It uses").
+Rel(beagle_renderer, operation_handlers, "It uses").
+Rel(beagle_renderer, expression_handlers, "It uses").
+Rel(global_context, beagle_renderer, "It triggers rendering").
+Rel(beagle_view, view_client, "It uses").
+Rel(beagle_view, global_context, "It creates").
+Rel(view_client, beagle_backend, "Makes a request", "HTTP").
+Rel(beagle_navigator, analytics, "It can create events").
+Rel(beagle_navigator, url_builder, "It uses").
+Rel(beagle_actions, http_client, "It can use").
+Rel(view_client, http_client, "It uses").
+Rel(prefetcher, view_client, "It uses").
 
 @enduml

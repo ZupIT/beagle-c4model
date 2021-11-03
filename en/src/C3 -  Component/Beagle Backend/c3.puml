@@ -5,36 +5,36 @@ LAYOUT_WITH_LEGEND()
 Container_Boundary(beagle_backend, "Beagle Backend"){
 
   Boundary(backend_starter, "Backend Starter"){
-    Component(backend_starter_spring, "Beagle Spring Starter", "Aciona configurações automáticas iniciais para aplicações que usam Spring")
-    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "Aciona configurações automáticas iniciais para aplicações que usam Micronaut")
+    Component(backend_starter_spring, "Beagle Spring Starter", "It triggers initial automatic configurations for applications using Spring").
+    Component(backend_starter_micronaut, "Beagle Micronaut Starter", "It triggers initial automatic configurations for applications using Micronaut").
   }
 
   Boundary(framework, "Framework"){
-    Component(cache, "Cache", "Contém a lógica que otimiza o reúso de JSON já enviados ao frontend")
-    Component(component_sorting, "Canalização de Componentes", "Utilitário que ajuda a filtrar quais componentes serão mostrados por plataforma")
-    Component(widget, "Widget", "Define o modelo base para criação de componentes")
-    Component(beagle_components, "Componentes Beagle UI", "Define o modelo para criação de cada componente de UI do Beagle como Text, Button e etc...")
-    Component(analytics, "Analytics", "Define o modelo para criação do serviço de analytics")
-    Component(operations, "Operações", "Define o modelo para adicionar operações aos componentes")
-    Component(actions, "Ações", "Define o modelo para adicionar ações aos componentes")
-    Component(serialization, "Serialização", "Utilitário para serializar os componentes criados")
-    Component(context, "Contexto", "Define o modelo para criação de contextos Beagle nos componentes")
-    Component(layout_style, "Layout e Estilos", "Define o modelo para aplicar mudanças de layout como posicionamento e estilo como cores e tamanho")
+    Component(cache, "Cache", "It has the logic to optimize the reuse of JSON already sent to the frontend").
+    Component(component_sorting, "Component channeling", "Utility that helps to filter which component will be displayed by the platform").
+    Component(widget, "Widget", "Defines the model to create components").
+    Component(beagle_components, "Componentes Beagle UI", "Defines the model to create each Beagle's UI component like Text, Button, etc...").
+    Component(analytics, "Analytics", "Defines the model to create analytics service").
+    Component(operations, "Operations", "Defines the model to add operations to the components").
+    Component(actions, "Actions", "Defines the model to add action to the components").
+    Component(serialization, "Serialization", "Utility to serialize the created components").
+    Component(context, "Context", "Defines the template to create Beagle's context on the components").
+    Component(layout_style, "Layout e Estilos", "Defines the template to apply layout changes like positioning and style, such as color and size").
   }
 
 }
 
-Rel(backend_starter,framework, "Configura")
+Rel(backend_starter,framework, "It configures").
 
-Rel(serialization, beagle_components, "Serializa")
-Rel(serialization, component_sorting, "Pode Usar")
-Rel(component_sorting, cache, "Pode Usar")
-Rel(beagle_components,widget, "Herda")
-Rel(beagle_components,analytics, "Herda")
-Rel(beagle_components,operations, "Herda")
-Rel(beagle_components,actions, "Herda")
-Rel(beagle_components,context, "Herda")
-Rel(beagle_components,layout_style, "Herda")
+Rel(serialization, beagle_components, "It serialize").
+Rel(serialization, component_sorting, "It can use").
+Rel(component_sorting, cache, "It can use").
+Rel(beagle_components,widget, "It inherits").
+Rel(beagle_components,analytics, "It inherits").
+Rel(beagle_components,operations, "It inherits").
+Rel(beagle_components,actions, "It inherits").
+Rel(beagle_components,context, "It inherits").
+Rel(beagle_components,layout_style, "It inherits").
 
 
 @enduml

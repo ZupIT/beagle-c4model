@@ -1,4 +1,5 @@
-Beagle Android has a relationship between Beagle Framework and Android applications. It orchestrates the creation of the views in the Android environment from components received from the Backend.
+Beagle Android sets the relationship between Beagle Framework and Android applications. 
+It orchestrates the creation of the views in the Android environment from components received from the Backend.
 
 Beagle's components are: 
 
@@ -11,4 +12,3 @@ Beagle has an **annotation process** mechanism, it initially creates the framewo
 These components are annotated, so that the processor is able to map them, for example:
 -  `@RegisterAction` is used to register actions;
 -  `@RegisterWidget` is used to register visual components.
-

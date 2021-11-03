@@ -17,13 +17,11 @@ The visualization of architecture is crucial in several aspects and responds to 
 This was our motivation to develop the C4 Model, that is, that of visualization of our architecture in a very simple and effective way.
 
 
-
 **What is C4Model?**
 
 The C4 model is based on 4 + 1 and UML and was created by Simon Brown between 2006 and 2011. The model emerged with the intention of helping to solve the problem of documentation of flaws or difficulties to understand and maintain, bringing a more Clara of the architecture documented by covering several levels and that is relevant to the various "personas" involved.
 
 It is divided into four types of diagrams, where each has a different level of detail and target audience. The idea is that each level is further deepened in the details and information of the previous level.
-
 
 
 **What is Beagle?**

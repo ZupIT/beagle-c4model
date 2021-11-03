@@ -21,7 +21,6 @@ Container_Boundary(beagle_backend, "Beagle Backend"){
     Component(context, "Context", "Defines the template to create Beagle's context on the components").
     Component(layout_style, "Layout e Estilos", "Defines the template to apply layout changes like positioning and style, such as color and size").
   }
-
 }
 
 Rel(backend_starter,framework, "It configures").
@@ -35,6 +34,5 @@ Rel(beagle_components,operations, "It inherits").
 Rel(beagle_components,actions, "It inherits").
 Rel(beagle_components,context, "It inherits").
 Rel(beagle_components,layout_style, "It inherits").
-
 
 @enduml

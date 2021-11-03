@@ -11,3 +11,4 @@ Beagle has an **annotation process** mechanism, it initially creates the framewo
 These components are annotated, so that the processor is able to map them, for example:
 -  `@RegisterAction` is used to register actions;
 -  `@RegisterWidget` is used to register visual components.
+

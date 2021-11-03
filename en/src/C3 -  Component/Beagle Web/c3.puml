@@ -8,7 +8,7 @@ Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of
 
 Container_Boundary(beagle_web, "Beagle Web"){
 
-  Boundary(beagle_web_frontend, "Beagle Web Frontend"){
+Boundary(beagle_web_frontend, "Beagle Web Frontend"){
     Component(beagle_remote_view, "Beagle Remote View","Typescript", "Location where the screen is rendered according to the route and/or past settings").
     Component(beagle_components, "Beagle Components","Typescript", "Beagle's components like Text, Listview, Container, etc").
 
@@ -25,10 +25,7 @@ Container_Boundary(beagle_web, "Beagle Web"){
     }
   }
 
-
-
   Boundary(beagle_core, "Beagle Web Core"){
-
     Component(beagle_service, "Beagle Service", "Typescript", "The starting point of all Beagle Core processes. It is responsible for starting the library and it reduces the gap between utilities and native code").
     Component(beagle_config, "Beagle Config", "Typescript","Settings that change or enhance Beagle's library behavior").
     Component(beagle_view, "Beagle View","Typescript", "It is responsible for managing server-driven screens").
@@ -36,7 +33,7 @@ Container_Boundary(beagle_web, "Beagle Web"){
     Component(beagle_renderer, "Beagle Renderer", "Typescript", "It is responsible for rendering the screens and use of deserialization utilities").
     Component(beagle_actions, "Beagle Actions","Typescript", "Pre-defined or customized actions, for example, SendRequest").
 
-    Boundary(beagle_config_services, "Config Services and Helpers"){
+  Boundary(beagle_config_services, "Config Services and Helpers"){
       Component(http_client, "HTTP Client","Typescript", "Service to define custom fetch action").
       Component(analytics, "Analytics Service","Typescript", "Service to enable analytics for route changing events or components action").
       Component(view_client, "View Client","Typescript", "Utility that makes requests to the backend and handles cache strategies").

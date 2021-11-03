@@ -27,5 +27,4 @@ Rel(infra, beagle_backend, "It hosts").
 Rel(sre, infra, "It configures").
 Rel(software_developer, frontend_app, "It configures Beagle").
 
-
 @enduml

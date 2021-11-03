@@ -26,13 +26,12 @@ It is divided into four types of diagrams, where each has a different level of d
 
 
 
-**O que é o Beagle?**
+**What is Beagle?**
+Beagle is an open-source framework for cross-platform development using the concept of Server-Driven UI.
 
-Beagle é uma ferramenta de código aberto que ajuda os desenvolvedores a implementar Server-Driven UI que funcione em múltiplas plataformas.
+When you use Beagle, you are able to: 
 
-Ao utilizar o Beagle, desenvolvedores podem:
-
- - Rapidamente alterar o layout, dados, fluxo de navegação, ou até mesmo lógica, apenas alterando código no backend.
- - Ser mais independentes das lojas mobile, como App Store e Play Store, porque a maioria das mudanças não precisarão de uma atualização no aplicativo.
- - Ter mais confiança de que aplicações se comportarão de forma semelhante em plataformas diferentes, pois o código será compartilhado e padronizado entre backend e frontend.
- - Testar facilmente novas hipóteses de negócio ou fazer correções em tempo real nas aplicações para melhorar a experiência dos usuários e receber feedback.
+ - Quickly change the layout, data, navigation flow, or even logic, just by changing code in the backend.
+ - Be more independent from mobile stores such as the App Store and Play Store because most changes will not need an in-app update.
+ - Be more confident that the application will behave similarly on different platforms as code will be shared between backend and frontend.
+ - Easily test new business hypotheses or make real-time fixes to applications to improve user experience and receive feedback.

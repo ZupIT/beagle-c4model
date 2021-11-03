@@ -2,44 +2,44 @@
 !include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
 LAYOUT_WITH_LEGEND()
 
-System_Ext(frontend_app, "Android Application", "An application that render screens/components created with Beagle")
-System_Ext(moshi_lib, "Moshi library","A JSON library for Android and Java that converts JSON objects into Java objects")
-System_Ext(yoga_layout, "Yoga Layout", "Engine that positions ui components on a screen")
-System_Ext(design_system, "Design System (External)", "An external Design System library ")
-System_Ext(analytics_provider, "Analytics Provider", "An external Analytics tool provider")
+System_Ext(frontend_app, "Android application", "An application that renders Beagle's screens").
+System_Ext(moshi_lib, "Moshi library", "JSON lib for Android and Java. It converts JSON into a Java object").
+System_Ext(yoga_layout, "Yoga Layout", "Engine that positions the screen components").
+System_Ext(design_system, "Design System Externo", "Design System configuration lib external to the application").
+System_Ext(analytics_provider, "Analytics Provider", "External Analytics provider").
 
-Container(beagle_backend, "Beagle Backend", "Kotlin", "Defines an enviroment to create Beagle Screens/Components following it's contract")
+Container(beagle_backend, "Beagle Backend", "Koltin", "It allows screen creation following Beagle's contract").
 
 Container_Boundary(beagle_android, "Beagle Android"){
-  Component(beagle_config, "Beagle Config", "Kotlin", "Defines some Beagle Configurations, like the BASE URL used for backend requisitions. It is also used when creating the Beagle Setup")
-  Component(beagle_networking, "Beagle Networking", "Kotlin","Configures the application netwrok layer")
-  Component(beagle_setup, "Beagle Setup", "Kotlin", "Maps the components registration created by Beagle. It is set through an annotation processor. It is created on the application first build.") 
-  Component(beagle_activity, "Beagle Activity", "Kotlin","Receives serialized server driven screens/components")
-  Component(beagle_serializer, "Beagle Serializer", "Kotlin", "Serializes/Deserializes screens/components through MOSHI")
-  Component(server_driven_component, "Server Driven Component", "Kotlin","Beagle component ready to be turned into an Android native view")
-  Component(view_factory, "Beagle View Factory", "Kotlin", "Class whoose logic is responsible to create Android native views")
-  Component(beagle_fragment, "Beagle Fragment", "Kotlin", "Android fragment created from a deserialized screen/component JAVA object")
-  Component(context_data_manager, "Context Data Manager", "Kotlin", "Defines de logic to add and handle the Context functionality in Beagle screen/components. Updates the Global context")
-  Component(beagle_analytic, "Beagle Analytics", "Kotlin", "Maps the Analytics provider")
-  Component(beagle_ds, "Design System", "Kotlin", "Maps the Android styles so Beagle could apply them on screen/components")
+  Component(beagle_config, "Beagle Config", "Kotlin", "Defines Beagle's configuration, as the base URL for backend requests. It is used in the creation of the Beagle Setup.").
+  Component(beagle_networking, "Beagle Networking", "Kotlin","It configures the application's net").
+  Component(beagle_setup, "Beagle Setup", "Kotlin","Registers the components used/created on Beagle through an annotation processor. It is created when the application is built the first time.").
+  Component(beagle_activity, "Beagle Activity", "Kotlin","It receives serialized server-driven Screens/components").
+  Component(beagle_serializer, "Beagle Serializer", "Kotlin", "Serializes/Deserializes screen/components using MOSHI").
+  Component(server_driven_component, "Server Driven Component", "Kotlin","Beagle's component ready to be transformed into an Android's native view").
+  Component(view_factory, "Beagle View Factory", "Kotlin", "Class responsible for creating native views on Android").
+  Component(beagle_fragment, "Beagle Fragment", "Kotlin", "Android's fragment created from screen/deserialized component").
+  Component(context_data_manager, "Context Data Manager", "Kotlin", "Regulates adding and updating context functionality to components. It updates the Global context").
+  Component(beagle_analytic, "Beagle Analytics", "Kotlin", "Class that maps Analytics").
+  Component(beagle_ds, "Design System", "Kotlin", "Class that maps the Android styles so Beagle's components can use it. ").
 }
 
-Rel(frontend_app, beagle_config, "Defines")
-BiRel(beagle_analytic, analytics_provider, "Register events")
-BiRel(beagle_fragment, beagle_ds, "Add styles")
-BiRel(beagle_ds, design_system, "Can get styles from an external library")
-BiRel(beagle_fragment, beagle_analytic, "Adds Analytics provider")
-BiRel(beagle_fragment, context_data_manager, "Adds/Handles context")
-Rel(beagle_serializer, beagle_fragment, "Converts in")
-Rel(frontend_app, beagle_activity, "Adds a server driven screen on Android application")
-Rel(beagle_activity, beagle_networking, "Uses", "Fetches")
-Rel(beagle_networking, beagle_backend, "Makes screen/components requisitions to the backend","HTTPS/JSON")
-Rel(beagle_serializer, moshi_lib, "Uses")
-Rel(beagle_activity, beagle_serializer, "Uses")
-Rel(beagle_fragment, server_driven_component, "Creates")
-Rel(server_driven_component, view_factory, "Uses")
-Rel(view_factory, beagle_activity, "Creantes an Android view")
-Rel(server_driven_component, beagle_setup, "Is registered")
-BiRel(server_driven_component, yoga_layout, "Defines ui components positioning at a screen")
+Rel(frontend_app, beagle_config, "It defines").
+BiRel(beagle_analytic, analytics_provider, "Registers events").
+BiRel(beagle_fragment, beagle_ds, "Adds styles").
+BiRel(beagle_ds, design_system, "It can receive styles from external library").
+BiRel(beagle_fragment, beagle_analytic, "Adds Analytics").
+BiRel(beagle_fragment, context_data_manager, "Adds context").
+Rel(beagle_serializer, beagle_fragment, "It converts in").
+Rel(frontend_app, beagle_activity, "Adds the Server-Driven scree to the application").
+Rel(beagle_activity, beagle_networking, "It uses", "Fetch").
+Rel(beagle_networking, beagle_backend, "Make screen request/Beagle component","HTTPS/JSON").
+Rel(beagle_serializer, moshi_lib, "It uses").
+Rel(beagle_activity, beagle_serializer, "It uses").
+Rel(beagle_fragment, server_driven_component, "It creates").
+Rel(server_driven_component, view_factory, "It uses").
+Rel(view_factory, beagle_activity, "It creates an Android view").
+Rel(server_driven_component, beagle_setup, "It is registered").
+BiRel(server_driven_component, yoga_layout, "Defines the screen positioning").
 
 @enduml

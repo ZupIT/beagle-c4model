@@ -1,9 +1,14 @@
-O Beagle iOS é uma biblioteca que tem como finalidade integrar o sistema Beagle em um projeto existente de aplicativo nativo dos sistemas Apple iOS.
+Beagle iOS is a library created to integrate Beagle's system into an existing native Apple iOS systems application.
 
-As peças chave para entendimento da arquitetura e sua aplicação são os componentes abaixo:
+The key part to understanding the architecture and its application are the components below: 
 
-* **Beagle Config:** Classe de instância única que armazena todas as configurações, customizações e implementações do Beagle (propriedade `Dependencies`). Sua inicialização é essencial para o funcionamento do projeto e ocorre no `AppDelegate` do aplicativo hospedeiro.
-* **Beagle View Controller e Beagle View:** São as portas de entrada para as telas server-driven do Beagle. O **Beagle View Controller** pode ser adicionado na pilha de navegação diretamente a partir da classe `AppDelegate` e age como uma tela independente. Já **Beagle View** é uma UIView do UIKit, ela possibilita adicionar uma tela Beagle como subview de uma tela existente, sendo assim, torna-se dependente de um view controller ou UIView previamente definidos. O conteúdo de um **Beagle View Controller** é uma composição de **Server Driven Components** traduzidos para UIKit.
-* **Server Driven Component:** Representação de qualquer elemento de interface do Beagle. Ele pode representar tanto elementos visuais como botões, textos e listas quanto ações de navegação, comportamentos de clique e operações.
-* **Network Client:** Por padrão o Beagle iOS não provê uma estratégia padrão para realização de requisições remotas, dando a liberdade aos desenvolvedores implementarem a abordagem mais compatível com o contexto do projeto, como: direcionamento de entpoints, regras de segurança e tratamento de erros. **Network Client** fica responsável por comunicar-se com os recursos implementados no **Beagle Backend**.
-* **Recursos de apoio:** O Beagle iOS provê certo nível de customização de alguns componentes de projeto. Ao observar o diagrama abaixo, é possível notar alguns componentes com a descrição "abstrato | opcional", tais componentes são meios de propagar eventos para ferramentas de analytics contratadas ou regras customizadas de armazenamento local das telas.
+* **Beagle Config:** Single instance class that stores Beagle's configuration, customizations, and implementations (`Dependencies` property). Its initialization is essential to make the project work and it happens on the `AppDelegate` of the host application.
+* **Beagle View Controller and Beagle View:** These are the gateways to Beagle's server-driven screens. **Beagle View Controller** can be directly added to the navigation stack from the `AppDelegate` class and acts as a standalone screen. 
+**Beagle View** is an UIView from UIKit. It is possible to add a Beagle screen as a subview of an existing screen, therefore, it becomes dependent on a previously defined view controller or UIView. 
+The content of a **Beagle View Controller** is a composition of **Server Driven Components** translated to UIKit.
+
+* **Server Driven Component:** Representation of any Beagle interface element. It can represent both visual elements such as buttons, text, and lists as well as navigation actions, click behaviors, and operations.
+
+* **Network Client:** By default, Beagle iOS provides a strategy to perform remote requests. It gives developers the freedom to implement the most compatible approach to the context of the project, for example, endpoint routing, security rules, and error handling. **Network Client** is responsible for communicating with the implemented resources in the **Beagle Backend**.
+
+* **Support resources:** Beagle iOS provides a customization level of some components. Check out the diagram below, you can notice some components with the "abstract | optional" description, they are able to propagate events to contracted analytics tools or custom screen local storage rules.

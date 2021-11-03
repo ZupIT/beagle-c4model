@@ -1,4 +1,4 @@
-O Beagle Backend é uma biblioteca de suporte que ajuda na criação de telas Beagle a partir de um servidor.
-- O Backend Starter configura automaticamente a biblioteca em aplicações usando Spring ou Micronaut. 
-- O Framework fornece todos os contratos que serão usados na criação dos componentes.
-- O Framework também possui um utilitário de serialização que transforma toda tela criada no JSON que será enviado para um frontend.
+Beagle Backend is a support library that helps create Beagle screens from a server. 
+- The Backend Starter automatically configures the library in applications using Spring or Micronaut. 
+- The Framework provides all contracts that will be used in the creation of the components.
+- The Framework also has a serialization utility that transforms every screen created in JSON, and it will be sent to a frontend.

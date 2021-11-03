@@ -3,28 +3,27 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(software_developer, "Software developer", "Any developer who wants to create and publish a frontend multi-platform application").
+Person(software_developer, "Software Developer", "Any developers that want to publish a cross platform frontend application.")
 System_Boundary(beagle, "Beagle"){
   
-  Container(beagle_backend, "Beagle Backend", "Koltin", "It allows screen creation following Beagle's contract").
+  Container(beagle_backend, "Beagle Backend", "Kotlin", "It allows screen creation following Beagle's contract.")
 
   System_Boundary(beagle_frontend, "Beagle Frontend") {
       
-    Container(beagle_web_core, "Beagle Web", "Typescript", "Watches the web application rendering").
-      Container(beagle_android, "Beagle Android", "Kotlin", "Watches the Android application rendering").
-      Container(beagle_ios, "Beagle iOS", "swift", "Watches the iOS applications rendering").
+    Container(beagle_web_core, "Beagle Web", "Typescript", "Handles the rendering of Web Applications.")
+      Container(beagle_android, "Beagle Android", "Kotlin", "Handles the rendering of Android Applications.")
+      Container(beagle_ios, "Beagle iOS", "swift", "Handles the rendering of iOS Applications.")
   }
-
 }
-System_Ext(frontend_app, "Application / Website", "A software that renders Beagle's screens").
-System_Ext(infra, "Infraestrutura", "Entity infrastructure that implements Beagle").
-Person(sre, "SRE / Devops", "Responsible for the configuration and infrastructure environment maintenance").
+System_Ext(frontend_app, "App / Website", "A software that renders Beagle screens.")
+System_Ext(infra, "Infrastructure", "The whole infra of the entity that implements beagle.")
+Person(sre, "SRE / Devops", "Responsible for configuring and maintaining the environments")
 
-Rel(software_developer, beagle_backend, "It define screens").
-Rel(frontend_app, beagle_frontend, "It renders / It is installed").
-Rel(beagle_frontend, beagle_backend, "Requests Beagle UI screen","REST or gRPC").
-Rel(infra, beagle_backend, "It hosts").
-Rel(sre, infra, "It configures").
-Rel(software_developer, frontend_app, "It configures Beagle").
+Rel(software_developer, beagle_backend, "Defines using")
+Rel(frontend_app, beagle_frontend, "Renders using / Has installed")
+Rel(beagle_frontend, beagle_backend, "Requests Beagle UI screens","REST or gRPC")
+Rel(infra, beagle_backend, "Hosts")
+Rel(sre, infra, "Configures")
+Rel(software_developer, frontend_app, "Configures Beagle at")
 
 @enduml

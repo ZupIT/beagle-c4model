@@ -18,9 +18,11 @@ This was our motivation to develop the C4 Model, that is, that of visualization 
 
 
 
-**O que é o C4Model?**
+**What is C4Model?**
 
- O C4 Model é baseado no 4+1 e UML e foi criado por Simon Brown entre 2006 e 2011. O modelo surgiu com o intuito de ajudar a resolver o problema de documentação de arquiteturas falhas, difíceis de entender e manter, trazendo uma visão mais clara da arquitetura documentada abrangendo vários níveis e que seja relevante para as várias “personas” envolvidas. Ele é dividido em quatro tipos de diagramas, onde cada um possui um nível diferente de detalhes e público alvo. A ideia é que cada nível se aprofunde mais nos detalhes e informações do nível anterior. 
+The C4 model is based on 4 + 1 and UML and was created by Simon Brown between 2006 and 2011. The model emerged with the intention of helping to solve the problem of documentation of flaws or difficulties to understand and maintain, bringing a more Clara of the architecture documented by covering several levels and that is relevant to the various "personas" involved.
+
+It is divided into four types of diagrams, where each has a different level of detail and target audience. The idea is that each level is further deepened in the details and information of the previous level.
 
 
 

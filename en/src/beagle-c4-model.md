@@ -2,21 +2,19 @@
 
 **Overview**
 
-Uma das definições usadas de arquitetura de software é que ela define as partes de um software e é a estratégia tecnológica de um produto/projeto. E como toda estratégia, é muito importante que ela seja vista e frequentemente visitada e atualizada. Afinal, um planejamento sem visualização tenderá a ser falho. 
+By definition, software architecture is the technological strategy of a product and/or service, defining the parts that make up a system. And, like every strategy, it is critical that it is constantly updated, after all, non-viewing planning will tend to be flawed.
 
-Documentar a arquitetura de um projeto muitas vezes é um processo maçante, que exige tempo, conhecimento de ferramentas e técnicas para diagramação e documentação. O maior desafio dentro de uma documentação de arquitetura é evitar dois cenários.
+Documenting the architecture of a project will often be a dull process and that requires time, knowledge of tools, and techniques for diagramming and documentation. The biggest challenge within architecture documentation is to avoid two scenarios:
 
-- Documentações de arquitetura muito complexas e por consequência elas tendem a ficarem confusas e obsoletas, assim, se perde o seu propósito. Ou seja, se gasta bastante tempo para uma documentação que tende a ser inutilizada eventualmente.
+1. Very complex architecture documentation and that, therefore, tend to stalk and obsolete, losing its purpose. In other words: it spends plenty of time on documentation that tends to be unusable eventually.
 
-- Documentações pobres com pouca informação ou informações falhas. 
+2. Poor documentation with low information or failure information.
 
-Em ambos os casos o resultado final é que elas acabam atrapalhando mais do que ajudando.
+In both cases, the end result is that they end up disturbing more than helping.
 
+The visualization of architecture is crucial in several aspects and responds to several questions, for example: "How does my system integrate with other systems? How can I climb my application? How to ensure security between my applications?", Among other points.
 
-A visualização da arquitetura é crucial em diversos aspectos e responde várias perguntas, por exemplo, como o meu sistema integra entre eles mesmo e outros sistemas? Como consigo escalar a minha aplicação? Como garantir a segurança entre as minhas aplicações, dentre outros pontos.
-
-
-Pensando nisso, nos motivamos para criar uma visualização da nossa arquitetura de um modo bastante simples com o C4 Model.
+This was our motivation to develop the C4 Model, that is, that of visualization of our architecture in a very simple and effective way.
 
 
 

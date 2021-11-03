@@ -4,60 +4,60 @@
 LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
-System_Ext(frontend_app, "iOS Application", "An application that renders Beagle screens").
-Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of screens following Beagle's contract").
+System_Ext(frontend_app, "iOS Application", "An application that renders Beagle screens")
+Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of screens following Beagle's contract")
 
 Container_Boundary(beagle_android, "Beagle iOS") {
-  Component(beagle_config, "Beagle Config", "Swift", "Singleton responsible for storing all Beagle dependencies and settings, such as: themes, view client implementations, analytics, decoder, logger, deeplinks, etc").
-  Component(beagle_view_controller, "Beagle View Controller", "Swift", "Full screen representation of Beagle (View Controller)").
-  Component(beagle_view, "Beagle View", "Swift", "Another option to Beagle View Controller that allows you to add a Beagle screen as part of a native iOS screen (UIView)").
-  Component(analytics, "Analytics", "Swift | Abstract | Opcional", "Register screen lifecycle events for analysis tools").
-  Component(view_client, "View Client", "Swift", "Repository that is responsible for making remote requests to get Beagle screens").
-  Component(view_model, "Beagle View Model", "Swift", "It works between system IO and component visualization").
-  Component(component_decoder, "Component Decoder", "Swift", "It transforms backend JSON responses into Beagle Components").
-  Component(beagle_component, "Server Driven Component", "Swift", "Data structure representing a Beagle interface element (Container, Button, Text, List, Operation, etc)").
-  Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Temporarily stores screen structures received via server, indexed by URI").
-  Component(network_client, "Network Client", "Swift | Abstract", "Component that defines the execution strategy for remote requests. Requires implementation").
-  Component(renderer, "Renderer", "Swift", "It coordinates rendering of interface elements").
-  Component(view_configurator, "View Configurator", "Swift", "It applies themes and accessibility to server-driven components").
-  Component(beagle_theme, "Theme", "Swift", "It stores component style settings such as colors, borders. It reduces gap between native system design and Beagle components").
-  Component(style_view_configurator, "Style View Configurator", "Swift", "It knows how to apply flex styles and organization to interface elements").
-  Component(layout_manager, "Layout Manager", "Swift", "It coordinates the distribution of interface elements on screens, applies margins and safe area").
+  Component(beagle_config, "Beagle Config", "Swift", "Singleton responsible for storing all Beagle dependencies and settings, such as: themes, view client implementations, analytics, decoder, logger, deeplinks, etc")
+  Component(beagle_view_controller, "Beagle View Controller", "Swift", "Full screen representation of Beagle (View Controller)")
+  Component(beagle_view, "Beagle View", "Swift", "Another option to Beagle View Controller that allows you to add a Beagle screen as part of a native iOS screen (UIView)")
+  Component(analytics, "Analytics", "Swift | Abstract | Opcional", "Register screen lifecycle events for analysis tools")
+  Component(view_client, "View Client", "Swift", "Repository that is responsible for making remote requests to get Beagle screens")
+  Component(view_model, "Beagle View Model", "Swift", "It works between system IO and component visualization")
+  Component(component_decoder, "Component Decoder", "Swift", "It transforms backend JSON responses into Beagle Components")
+  Component(beagle_component, "Server Driven Component", "Swift", "Data structure representing a Beagle interface element (Container, Button, Text, List, Operation, etc)")
+  Component(cache, "Cache", "Swift  | Abstrato | Opcional", "Temporarily stores screen structures received via server, indexed by URI")
+  Component(network_client, "Network Client", "Swift | Abstract", "Component that defines the execution strategy for remote requests. Requires implementation")
+  Component(renderer, "Renderer", "Swift", "It coordinates rendering of interface elements")
+  Component(view_configurator, "View Configurator", "Swift", "It applies themes and accessibility to server-driven components")
+  Component(beagle_theme, "Theme", "Swift", "It stores component style settings such as colors, borders. It reduces gap between native system design and Beagle components")
+  Component(style_view_configurator, "Style View Configurator", "Swift", "It knows how to apply flex styles and organization to interface elements")
+  Component(layout_manager, "Layout Manager", "Swift", "It coordinates the distribution of interface elements on screens, applies margins and safe area")
 }
 
-System_Ext(yoga, "Yoga", "Library that organizes an application's screens in the flex pattern").
+System_Ext(yoga, "Yoga", "Library that organizes an application's screens in the flex pattern")
 
-Rel(frontend_app, beagle_config, "It starts").
-Rel(frontend_app, beagle_view_controller, "It starts").
-Rel(frontend_app, beagle_view, "Add to existing screens").
+Rel(frontend_app, beagle_config, "It starts")
+Rel(frontend_app, beagle_view_controller, "It starts")
+Rel(frontend_app, beagle_view, "Add to existing screens")
 
-Rel(beagle_view_controller, renderer, "It uses").
-Rel(beagle_view_controller, beagle_component, "It contains one or more").
-Rel(beagle_view_controller, layout_manager, "It uses").
-Rel(beagle_view_controller, analytics, "Registers actions and navigation").
-BiRel(beagle_view_controller, view_model, "Requests content | Watches").
+Rel(beagle_view_controller, renderer, "It uses")
+Rel(beagle_view_controller, beagle_component, "It contains one or more")
+Rel(beagle_view_controller, layout_manager, "It uses")
+Rel(beagle_view_controller, analytics, "Registers actions and navigation")
+BiRel(beagle_view_controller, view_model, "Requests content | Watches")
 
-Rel(beagle_view, beagle_view_controller, "It uses in a container").
+Rel(beagle_view, beagle_view_controller, "It uses in a container")
 
-Rel(layout_manager, style_view_configurator, "It uses").
+Rel(layout_manager, style_view_configurator, "It uses")
 
-Rel(style_view_configurator, yoga, "It uses properties and Yoga elements").
+Rel(style_view_configurator, yoga, "It uses properties and Yoga elements")
 
-Rel(view_client, component_decoder, "It uses").
-Rel(view_client, cache, "It stores answers").
+Rel(view_client, component_decoder, "It uses")
+Rel(view_client, cache, "It stores answers")
 Rel(view_client, network_client, "It uses")
 
-Rel(network_client, beagle_backend, "Resquests screens", "JSON/Https").
+Rel(network_client, beagle_backend, "Resquests screens", "JSON/Https")
 
-Rel(renderer, beagle_component, "Transforms into native (UIKit)").
-Rel(renderer, view_configurator, "It uses").
+Rel(renderer, beagle_component, "Transforms into native (UIKit)")
+Rel(renderer, view_configurator, "It uses")
 
-Rel(view_configurator, beagle_theme, "It applies").
-Rel(view_configurator, style_view_configurator, "It uses").
+Rel(view_configurator, beagle_theme, "It applies")
+Rel(view_configurator, style_view_configurator, "It uses")
 
-Rel(component_decoder, beagle_component, "It creates and stores custom types").
+Rel(component_decoder, beagle_component, "It creates and stores custom types")
 
-Rel(view_model, view_client, "It uses").
-Rel(view_model, analytics, "Promotes events").
+Rel(view_model, view_client, "It uses")
+Rel(view_model, analytics, "Promotes events")
 
 @enduml

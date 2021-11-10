@@ -6,7 +6,7 @@ LAYOUT_WITH_LEGEND()
 Person(software_developer, "Desenvolvedor de software", "Qualquer desenvolvedor que queira criar e publicar uma aplicação frontend multi plataformas.")
 System_Boundary(beagle, "Beagle"){
   
-  Container(beagle_backend, "Beagle Backend", "Koltin", "Permite a criação de telas seguindo o contrato do Beagle")
+  Container(beagle_backend, "Beagle Backend", "Kotlin", "Permite a criação de telas seguindo o contrato do Beagle")
 
   System_Boundary(beagle_frontend, "Beagle Frontend") {
       

@@ -5,7 +5,7 @@ LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
 System_Ext(frontend_app, "iOS Application", "An application that renders Beagle screens")
-Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of screens following Beagle's contract")
+Container(beagle_backend, "Beagle Backend", "Kotlin", "It allows the creation of screens following Beagle's contract")
 
 Container_Boundary(beagle_android, "Beagle iOS") {
   Component(beagle_config, "Beagle Config", "Swift", "Singleton responsible for storing all Beagle dependencies and settings, such as: themes, view client implementations, analytics, decoder, logger, deeplinks, etc")

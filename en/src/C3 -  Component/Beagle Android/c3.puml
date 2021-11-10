@@ -5,10 +5,10 @@ LAYOUT_WITH_LEGEND()
 System_Ext(frontend_app, "Android application", "An application that renders Beagle's screens")
 System_Ext(moshi_lib, "Moshi library", "JSON lib for Android and Java It converts JSON into a Java object")
 System_Ext(yoga_layout, "Yoga Layout", "Engine that positions the screen components")
-System_Ext(design_system, "Design System Externo", "Design System configuration lib external to the application")
+System_Ext(design_system, "External Design System", "Design System configuration lib external to the application")
 System_Ext(analytics_provider, "Analytics Provider", "External Analytics provider")
 
-Container(beagle_backend, "Beagle Backend", "Koltin", "It allows screen creation following Beagle's contract")
+Container(beagle_backend, "Beagle Backend", "Kotlin", "It allows screen creation following Beagle's contract")
 
 Container_Boundary(beagle_android, "Beagle Android"){
   Component(beagle_config, "Beagle Config", "Kotlin", "Defines Beagle's configuration, as the base URL for backend requests It is used in the creation of the Beagle Setup")

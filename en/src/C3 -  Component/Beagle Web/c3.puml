@@ -4,7 +4,7 @@ LAYOUT_WITH_LEGEND()
 
 System_Ext(frontend_app, "Application / Website", "A software that renders Beagle's screens")
 
-Container(beagle_backend, "Beagle Backend", "Koltin", "It allows the creation of screens following Beagle's contract")
+Container(beagle_backend, "Beagle Backend", "Kotlin", "It allows the creation of screens following Beagle's contract")
 
 Container_Boundary(beagle_web, "Beagle Web"){
 

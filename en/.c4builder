@@ -12,7 +12,7 @@
 	"includeNavigation": true,
 	"includeTableOfContents": true,
 	"webTheme": "https://docs.usebeagle.io/c4model/theme/theme.css",
-	"repoUrl": "",
+	"repoUrl": "https://github.com/ZupIT/beagle-c4model",
 	"docsifyTemplate": "../docsify.template.js",
 	"webPort": "3000",
 	"includeBreadcrumbs": true,

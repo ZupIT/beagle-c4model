@@ -8,7 +8,7 @@ The software architecture defines the parts of the software and it is also the t
 
 Documenting a project's architecture takes time, knowledge of tools, and layout techniques. The biggest challenge is to avoid two scenarios:
 
-* **Scenario 1:** Complex documentation can be confusing and obsolete and it loses the main purpose and it is a waste of time to produce something it won't be used.
+* **Scenario 1:** Complex documentation can be confusing and quickly become obsolete losing its main purpose which is avoiding the waste of time to produce something that won't be used.
 
 * **Scenario 2:** Documents with flaws and not enough information.
 

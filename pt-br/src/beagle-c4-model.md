@@ -2,7 +2,7 @@
 
 # **Overview**
 
-A arquitetura de software define as partes de um software e é também a estratégia tecnológica de um produto/projeto. Com isso, é muito importante que os usuários vejam uma atualização frequente, porque sem isso pode ocorrer falhas.
+Por definição, arquitetura de software é a estratégia tecnológica de um produto e/ou serviço, definindo as partes que compõem um sistema. E, como toda estratégia, é fundamental que ela esteja em constante atualização, afinal um planejamento sem visualização tenderá a ser falho.
 
 ### Documentação da arquitetura
 

@@ -1,6 +1,6 @@
 Beagle Backend is a support library that helps create Beagle screens from a server. 
 
-Some of this resources are: 
+Some of these resources are: 
 
 - The Backend Starter automatically configures the library in applications using Spring or Micronaut. 
 

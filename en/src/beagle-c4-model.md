@@ -20,7 +20,7 @@ The project's architecture is crucial for the user to have a better experience, 
 * How can I escalate my application?
 * How can I assure my application's security?
 
-After all this, Beagle's team created a view of our architecture in a simpler way, the C4 Model.
+After all this, Beagle's team created a view of its architecture in a simpler way, the C4 Model.
 
 
 ## **What is C4Model?**

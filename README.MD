@@ -54,16 +54,17 @@ To generate doc files, run:
 
 ### **Changing configurations**
 
-To modify any configuration access:
+If you want to modify any configuration access:
 1. **`.c4builder`** file on [**en/.c4builder**](https://github.com/ZupIT/myproject-c4model//tree/main/en/.c4builder) or [**pt-br/.c4builder**](https://github.com/ZupIT/myproject-c4model//tree/main/pt-br/.c4builder)
 
 ## **Documentation**
 You can find Beagle's documentation on our [**website**](https://docs.usebeagle.io).
 
 ## **Contributing**
-Check out our [**contributing guide**]https://github.com/ZupIT/beagle/blob/main/CONTRIBUTING.md) to learn about our development process, how to suggest bugfixes and improvements. 
-
 Feel free to use, recommend improvements or contribute to new implementations.
+
+Check out our [**contributing guide**](https://github.com/ZupIT/beagle/blob/main/CONTRIBUTING.md) to learn about our development process, how to suggest bug fixes and improvements. 
+
 
 ## **License**
  [**Apache License 2.0**](https://github.com/ZupIT/beagle/blob/main/LICENSE.txt).

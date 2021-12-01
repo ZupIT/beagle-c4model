@@ -63,13 +63,13 @@ You can find Beagle's documentation on our [**website**](https://docs.usebeagle.
 ## **Contributing**
 Feel free to use, recommend improvements or contribute to new implementations.
 
-Check out our [**contributing guide**](https://github.com/ZupIT/beagle/blob/main/CONTRIBUTING.md) to learn about our development process, how to suggest bug fixes and improvements. 
+Check out our [**contributing guide**](https://github.com/ZupIT/beagle-c4model/blob/main/CONTRIBUTING.md) to learn about our development process, how to suggest bug fixes and improvements. 
 
 
 ## **License**
- [**Apache License 2.0**](https://github.com/ZupIT/beagle/blob/main/LICENSE.txt).
+ [**Apache License 2.0**](https://github.com/ZupIT/beagle-c4model/blob/main/LICENSE.txt).
 
  ## **Community**
 Feel free to reach out to us at:
-- [**GitHub Issues**](https://github.com/ZupIT/beagle/issues)
+- [**GitHub Issues**](https://github.com/ZupIT/beagle-c4model/issues)
 - If you have any questions or ideas, let's chat in our [**Zup Open Source Forum**](https://forum.zup.com.br).

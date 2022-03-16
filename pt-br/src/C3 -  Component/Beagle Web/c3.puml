@@ -25,6 +25,10 @@ Container_Boundary(beagle_web, "Beagle Web"){
     }
   }
 
+   Boundary(beagle_flutter_core, "Beagle Flutter Core"){
+      Component(root_navigator, "Root Navigator", "Dart", "Implementação de um 'Navigator' nativo em dar, é similar com o Default Web Navigator")
+  }
+
 
 
   Boundary(beagle_core, "Beagle Web Core"){
@@ -32,16 +36,16 @@ Container_Boundary(beagle_web, "Beagle Web"){
     Component(beagle_service, "Beagle Service", "Typescript","Ponto de partida de toda a lógica de processamento do Beagle Web Core, é responsável por iniciar a biblioteca e faz a ponte entre os utilitários e o código nativo")
     Component(beagle_config, "Beagle Config", "Typescript","Configurações que alteram ou incrementam o comportamento da biblioteca Beagle")
     Component(beagle_view, "Beagle View","Typescript", "Responsável pelo gerenciamento de telas server-driven")
-    Component(beagle_navigator, "Beagle Navigator","Typescript", "Responsável pelo controle de navegação entre as rotas")
-    Component(beagle_renderer, "Beagle Renderer","Typescript", "Responsável pela renderização de telas e uso dos utilitários de desserialização")
+    Component(default_web_controller, "Default Web Controller", "Typescript", "Handles events of Loading, Error and Success when navigation happens")
     Component(beagle_actions, "Beagle Actions","Typescript", "Ações pré-definidas ou customizadas como por exemplo SendRequest")
+    Component(renderer, "Renderer","Typescript", "Responsável por renderizar telas e usar os utilitários de desserialização")
 
     Boundary(beagle_config_services, "Config Services and Helpers"){
       Component(http_client, "HTTP Client","Typescript", "Serviço para definir ação de fetch customizada")
       Component(analytics, "Analytics Service","Typescript", "Serviço que habilita o analytics para eventos de mudança de rota ou ações de componentes")
       Component(view_client, "View Client","Typescript", "Utilitário que faz requisições para o backend e cuida das estratégias de cache")
       Component(view_content_manager, "View Content Manager","Typescript", "Utilitário que ajuda no acesso a elementos da árvore de componentes")
-      Component(prefetcher, "Prefetcher","Typescript", "Utilitário que faz a reutilização de telas já carregadas")
+      Component(default_web_navigator, "Default Web Navigator","Typescript", "Responsável pela mudança de rotas e por chamar os serviços de tratamento e apresentação dos componentes")
       Component(global_context, "Global Context","Typescript", "Utilitário responsável pela desserialização e tratamento do contexto global")
       Component(url_builder, "URL Builder","Typescript", "Utilitário que trata a url enviada como parâmetro para as configurações")
       Component(operation_handlers, "Operation Handler","Typescript", "Utilitário responsável pela desserialização e tratamento de operações")
@@ -54,36 +58,36 @@ Container_Boundary(beagle_web, "Beagle Web"){
 Rel(frontend_app, beagle_angular, "Usa")
 Rel(frontend_app, beagle_react, "Usa")
 Rel(frontend_app, beagle_flutter, "Usa")
+Rel(beagle_flutter, root_navigator,"Usa")
 Rel(beagle_flutter_bridge, beagle_service, "Cria")
 Rel(beagle_provider, beagle_remote_view, "Acessa parâmetros")
 Rel(beagle_module, beagle_remote_view, "Acessa parâmetros")
 Rel(beagle_remote_view, beagle_components, "Processa e apresenta")
+Rel(beagle_remote_view, default_web_navigator, "Cria")
 Rel(beagle_actions, analytics, "Pode criar evento")
 Rel(beagle_provider, beagle_service, "Cria")
 Rel(beagle_module, beagle_service, "Cria")
-Rel(beagle_service, beagle_view, "Cria")
-Rel(beagle_view, beagle_service, "Contém")
 Rel(beagle_service, beagle_config ,"Processa")
 Rel(beagle_config, beagle_config_services ,"Contém")
+Rel(default_web_navigator, view_client, "Usa")
 Rel(beagle_config, beagle_components ,"Contém")
 Rel(beagle_remote_view, view_content_manager ,"Provê para seus filhos")
 Rel(view_content_manager, beagle_view , "Retorna uma instância")
 Rel(beagle_config, beagle_actions ,"Contém")
-Rel(beagle_view, beagle_navigator, "Cria")
-Rel(beagle_view, beagle_renderer, "Cria")
-Rel(beagle_renderer, beagle_view, "Usa")
-Rel(beagle_navigator, beagle_renderer, "Aciona renderização")
-Rel(beagle_renderer, action_handlers, "Usa")
-Rel(beagle_renderer, operation_handlers, "Usa")
-Rel(beagle_renderer, expression_handlers, "Usa")
-Rel(global_context, beagle_renderer, "Aciona renderização")
-Rel(beagle_view, view_client, "Usa")
 Rel(beagle_view, global_context, "Cria")
-Rel(view_client, beagle_backend, "Faz requisição", "HTTP")
-Rel(beagle_navigator, analytics, "Pode criar evento")
-Rel(beagle_navigator, url_builder, "Usa")
+Rel(http_client, beagle_backend, "Faz requisição", "HTTP")
+Rel(default_web_navigator, default_web_controller, "Usa")
 Rel(beagle_actions, http_client, "Pode usar")
 Rel(view_client, http_client, "Usa")
-Rel(prefetcher, view_client, "Usa")
+Rel(default_web_navigator, beagle_view, "Cria")
+Rel(beagle_view, default_web_navigator, "Acessa")
+Rel(beagle_service, beagle_config_services, "Cria")
+Rel(beagle_view, renderer, "Cria")
+Rel_L(renderer, expression_handlers, "Usa")
+Rel_L(renderer, operation_handlers, "Usa")
+Rel_L(renderer, action_handlers, "Usa")
+Rel(view_client, url_builder, "Usa")
+Rel(default_web_controller, renderer, "Accessa e inicia renderização")
+Rel(default_web_navigator, analytics, "Pode criar eventos")
 
 @enduml

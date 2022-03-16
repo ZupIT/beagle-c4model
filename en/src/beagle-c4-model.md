@@ -1,4 +1,5 @@
 
+**This is the version for Beagle 2.0 architecture, If you want you can see the previous one at our github repository [Beagle C4 v1.x](https://github.com/ZupIT/beagle-c4model/releases/tag/v1.0.1)**
 
 # **Overview**
 

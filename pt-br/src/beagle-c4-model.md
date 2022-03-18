@@ -3,6 +3,11 @@
 
 Por definição, arquitetura de software é a estratégia tecnológica de um produto e/ou serviço, definindo as partes que compõem um sistema. E, como toda estratégia, é fundamental que ela esteja em constante atualização, afinal um planejamento sem visualização tenderá a ser falho.
 
+<b><i>
+  Esse modelo referencia a versão 2.0 do Beagle<br>
+  Para verificar o modelo da versão anterior, acesse nosso repositório no [GitHub](https://github.com/ZupIT/beagle-c4model)
+</i></b>
+
 ## Documentação da arquitetura
 
 Documentar a arquitetura de um projeto é um processo que exige tempo, conhecimento de ferramentas e técnicas para a diagramação. O maior desafio é evitar dois cenários:
@@ -38,8 +43,3 @@ Ao utilizar o Beagle, desenvolvedores podem:
 -Ter mais confiança de que aplicações se comportarão de forma semelhante em plataformas diferentes, pois o código será compartilhado e padronizado entre backend e frontend.
 
 -Testar facilmente novas hipóteses de negócio ou fazer correções em tempo real nas aplicações para melhorar a experiência dos usuários e receber feedback.
-
-<b><i>
-  Esse modelo referencia a versão 2.0 do Beagle<br>
-  Para verificar o modelo da versão anterior, acesse nosso repositório no [GitHub](https://github.com/ZupIT/beagle-c4model)
-</i></b>

@@ -5,7 +5,7 @@ Por definição, arquitetura de software é a estratégia tecnológica de um pro
 
 <b><i>
   Esse modelo referencia a versão 2.0 do Beagle<br>
-  Para verificar o modelo da versão anterior, acesse nosso repositório no [GitHub](https://github.com/ZupIT/beagle-c4model)
+  Para verificar o modelo da versão anterior, acesse nosso repositório no [GitHub](https://github.com/ZupIT/beagle-c4model/tree/v1.0.1)
 </i></b>
 
 ## Documentação da arquitetura

@@ -4,7 +4,7 @@
 By definition, software architecture is the technological strategy of a product and / or service, defining the parts that make up a system. And, like every strategy, it is critical that it is constantly updated, after all, a non-viewing planning will tend to be flawed.
 
 <b><i> This model references the Beagle version 2.0 <br>
-If you wish to check the models for previous versions, please check our repository in GitHub
+If you wish to check the models for previous versions, please check our repository in [GitHub](https://github.com/ZupIT/beagle-c4model/tree/v1.0.1)
 </i></b>
 
 ## **Software documentation**

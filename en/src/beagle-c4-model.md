@@ -41,3 +41,7 @@ When you use Beagle, you are able to:
  - Be more confident that the application will behave similarly on different platforms as code will be shared between backend and frontend.
 
  - Easily test new business hypotheses or make real-time fixes to applications to improve user experience and receive feedback.
+
+<b><i> This model references the Beagle version 2.0 <br>
+If you wish to check the models for previous versions, please check our repository in GitHub
+</i></b>

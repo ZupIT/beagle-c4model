@@ -1,6 +1,4 @@
 
-**This is the version for Beagle 2.0 architecture, If you want you can see the previous one at our github repository [Beagle C4 v1.x](https://github.com/ZupIT/beagle-c4model/releases/tag/v1.0.1)**
-
 # **Overview**
 
 By definition, software architecture is the technological strategy of a product and / or service, defining the parts that make up a system. And, like every strategy, it is critical that it is constantly updated, after all, a non-viewing planning will tend to be flawed.

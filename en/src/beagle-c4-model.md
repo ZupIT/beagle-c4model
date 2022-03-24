@@ -1,5 +1,4 @@
 
-
 # **Overview**
 
 By definition, software architecture is the technological strategy of a product and / or service, defining the parts that make up a system. And, like every strategy, it is critical that it is constantly updated, after all, a non-viewing planning will tend to be flawed.

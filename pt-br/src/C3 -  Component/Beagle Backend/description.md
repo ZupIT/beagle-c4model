@@ -2,6 +2,6 @@ O Beagle Backend é uma biblioteca de suporte que ajuda na criação de telas Be
 
 Alguns dos recursos disponíveis são: 
 
-- O Backend Starter, que configura automaticamente a biblioteca em aplicações usando Spring ou Micronaut.
+- O Backend Starter, que configura automaticamente a biblioteca em aplicações usando Spring, Micronaut ou Typescript.
  
-- O Framework, que fornece todos os contratos que serão usados na criação dos componentes. Além disso, ele também possui um utilitário de serialização que transforma toda tela criada no JSON que será enviado para um frontend.
+- O Framework ou Core, que fornece todos os contratos que serão usados na criação dos componentes. Além disso, ele também possui um utilitário de serialização que transforma toda tela criada no JSON que será enviado para um frontend.
